@@ -39,7 +39,7 @@ export default function HeroScrub({ children }: HeroScrubProps) {
           muted
         />
         <div className="hero-scrim" />
-        <div className="container" data-sc-cue="0.05 0.7">
+        <div className="container" data-sc-cue="0 0.75 0 0.35">
           {children}
         </div>
       </div>

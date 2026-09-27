@@ -480,13 +480,14 @@ section:last-of-type {
   color: var(--on-dark);
   border-bottom: none;
   position: relative;
+  padding: 0;
 }
 
 .hero .sc-stage {
   position: sticky;
-  top: 0;
-  height: 100vh;
-  height: 100svh;
+  top: 72px;
+  height: calc(100vh - 72px);
+  height: calc(100svh - 72px);
   overflow: clip;
   z-index: 1;
   background: var(--navy-950);
@@ -538,11 +539,51 @@ section:last-of-type {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-block: 88px;
+  padding-block: 24px 64px;
 }
 
 [data-sc-cue] {
   opacity: 0;
+}
+
+@media (max-width: 639px) {
+  .hero .sc-stage > .container {
+    padding-block: 16px 84px;
+  }
+
+  .hero .container .progress-badge {
+    margin-bottom: 16px;
+  }
+
+  .hero .container h1 {
+    font-size: clamp(28px, 8vw, 34px);
+    margin-bottom: 12px;
+  }
+
+  .hero .container p {
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+
+  .hero .container .hero-stats {
+    margin-top: 24px;
+  }
+
+  .hero .container .hero-socials {
+    margin-top: 20px;
+  }
+}
+
+@media (max-height: 740px) {
+  .hero .container .hero-stats {
+    display: none;
+  }
+}
+
+@media (max-width: 639px) and (max-height: 680px) {
+  .hero .container .progress-badge {
+    display: none;
+  }
 }
 
 /* ---------- N-1 progress badge: builds up, never completes ---------- */
