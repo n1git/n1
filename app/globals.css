@@ -114,6 +114,17 @@ section:last-of-type {
   border-bottom: none;
 }
 
+section:not(.hero) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 760px;
+}
+
+@media (max-width: 639px) {
+  section:not(.hero) {
+    contain-intrinsic-size: auto 1150px;
+  }
+}
+
 .kicker {
   text-transform: uppercase;
   letter-spacing: 2.5px;

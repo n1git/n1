@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, type ReactNode } from "react";
+import { useEffect, useRef, type ReactNode } from "react";
 import Script from "next/script";
 import { withBasePath } from "@/app/base-path";
 
@@ -14,6 +14,22 @@ type HeroScrubProps = {
 
 export default function HeroScrub({ children }: HeroScrubProps) {
   const rootRef = useRef<HTMLElement>(null);
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    function attachSources() {
+      const video = videoRef.current;
+      if (!video) return;
+      video.setAttribute("data-sc-src", withBasePath("/hero/n1-hero.mp4"));
+      video.setAttribute("data-sc-src-mobile", withBasePath("/hero/n1-hero-m.mp4"));
+    }
+    if (window.scrollY > 0) {
+      attachSources();
+      return;
+    }
+    window.addEventListener("scroll", attachSources, { once: true, passive: true });
+    return () => window.removeEventListener("scroll", attachSources);
+  }, []);
 
   function mount() {
     const w = window as ScrollCraftGlobal;
@@ -31,13 +47,7 @@ export default function HeroScrub({ children }: HeroScrubProps) {
       <div className="sc-stage" data-sc-stage>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img className="sc-stage__poster" src={withBasePath("/hero/n1-hero-poster.webp")} alt="" />
-        <video
-          data-sc-scrub
-          data-sc-src={withBasePath("/hero/n1-hero.mp4")}
-          data-sc-src-mobile={withBasePath("/hero/n1-hero-m.mp4")}
-          playsInline
-          muted
-        />
+        <video ref={videoRef} data-sc-scrub playsInline muted />
         <div className="hero-scrim" />
         <div className="container" data-sc-cue="0 0.75 0 0.35">
           {children}
