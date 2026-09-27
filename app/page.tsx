@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./Header";
 import Portfolio from "./Portfolio";
+import HeroScrub from "@/components/HeroScrub";
 import ChatWidget from "@/components/support-chat/ChatWidget";
 import { withBasePath } from "./base-path";
 import {
@@ -78,54 +79,52 @@ export default function Home() {
       <div id="top" />
       <Header />
 
-      <section className="hero">
-        <div className="container">
-          <div className="hero-eyebrow">Company Profile · 2026</div>
-          <div className="progress-badge" aria-hidden="true">
-            <span className="progress-track">
-              <span className="progress-fill" />
-            </span>
-            <span className="progress-label">N⁻¹ · Always One Short</span>
-          </div>
-          <h1>
-            Building Indonesia&apos;s Own <span>AI Technology</span> Capability
-          </h1>
-          <p>
-            N⁻¹ Labs adalah perusahaan teknologi AI asal Indonesia yang membangun AI Agent, software
-            systems, automation, dan digital products — dengan arah jangka panjang menjadi AI technology
-            company yang membangun teknologinya sendiri.
-          </p>
-          <div className="hero-ctas">
-            <a className="btn btn-primary" href="#portfolio">
-              Lihat Portofolio
-            </a>
-            <a className="btn btn-ghost" href="#vision">
-              Pelajari Visi Kami
-            </a>
-          </div>
-          <div className="hero-stats">
-            {stats.map((stat) => (
-              <div className="stat" key={stat.label}>
-                <b>{stat.value}</b>
-                <span>{stat.label}</span>
-              </div>
-            ))}
-          </div>
-          <div className="hero-socials">
-            {SOCIAL_LINKS.map((social) => (
-              <a
-                key={social.label}
-                className="hero-social-link"
-                href={social.href}
-                aria-label={social.label}
-                {...(social.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              >
-                {social.icon}
-              </a>
-            ))}
-          </div>
+      <HeroScrub>
+        <div className="hero-eyebrow">Company Profile · 2026</div>
+        <div className="progress-badge" aria-hidden="true">
+          <span className="progress-track">
+            <span className="progress-fill" />
+          </span>
+          <span className="progress-label">N⁻¹ · Always One Short</span>
         </div>
-      </section>
+        <h1>
+          Building Indonesia&apos;s Own <span>AI Technology</span> Capability
+        </h1>
+        <p>
+          N⁻¹ Labs adalah perusahaan teknologi AI asal Indonesia yang membangun AI Agent, software
+          systems, automation, dan digital products — dengan arah jangka panjang menjadi AI technology
+          company yang membangun teknologinya sendiri.
+        </p>
+        <div className="hero-ctas">
+          <a className="btn btn-primary" href="#portfolio">
+            Lihat Portofolio
+          </a>
+          <a className="btn btn-ghost" href="#vision">
+            Pelajari Visi Kami
+          </a>
+        </div>
+        <div className="hero-stats">
+          {stats.map((stat) => (
+            <div className="stat" key={stat.label}>
+              <b>{stat.value}</b>
+              <span>{stat.label}</span>
+            </div>
+          ))}
+        </div>
+        <div className="hero-socials">
+          {SOCIAL_LINKS.map((social) => (
+            <a
+              key={social.label}
+              className="hero-social-link"
+              href={social.href}
+              aria-label={social.label}
+              {...(social.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+            >
+              {social.icon}
+            </a>
+          ))}
+        </div>
+      </HeroScrub>
 
       <section id="philosophy">
         <div className="container">

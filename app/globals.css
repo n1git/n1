@@ -477,26 +477,72 @@ section:last-of-type {
 
 /* ---------- hero ---------- */
 .hero {
-  background: radial-gradient(1100px 700px at 85% -10%, var(--navy-700) 0%, var(--navy-900) 45%, var(--navy-950) 100%);
   color: var(--on-dark);
   border-bottom: none;
-  padding-top: 88px;
-  padding-bottom: 88px;
   position: relative;
-  overflow: hidden;
 }
 
-.hero::after {
-  content: "[N⁻¹]";
+.hero .sc-stage {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  height: 100svh;
+  overflow: clip;
+  z-index: 1;
+  background: var(--navy-950);
+}
+
+.hero .sc-stage :is(video[data-sc-scrub], .sc-stage__poster) {
   position: absolute;
-  right: -40px;
-  top: 40px;
-  font-size: 280px;
-  font-weight: 800;
-  color: rgba(255, 255, 255, 0.04);
-  font-family: Georgia, serif;
-  line-height: 1;
-  pointer-events: none;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero video[data-sc-scrub] {
+  opacity: 0;
+  transition: opacity 380ms var(--cta-ease);
+}
+
+.hero.sc-has-clip video[data-sc-scrub] {
+  opacity: 1;
+}
+
+.hero .sc-stage__poster {
+  z-index: 0;
+  transition: opacity 380ms var(--cta-ease);
+}
+
+.hero.sc-has-clip .sc-stage__poster {
+  opacity: 0;
+}
+
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  background: linear-gradient(
+    to top,
+    rgba(11, 20, 36, 0.88) 0%,
+    rgba(11, 20, 36, 0.55) 32%,
+    rgba(11, 20, 36, 0.15) 62%,
+    transparent 100%
+  );
+}
+
+.hero .sc-stage > .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-block: 88px;
+}
+
+[data-sc-cue] {
+  opacity: 0;
 }
 
 /* ---------- N-1 progress badge: builds up, never completes ---------- */
