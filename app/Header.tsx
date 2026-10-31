@@ -2,15 +2,17 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { withBasePath } from "./base-path";
 
 const NAV_LINKS = [
-  { href: "#philosophy", label: "Filosofi" },
-  { href: "#about", label: "Tentang" },
-  { href: "#technology", label: "Fokus Teknologi" },
-  { href: "#portfolio", label: "Portofolio" },
-  { href: "#vision", label: "Visi" },
-  { href: "#contact", label: "Kontak" },
+  { href: "/#philosophy", label: "Filosofi" },
+  { href: "/#about", label: "Tentang" },
+  { href: "/#technology", label: "Fokus Teknologi" },
+  { href: "/produk", label: "Produk" },
+  { href: "/#portfolio", label: "Portofolio" },
+  { href: "/#vision", label: "Visi" },
+  { href: "/#contact", label: "Kontak" },
 ];
 
 export default function Header() {
@@ -36,24 +38,24 @@ export default function Header() {
   return (
     <header className="site-header">
       <div className="container">
-        <a className="brand" href="#top">
+        <Link className="brand" href="/">
           <Image src={withBasePath("/logo.png")} alt="N⁻¹ Labs" width={34} height={34} priority />
           N⁻¹&nbsp;LABS
-        </a>
+        </Link>
 
         <nav>
           <ul className="nav-links">
             {NAV_LINKS.map((link) => (
               <li key={link.href}>
-                <a href={link.href}>{link.label}</a>
+                <Link href={link.href}>{link.label}</Link>
               </li>
             ))}
           </ul>
         </nav>
 
-        <a className="btn btn-primary header-cta" href="#portfolio">
+        <Link className="btn btn-primary header-cta" href="/#portfolio">
           Lihat Portofolio
-        </a>
+        </Link>
 
         <div className="header-actions">
           <button
@@ -96,13 +98,13 @@ export default function Header() {
       <div className={`mobile-nav-wrap${menuOpen ? " open" : ""}`}>
         <nav className="mobile-nav">
           {NAV_LINKS.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
+            <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
               {link.label}
-            </a>
+            </Link>
           ))}
-          <a className="btn btn-primary mobile-nav-cta" href="#portfolio" onClick={() => setMenuOpen(false)}>
+          <Link className="btn btn-primary mobile-nav-cta" href="/#portfolio" onClick={() => setMenuOpen(false)}>
             Lihat Portofolio
-          </a>
+          </Link>
         </nav>
       </div>
     </header>

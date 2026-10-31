@@ -53,7 +53,13 @@ export const missionPillars = [
   },
 ];
 
-export const techDomains = [
+export type TechDomain = {
+  name: string;
+  items: string[];
+  vision?: boolean;
+};
+
+export const techDomains: TechDomain[] = [
   {
     name: "Artificial Intelligence",
     items: [
