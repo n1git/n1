@@ -1,63 +1,38 @@
-"use client";
+import type { ProductCategory } from "./content";
 
-import { useState } from "react";
-import type { TechDomain } from "./content";
-
-export default function ProductCategories({ domains }: { domains: TechDomain[] }) {
-  const [openNames, setOpenNames] = useState<Set<string>>(new Set());
-
-  function toggle(name: string) {
-    setOpenNames((prev) => {
-      const next = new Set(prev);
-      if (next.has(name)) next.delete(name);
-      else next.add(name);
-      return next;
-    });
-  }
-
+export default function ProductCategories({ categories }: { categories: ProductCategory[] }) {
   return (
     <div style={{ marginTop: 24 }}>
-      {domains.map((domain, i) => {
-        const isOpen = openNames.has(domain.name);
-        const bodyId = `product-category-body-${i}`;
-        return (
-          <div className={`project${isOpen ? " open" : ""}`} key={domain.name}>
-            <button
-              type="button"
-              className="project-trigger"
-              aria-expanded={isOpen}
-              aria-controls={bodyId}
-              onClick={() => toggle(domain.name)}
-            >
-              <div className="heading">
-                <span className="num">{String(i + 1).padStart(2, "0")}</span>
-                <span className="title">
-                  {domain.name}
-                  {domain.vision && (
-                    <span className="tag vision" style={{ marginLeft: 6 }}>
-                      Vision
-                    </span>
-                  )}
-                </span>
+      {categories.map((category) => (
+        <div key={category.name} style={{ marginBottom: 32 }}>
+          <h3 style={{ fontSize: 13, textTransform: "uppercase", letterSpacing: 0.5, marginBottom: 12 }}>
+            {category.name}
+          </h3>
+          <div className="grid grid-2">
+            {category.products.map((product) => (
+              <div className="panel domain-card" key={product.name}>
+                <h3>
+                  <span className="dot" />
+                  {product.name}
+                </h3>
+                <p style={{ fontSize: 13, fontWeight: 600, margin: "4px 0 8px" }}>{product.tagline}</p>
+                <p style={{ fontSize: 13.5, margin: 0 }}>{product.description}</p>
+                {product.url && (
+                  <a
+                    className="btn btn-ghost"
+                    style={{ marginTop: 12, display: "inline-block" }}
+                    href={product.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Kunjungi {product.name}
+                  </a>
+                )}
               </div>
-              <span className="chev" aria-hidden="true">
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 5v14M5 12h14" />
-                </svg>
-              </span>
-            </button>
-            <div className="project-body-wrap" id={bodyId}>
-              <div className="project-body">
-                <ul className="clean">
-                  {domain.items.map((item) => (
-                    <li key={item}>{item}</li>
-                  ))}
-                </ul>
-              </div>
-            </div>
+            ))}
           </div>
-        );
-      })}
+        </div>
+      ))}
     </div>
   );
 }

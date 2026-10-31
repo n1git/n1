@@ -104,6 +104,42 @@ export const techDomains: TechDomain[] = [
   },
 ];
 
+export type ProductCategory = {
+  name: string;
+  products: {
+    name: string;
+    tagline: string;
+    description: string;
+    url?: string;
+  }[];
+};
+
+export const productCategories: ProductCategory[] = [
+  {
+    name: "Produk App",
+    products: [
+      {
+        name: "Getruzz",
+        tagline: "Platform klub olahraga",
+        description:
+          "Satu akun untuk dua sisi: personal gratis (log latihan, sosial, grup) dan bisnis berbayar (manajemen klub).",
+        url: "https://getruzz.com",
+      },
+    ],
+  },
+  {
+    name: "Produk Sistem",
+    products: [
+      {
+        name: "Systemma",
+        tagline: "Sistem pre-order agen",
+        description:
+          "Portal pre-order untuk puluhan agen: agen memesan per batch dan membayar DP, admin memeriksa pembayaran, produksi, dan pengiriman.",
+      },
+    ],
+  },
+];
+
 export const buildAreas = [
   {
     title: "Intelligent Systems",

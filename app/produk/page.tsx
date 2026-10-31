@@ -2,12 +2,11 @@ import type { Metadata } from "next";
 import Header from "../Header";
 import Footer from "../Footer";
 import ProductCategories from "../ProductCategories";
-import { techDomains } from "../content";
+import { productCategories } from "../content";
 
 export const metadata: Metadata = {
   title: "Produk — N⁻¹ Labs",
-  description:
-    "Kategori produk dan layanan N⁻¹ Labs: Artificial Intelligence, AI Infrastructure, Software Engineering, Automation, Digital Products, dan riset masa depan.",
+  description: "Produk N⁻¹ Labs: Getruzz (Produk App) dan Systemma (Produk Sistem).",
 };
 
 export default function ProdukPage() {
@@ -18,15 +17,15 @@ export default function ProdukPage() {
 
       <section id="produk">
         <div className="container">
-          <div className="kicker">Produk &amp; Layanan</div>
-          <h1 className="section-title">Kategori Produk</h1>
+          <div className="kicker">Produk</div>
+          <h1 className="section-title">Produk Kami</h1>
           <div className="divider" />
           <p className="section-lead">
-            Produk dan layanan N⁻¹ Labs dikelompokkan ke dalam enam kategori utama. Klik tiap kategori
-            untuk melihat cakupannya.
+            Produk N⁻¹ Labs dikelompokkan ke dalam dua kategori: Produk App untuk pengguna akhir, dan
+            Produk Sistem untuk operasional bisnis.
           </p>
 
-          <ProductCategories domains={techDomains} />
+          <ProductCategories categories={productCategories} />
         </div>
       </section>
 
