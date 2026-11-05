@@ -29,6 +29,20 @@ and reference it in `.github/workflows/deploy.yml`'s build step. If left
 unset, the chat widget still works fully (FAQ answers, quick replies) and
 simply skips all network calls — nothing breaks.
 
+## Booking
+
+The same `/exec` URL also receives project bookings from `/booking`
+(`action: "create_booking"`). Each booking is appended to a `BOOKINGS` sheet
+with status `menunggu_dp`, and the team is emailed.
+
+- Set the Script Property `NOTIFY_EMAIL` (**Project Settings → Script
+  properties**) to the address that should receive booking emails. Without it,
+  no email is sent; the Sheet row is still written.
+- The first deploy after this change asks to authorize sending email
+  (`MailApp`). Re-deploy as a new version afterwards.
+- The visitor is also given a prefilled WhatsApp message with the booking
+  details, so a booking is never lost if this endpoint is unset or down.
+
 ## Behavior notes
 
 - Requests are sent with `mode: "no-cors"` and `Content-Type:
@@ -41,8 +55,11 @@ simply skips all network calls — nothing breaks.
 - Anti-spam: a hidden honeypot field (`honeypot`) is sent with every
   request; if it's non-empty, the request is silently accepted but
   discarded. A per-`ticketId` rate limit (`CacheService`, 20 requests per
-  60s) blocks abusive bursts.
+  60s), a global limit (120 per 60s), and a booking limit (10 per 60s) block
+  abusive bursts.
 - All payload fields are sanitized server-side (HTML tags stripped, length
-  capped, email format validated) before being written to the Sheet.
+  capped, email format validated, values starting with `=`, `+`, `-`, or `@`
+  prefixed with `'` so Sheets never reads them as formulas) before being
+  written to the Sheet.
 - Re-deploy (**Deploy → Manage deployments → Edit → New version**) after
   changing `Code.gs`; the `/exec` URL stays the same across versions.

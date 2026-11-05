@@ -4,6 +4,34 @@ export const contact = {
   email: "contact@n-1labs.com",
 };
 
+export const services = [
+  "Sistem Keuangan",
+  "Sistem Order",
+  "Sistem Gudang",
+  "Sistem Kasir",
+  "E-commerce",
+  "Website",
+];
+
+export type Booking = {
+  minPrice: number;
+  dpAmount?: number;
+  bank?: { name: string; number: string; holder: string };
+};
+
+export const booking: Booking = {
+  minPrice: 10000000,
+};
+
+export const budgetOptions = [
+  "Rp10–25 juta",
+  "Rp25–50 juta",
+  "Di atas Rp50 juta",
+  "Belum tahu, perlu konsultasi",
+];
+
+export const startOptions = ["Secepatnya", "1–3 bulan ke depan", "Belum pasti"];
+
 export const identity = [
   { label: "Nama Perusahaan", value: "N⁻¹ Labs" },
   { label: "Didirikan", value: "2 September 2026" },

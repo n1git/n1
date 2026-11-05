@@ -53,8 +53,8 @@ export default function Header() {
           </ul>
         </nav>
 
-        <Link className="btn btn-primary header-cta" href="/#portfolio">
-          Lihat Portofolio
+        <Link className="btn btn-primary header-cta" href="/booking">
+          Booking Proyek
         </Link>
 
         <div className="header-actions">
@@ -102,8 +102,8 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
-          <Link className="btn btn-primary mobile-nav-cta" href="/#portfolio" onClick={() => setMenuOpen(false)}>
-            Lihat Portofolio
+          <Link className="btn btn-primary mobile-nav-cta" href="/booking" onClick={() => setMenuOpen(false)}>
+            Booking Proyek
           </Link>
         </nav>
       </div>

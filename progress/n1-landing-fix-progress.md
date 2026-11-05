@@ -12,6 +12,18 @@ Status: Fase 0 selesai, menunggu OK owner.
 - [ ] 5. Mock tata letak baru (HP 390 px dan desktop 1440 px). **Wait for my OK.**
 - [ ] 6. Terapkan tata letak yang disetujui, `npm run build` sekali, cek `out/robots.txt`, `out/sitemap.xml`, `out/privacy.html`.
 
+## Tambahan di luar fase: booking jasa
+
+Permintaan owner: jasa sistem keuangan, order, gudang, kasir, e-commerce, website, harga mulai Rp10.000.000, booking wajib DP untuk menyaring klien serius. DP nominal tetap, transfer bank manual, bukti via WhatsApp.
+
+- Berkas: `app/booking/page.tsx`, `components/booking/BookingForm.tsx`, `lib/booking/booking.ts`, `app/content.ts` (`services`, `booking`, `budgetOptions`, `startOptions`), `app/globals.css`, `app/Header.tsx` (CTA jadi "Booking Proyek"), `apps-script/Code.gs`, `apps-script/README.md`.
+- `Code.gs`: aksi `create_booking`, sheet `BOOKINGS`, email via `NOTIFY_EMAIL`. Poin 3 Fase 1 sudah terpenuhi di sini: netralisasi awalan formula di `sanitizeText`, batas laju global, `notifyTeam`. Sisa Fase 1 untuk `Code.gs`: panggil `notifyTeam` saat tiket chat baru dibuat.
+- Formulir tidak menampilkan apa pun selain pemberitahuan WhatsApp sampai `booking.dpAmount` dan `booking.bank` di `app/content.ts` diisi owner.
+- Tanpa endpoint, booking tetap utuh lewat pesan WhatsApp yang sudah terisi (kode, nama, layanan, anggaran, kebutuhan).
+- DP tidak bisa dipaksa oleh situs statis: yang ditegakkan adalah pernyataan "booking baru berlaku setelah DP diterima" dan verifikasi manual.
+- Fase 2: tambahkan `/booking` ke `app/sitemap.ts`. Fase 3: `/privacy` harus mencakup data booking, lalu tautkan dari formulir booking (kini hanya kalimat singkat tanpa tautan karena halamannya belum ada). Fase 5: mock hero perlu CTA "Booking Proyek".
+- Belum diuji di peramban (aturan proyek: hanya typecheck).
+
 Rincian per fase (berkas berubah, hash commit, hasil pengecekan, blocker) diisi saat fase dikerjakan.
 
 ## Pertanyaan untuk owner
@@ -22,6 +34,9 @@ Rincian per fase (berkas berubah, hash commit, hasil pengecekan, blocker) diisi 
 4. URL Systemma. Sampai ada, tanpa tautan.
 5. Alamat email tim untuk Script Properties `NOTIFY_EMAIL` (diisi owner di Apps Script, tidak ditulis di kode).
 6. Apakah `SUPPORT_CHAT_ENDPOINT` akan dibuat sebagai secret GitHub? Tanpa itu, chat produksi memakai mode tanpa formulir.
+
+7. Nominal DP (angka) dan rekening: nama bank, nomor rekening, atas nama. Isi `booking.dpAmount` dan `booking.bank` di `app/content.ts`.
+8. Kebijakan DP jika proyek batal atau ditolak: dikembalikan atau tidak? Belum dinyatakan di halaman. Halaman juga belum menyebut DP dipotong dari total proyek; tambahkan bila benar.
 
 ## Kebutuhan data dari owner (bagian bukti)
 

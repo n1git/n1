@@ -1,11 +1,16 @@
 const TICKETS_SHEET_NAME = "TICKETS";
 const MESSAGES_SHEET_NAME = "MESSAGES";
+const BOOKINGS_SHEET_NAME = "BOOKINGS";
 const RATE_LIMIT_PER_MINUTE = 20;
+const RATE_LIMIT_GLOBAL_PER_MINUTE = 120;
+const RATE_LIMIT_BOOKING_PER_MINUTE = 10;
+const MIN_BOOKING_DESCRIPTION = 30;
 const MAX_TEXT_LENGTH = 2000;
 const MAX_NAME_LENGTH = 100;
 const MAX_EMAIL_LENGTH = 200;
 const MAX_PHONE_LENGTH = 30;
 const MAX_REASON_LENGTH = 50;
+const MAX_BOOKING_DESCRIPTION_LENGTH = 1000;
 
 function doPost(e) {
   const response = handleRequest(e);
@@ -30,12 +35,20 @@ function handleRequest(e) {
     return { ok: true };
   }
 
+  if (!checkRateLimit("rl_global", RATE_LIMIT_GLOBAL_PER_MINUTE)) {
+    return { ok: false, error: "rate_limited" };
+  }
+
+  if (body.action === "create_booking") {
+    return createBooking(body);
+  }
+
   const ticketId = sanitizeText(body.ticketId, 64);
   if (!ticketId) {
     return { ok: false, error: "missing_ticket_id" };
   }
 
-  if (!checkRateLimit(ticketId)) {
+  if (!checkRateLimit("rl_" + ticketId, RATE_LIMIT_PER_MINUTE)) {
     return { ok: false, error: "rate_limited" };
   }
 
@@ -53,11 +66,10 @@ function handleRequest(e) {
   }
 }
 
-function checkRateLimit(ticketId) {
+function checkRateLimit(key, limit) {
   const cache = CacheService.getScriptCache();
-  const key = "rl_" + ticketId;
   const count = Number(cache.get(key) || 0);
-  if (count >= RATE_LIMIT_PER_MINUTE) {
+  if (count >= limit) {
     return false;
   }
   cache.put(key, String(count + 1), 60);
@@ -66,11 +78,20 @@ function checkRateLimit(ticketId) {
 
 function sanitizeText(value, maxLength) {
   if (typeof value !== "string") return "";
-  return value
+  const cleaned = value
     .replace(/<[^>]*>/g, "")
     .replace(/[\r\n\t]+/g, " ")
-    .trim()
-    .slice(0, maxLength);
+    .trim();
+  const safe = /^[=+\-@]/.test(cleaned) ? "'" + cleaned : cleaned;
+  return safe.slice(0, maxLength);
+}
+
+function notifyTeam(subject, body) {
+  const to = PropertiesService.getScriptProperties().getProperty("NOTIFY_EMAIL");
+  if (!to) return;
+  try {
+    MailApp.sendEmail(to, subject, body);
+  } catch (err) {}
 }
 
 function isValidEmail(value) {
@@ -102,6 +123,88 @@ function ticketsSheet() {
 
 function messagesSheet() {
   return getSheet(MESSAGES_SHEET_NAME, ["ticketId", "sender", "text", "timestamp"]);
+}
+
+function bookingsSheet() {
+  return getSheet(BOOKINGS_SHEET_NAME, [
+    "bookingId",
+    "createdAt",
+    "status",
+    "name",
+    "email",
+    "phone",
+    "business",
+    "service",
+    "budget",
+    "start",
+    "description",
+  ]);
+}
+
+function createBooking(body) {
+  const bookingId = sanitizeText(body.bookingId, 20);
+  const name = sanitizeText(body.name, MAX_NAME_LENGTH);
+  const email = sanitizeText(body.email, MAX_EMAIL_LENGTH);
+  const phone = sanitizeText(body.phone, MAX_PHONE_LENGTH);
+  const business = sanitizeText(body.business, MAX_NAME_LENGTH);
+  const service = sanitizeText(body.service, MAX_NAME_LENGTH);
+  const budget = sanitizeText(body.budget, MAX_NAME_LENGTH);
+  const start = sanitizeText(body.start, MAX_NAME_LENGTH);
+  const description = sanitizeText(body.description, MAX_BOOKING_DESCRIPTION_LENGTH);
+
+  if (
+    !/^BK-[A-Z0-9]{6}$/.test(bookingId) ||
+    !name ||
+    !isValidEmail(email) ||
+    !/^[0-9]{10,15}$/.test(phone) ||
+    !service ||
+    !budget ||
+    !start ||
+    description.length < MIN_BOOKING_DESCRIPTION
+  ) {
+    return { ok: false, error: "invalid_payload" };
+  }
+
+  if (!checkRateLimit("rl_booking", RATE_LIMIT_BOOKING_PER_MINUTE)) {
+    return { ok: false, error: "rate_limited" };
+  }
+
+  const sheet = bookingsSheet();
+  if (findTicketRow(sheet, bookingId) !== -1) {
+    return { ok: true };
+  }
+
+  sheet.appendRow([
+    bookingId,
+    new Date(),
+    "menunggu_dp",
+    name,
+    email,
+    phone,
+    business,
+    service,
+    budget,
+    start,
+    description,
+  ]);
+
+  notifyTeam(
+    "Booking baru " + bookingId + " - " + service,
+    [
+      "Kode: " + bookingId,
+      "Nama: " + name,
+      "Usaha: " + business,
+      "Email: " + email,
+      "WhatsApp: " + phone,
+      "Layanan: " + service,
+      "Anggaran: " + budget,
+      "Target mulai: " + start,
+      "Kebutuhan: " + description,
+      "",
+      "Status: menunggu DP",
+    ].join("\n"),
+  );
+  return { ok: true };
 }
 
 function findTicketRow(sheet, ticketId) {
