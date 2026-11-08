@@ -26,14 +26,17 @@ NEXT_PUBLIC_SUPPORT_CHAT_ENDPOINT=https://script.google.com/macros/s/XXXX/exec
 
 For GitHub Pages, add it as a repository secret named `SUPPORT_CHAT_ENDPOINT`
 and reference it in `.github/workflows/deploy.yml`'s build step. If left
-unset, the chat widget still works fully (FAQ answers, quick replies) and
-simply skips all network calls — nothing breaks.
+unset, the chat widget skips the name/email/phone form, collects no personal
+data, and answers FAQ questions only; the "talk to a human" answer points to
+WhatsApp and email. When set, the form shows a privacy notice linking to
+`/privacy`.
 
 ## Booking
 
 The same `/exec` URL also receives project bookings from `/booking`
 (`action: "create_booking"`). Each booking is appended to a `BOOKINGS` sheet
-with status `menunggu_dp`, and the team is emailed.
+with status `menunggu_dp`, and the team is emailed. New chat tickets email
+the team the same way.
 
 - Set the Script Property `NOTIFY_EMAIL` (**Project Settings → Script
   properties**) to the address that should receive booking emails. Without it,

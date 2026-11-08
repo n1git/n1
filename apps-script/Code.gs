@@ -233,6 +233,10 @@ function createTicket(ticketId, body) {
 
   const now = new Date();
   sheet.appendRow([ticketId, name, email, phone, "open", now, now, ""]);
+  notifyTeam(
+    "Tiket chat baru " + ticketId,
+    ["Tiket: " + ticketId, "Nama: " + name, "Email: " + email, "Telepon: " + phone].join("\n"),
+  );
   return { ok: true };
 }
 

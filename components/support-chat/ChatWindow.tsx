@@ -10,7 +10,13 @@ import {
   clearSession,
   touchSession,
 } from "@/lib/support-chat/session";
-import { createTicket, addMessage, sendHeartbeat, closeTicket } from "@/lib/support-chat/api";
+import {
+  CHAT_BACKEND_ENABLED,
+  createTicket,
+  addMessage,
+  sendHeartbeat,
+  closeTicket,
+} from "@/lib/support-chat/api";
 import type { ChatMessage, ChatSession, FaqQuickReply, Visitor } from "@/lib/support-chat/types";
 import PreChatForm from "./PreChatForm";
 import ChatPanel from "./ChatPanel";
@@ -55,6 +61,24 @@ function createMessage(
   return { id: newId(), sender, text, timestamp: Date.now(), quickReplies };
 }
 
+function createLocalSession(): ChatSession {
+  const welcome = findFaqById(faqEntries, WELCOME_ENTRY_ID);
+  const session = touchSession({
+    ticketId: generateTicketId(),
+    visitor: { name: "", email: "", phone: "" },
+    messages: [
+      createMessage("bot", welcome?.answer ?? "Halo! Ada yang bisa kami bantu?", welcome?.quickReplies),
+    ],
+    lastActivityAt: Date.now(),
+  });
+  saveSession(session);
+  return session;
+}
+
+function nextSession(): ChatSession | null {
+  return CHAT_BACKEND_ENABLED ? null : createLocalSession();
+}
+
 function tokenizeForReveal(text: string): string[] {
   return text.match(/\S+|\s+/g) ?? [];
 }
@@ -85,7 +109,7 @@ type ChatWindowProps = {
 
 export default function ChatWindow({ onClose }: ChatWindowProps) {
   const [session, setSession] = useState<ChatSession | null>(() =>
-    typeof window === "undefined" ? null : loadSession(),
+    typeof window === "undefined" ? null : (loadSession() ?? nextSession()),
   );
   const [isTyping, setIsTyping] = useState(false);
   const [revealingMessageId, setRevealingMessageId] = useState<string | null>(null);
@@ -113,7 +137,7 @@ export default function ChatWindow({ onClose }: ChatWindowProps) {
         clearPendingReply();
         closeTicket(current.ticketId, "expired");
         clearSession();
-        setSession(null);
+        setSession(nextSession());
       }
     }, EXPIRY_CHECK_INTERVAL_MS);
     return () => window.clearInterval(interval);
@@ -260,7 +284,7 @@ export default function ChatWindow({ onClose }: ChatWindowProps) {
     clearPendingReply();
     closeTicket(current.ticketId, "visitor_closed");
     clearSession();
-    setSession(null);
+    setSession(nextSession());
   }
 
   return (

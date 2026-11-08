@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 import type { Visitor } from "@/lib/support-chat/types";
 
 const EMAIL_PATTERN = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -86,6 +87,10 @@ export default function PreChatForm({ onSubmit }: PreChatFormProps) {
           />
         </label>
       </div>
+      <p className="support-chat-form-intro">
+        Data dipakai hanya untuk menindaklanjuti percakapan ini.{" "}
+        <Link href="/privacy">Kebijakan privasi</Link>
+      </p>
       {error && (
         <p className="support-chat-form-error" role="alert">
           {error}

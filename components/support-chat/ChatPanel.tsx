@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type FormEvent } from "react";
+import { CHAT_BACKEND_ENABLED } from "@/lib/support-chat/api";
 import type { ChatMessage, FaqQuickReply } from "@/lib/support-chat/types";
 
 type ChatPanelProps = {
@@ -44,7 +45,7 @@ export default function ChatPanel({
 
   return (
     <div className="support-chat-panel-body">
-      <p className="support-chat-ticket">Tiket: {ticketId}</p>
+      {CHAT_BACKEND_ENABLED && <p className="support-chat-ticket">Tiket: {ticketId}</p>}
       <div className="support-chat-messages" ref={listRef} aria-live="polite">
         {messages.map((message) => {
           const isRevealing = message.id === revealingMessageId;

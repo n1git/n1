@@ -1,4 +1,5 @@
 import { contact, identity, missionPillars, techDomains, projects, values } from "@/app/content";
+import { CHAT_BACKEND_ENABLED } from "@/lib/support-chat/api";
 import type { FaqEntry } from "@/lib/support-chat/types";
 
 const identityValue = (label: string) => identity.find((item) => item.label === label)?.value ?? "";
@@ -159,8 +160,9 @@ export const faqEntries: FaqEntry[] = [
       "orang asli",
     ],
     question: "Bicara dengan manusia",
-    answer:
-      "Baik, pesan Anda sudah tercatat di tiket ini dan tim kami akan menghubungi Anda kembali. Anda juga bisa langsung menghubungi kami lewat WhatsApp atau email di bawah ini sambil menunggu.",
+    answer: CHAT_BACKEND_ENABLED
+      ? "Baik, pesan Anda sudah tercatat di tiket ini dan tim kami akan menghubungi Anda kembali. Anda juga bisa langsung menghubungi kami lewat WhatsApp atau email di bawah ini sambil menunggu."
+      : `Untuk bicara langsung dengan tim kami, hubungi lewat WhatsApp ${contact.whatsappDisplay} atau email ${contact.email}.`,
     quickReplies: [{ label: "Lihat kontak", targetId: "contact" }],
   },
   {

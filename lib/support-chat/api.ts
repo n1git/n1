@@ -1,5 +1,7 @@
 const ENDPOINT = process.env.NEXT_PUBLIC_SUPPORT_CHAT_ENDPOINT ?? "";
 
+export const CHAT_BACKEND_ENABLED = ENDPOINT !== "";
+
 type SupportChatAction = "create_ticket" | "add_message" | "heartbeat" | "close_ticket";
 
 type SupportChatPayload = Record<string, string>;

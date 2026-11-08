@@ -1613,6 +1613,10 @@ section:not(.hero) {
   margin: 0;
 }
 
+.support-chat-form-intro a {
+  text-decoration: underline;
+}
+
 .support-chat-field {
   display: flex;
   flex-direction: column;

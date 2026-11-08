@@ -5,7 +5,7 @@ Status: Fase 0 selesai, menunggu OK owner.
 ## Fase
 
 - [x] 0. `CLAUDE.md`, progress file, pertanyaan owner. **Wait for my OK.**
-- [ ] 1. Chat dukungan tanpa endpoint + pemberitahuan privasi bila endpoint ada; `apps-script/Code.gs` (netralkan formula, batas laju global, email notifikasi `NOTIFY_EMAIL`) dan `apps-script/README.md`.
+- [x] 1. Chat dukungan tanpa endpoint + pemberitahuan privasi bila endpoint ada; `apps-script/Code.gs` (netralkan formula, batas laju global, email notifikasi `NOTIFY_EMAIL`) dan `apps-script/README.md`.
 - [ ] 2. SEO: `metadataBase` `https://n-1labs.com`, canonical, `og:url`, `og:image`, `summary`, judul dan deskripsi memuat "N-1 Labs" dan "N⁻¹ Labs", `app/robots.ts`, `app/sitemap.ts` (`/`, `/produk`, `/privacy`), JSON-LD `Organization`, logo kecil ~192 px untuk header, footer, favicon.
 - [ ] 3. Halaman `/privacy` (draf), tertaut dari footer.
 - [ ] 4. Tautan: sosial opsional di `contact`, GitHub `https://github.com/n1git`, Getruzz `https://getruzz.com`, ruang bawah untuk tombol chat dan WhatsApp.
@@ -24,7 +24,14 @@ Permintaan owner: jasa sistem keuangan, order, gudang, kasir, e-commerce, websit
 - Fase 2: tambahkan `/booking` ke `app/sitemap.ts`. Fase 3: `/privacy` harus mencakup data booking, lalu tautkan dari formulir booking (kini hanya kalimat singkat tanpa tautan karena halamannya belum ada). Fase 5: mock hero perlu CTA "Booking Proyek".
 - Belum diuji di peramban (aturan proyek: hanya typecheck).
 
-Rincian per fase (berkas berubah, hash commit, hasil pengecekan, blocker) diisi saat fase dikerjakan.
+## Rincian fase
+
+### Fase 1
+- Berkas: `lib/support-chat/api.ts` (`CHAT_BACKEND_ENABLED`), `data/faq.ts`, `components/support-chat/ChatWindow.tsx`, `ChatPanel.tsx`, `PreChatForm.tsx`, `app/globals.css`, `apps-script/Code.gs`, `apps-script/README.md`.
+- Tanpa endpoint: sesi lokal otomatis dengan sapaan, tanpa formulir dan tanpa label "Tiket"; jawaban eskalasi hanya WhatsApp dan email. Dengan endpoint: formulir ditambah pemberitahuan privasi dan tautan `/privacy` (halaman dibuat di Fase 3). `Code.gs` kini mengirim email saat tiket chat baru.
+- Pengecekan: `npx next typegen && npx tsc --noEmit` lolos.
+- Hash commit: lihat `git log` pesan "Fase 1".
+- Blocker: tidak ada.
 
 ## Pertanyaan untuk owner
 
