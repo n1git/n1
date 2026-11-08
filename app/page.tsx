@@ -4,7 +4,6 @@ import Footer from "./Footer";
 import Portfolio from "./Portfolio";
 import ProductCategories from "./ProductCategories";
 import HeroScrub from "@/components/HeroScrub";
-import { formatRupiah } from "@/lib/booking/booking";
 import {
   contact,
   identity,
@@ -23,7 +22,7 @@ import {
   roadmapPhases,
   positioningCards,
   services,
-  booking,
+  painPoints,
   startSteps,
   productCategories,
 } from "./content";
@@ -96,8 +95,8 @@ export default function Home() {
           Sistem keuangan, order, gudang, kasir, e-commerce, dan website <span>untuk bisnis Anda.</span>
         </h1>
         <p>
-          Harga mulai {formatRupiah(booking.minPrice)}, menyesuaikan tingkat kompleksitas. Booking
-          disertai DP.
+          Dari keuangan, pesanan, stok gudang, sampai kasir dan toko online: kami bangun sesuai cara
+          kerja bisnis Anda.
         </p>
         <div className="hero-ctas">
           <a className="btn btn-primary" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
@@ -136,18 +135,46 @@ export default function Home() {
           <h2 className="section-title">Yang Kami Bangun</h2>
           <div className="divider" />
           <p className="section-lead">
-            Harga mulai {formatRupiah(booking.minPrice)}, menyesuaikan tingkat kompleksitas. Produk kami
-            berjalan nyata, bukan sekadar prototipe: Getruzz sudah live di getruzz.com dan Systemma
-            berjalan di produksi.
+            Pilih sistem yang bisnis Anda butuhkan. Setiap proyek dibuat sesuai alur kerja Anda. Produk
+            kami berjalan nyata: Getruzz sudah live di getruzz.com dan Systemma berjalan di produksi.
           </p>
 
-          <ul className="booking-services">
-            {services.map((service) => (
-              <li key={service}>{service}</li>
-            ))}
-          </ul>
+          <div className="subhead" style={{ marginTop: 24 }}>
+            Cocok jika bisnis Anda...
+          </div>
+          <div className="panel">
+            <ul className="clean">
+              {painPoints.map((point) => (
+                <li key={point}>{point}</li>
+              ))}
+            </ul>
+          </div>
 
-          <div className="grid grid-2" style={{ marginTop: 24 }}>
+          <div className="subhead" style={{ marginTop: 28 }}>
+            Layanan Kami
+          </div>
+          <div className="grid grid-2">
+            {services.map((service) => (
+              <div className="panel" key={service.name}>
+                <h4 style={{ margin: "0 0 8px 0", fontSize: 14.5 }}>{service.name}</h4>
+                <p style={{ margin: 0, fontSize: 13.5, color: "var(--muted)" }}>{service.description}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="hero-ctas" style={{ marginTop: 24 }}>
+            <Link className="btn btn-primary" href="/booking">
+              Booking Proyek
+            </Link>
+            <a className="btn btn-ghost" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+              Konsultasi via WhatsApp
+            </a>
+          </div>
+
+          <div className="subhead" style={{ marginTop: 40 }}>
+            Fondasi Teknologi Kami
+          </div>
+          <div className="grid grid-2">
             {buildAreas.map((area) => (
               <div className="panel" key={area.title}>
                 <h4 style={{ margin: "0 0 8px 0", fontSize: 14.5 }}>{area.title}</h4>
@@ -694,7 +721,10 @@ export default function Home() {
           </p>
 
           <div className="hero-ctas">
-            <a className="btn btn-primary" href="#portfolio">
+            <Link className="btn btn-primary" href="/booking">
+              Booking Proyek
+            </Link>
+            <a className="btn btn-ghost" href="#portfolio">
               Lihat Portofolio
             </a>
             <a className="btn btn-ghost" href="#top">

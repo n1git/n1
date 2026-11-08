@@ -8,7 +8,7 @@ export type BookingPayload = {
   phone: string;
   business: string;
   service: string;
-  budget: string;
+  scale: string;
   start: string;
   description: string;
 };

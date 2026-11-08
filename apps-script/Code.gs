@@ -135,7 +135,7 @@ function bookingsSheet() {
     "phone",
     "business",
     "service",
-    "budget",
+    "scale",
     "start",
     "description",
   ]);
@@ -148,7 +148,7 @@ function createBooking(body) {
   const phone = sanitizeText(body.phone, MAX_PHONE_LENGTH);
   const business = sanitizeText(body.business, MAX_NAME_LENGTH);
   const service = sanitizeText(body.service, MAX_NAME_LENGTH);
-  const budget = sanitizeText(body.budget, MAX_NAME_LENGTH);
+  const scale = sanitizeText(body.scale, MAX_NAME_LENGTH);
   const start = sanitizeText(body.start, MAX_NAME_LENGTH);
   const description = sanitizeText(body.description, MAX_BOOKING_DESCRIPTION_LENGTH);
 
@@ -158,7 +158,7 @@ function createBooking(body) {
     !isValidEmail(email) ||
     !/^[0-9]{10,15}$/.test(phone) ||
     !service ||
-    !budget ||
+    !scale ||
     !start ||
     description.length < MIN_BOOKING_DESCRIPTION
   ) {
@@ -183,7 +183,7 @@ function createBooking(body) {
     phone,
     business,
     service,
-    budget,
+    scale,
     start,
     description,
   ]);
@@ -197,7 +197,7 @@ function createBooking(body) {
       "Email: " + email,
       "WhatsApp: " + phone,
       "Layanan: " + service,
-      "Anggaran: " + budget,
+      "Skala: " + scale,
       "Target mulai: " + start,
       "Kebutuhan: " + description,
       "",

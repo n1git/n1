@@ -39,7 +39,7 @@ export default function PrivacyPage() {
             </li>
             <li>
               <b>Booking proyek</b>: nama, nama usaha, email, nomor WhatsApp, layanan yang dipilih,
-              perkiraan anggaran, target mulai, dan uraian kebutuhan.
+              skala proyek, target mulai, dan uraian kebutuhan.
             </li>
           </ul>
 

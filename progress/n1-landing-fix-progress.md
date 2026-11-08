@@ -99,3 +99,11 @@ Belum ada data untuk: nama klien, angka hasil, testimoni, studi kasus yang bisa 
 ## Klaim yang belum bisa dibuktikan dan masih tayang (keputusan owner)
 
 - "Enam proyek berikut menggambarkan perjalanan..." (`app/page.tsx`, bagian Portofolio) dan "Proyek-proyek yang telah dikerjakan N⁻¹ Labs..." (bagian Technology Journey): enam proyek tidak bisa diverifikasi dari repo. Ubah redaksi atau beri bukti.
+
+## Perubahan lanjutan: harga tidak ditampilkan
+
+- Semua teks harga (hero, Layanan, halaman booking, metadata, centang form) dihapus; `booking.minPrice` dihapus. Nominal DP tetap tampil karena diperlukan saat transfer.
+- Kolom "perkiraan anggaran" di form diganti "Skala proyek" (sederhana, menengah, kompleks, belum tahu) karena rentang Rp10 juta dan seterusnya membocorkan harga minimum. Payload, sheet `BOOKINGS`, dan email memakai `scale`, bukan `budget`.
+- Layanan kini berdeskripsi (`services` di `app/content.ts`), ada daftar "Cocok jika bisnis Anda..." (`painPoints`), CTA Booking Proyek dan Konsultasi via WhatsApp, dan langkah Cara Memulai Proyek memuat Konsultasi dan penawaran sesuai kompleksitas.
+- Deskripsi layanan dan `painPoints` ditulis generik oleh saya, bukan data dari owner: perlu dicek kesesuaiannya dengan apa yang benar-benar dibuat.
+- Pengecekan: `npx next typegen && npx tsc --noEmit` lolos. Belum dibuka di peramban.

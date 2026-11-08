@@ -4,8 +4,8 @@ import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import {
   booking,
-  budgetOptions,
   contact,
+  scaleOptions,
   services,
   startOptions,
 } from "@/app/content";
@@ -27,7 +27,7 @@ function buildWhatsAppUrl(data: BookingPayload): string {
     `Kode: ${data.bookingId}`,
     `Nama: ${data.name}`,
     `Layanan: ${data.service}`,
-    `Anggaran: ${data.budget}`,
+    `Skala: ${data.scale}`,
     `Target mulai: ${data.start}`,
     `Kebutuhan: ${data.description}`,
     "",
@@ -42,7 +42,7 @@ export default function BookingForm() {
   const [phone, setPhone] = useState("");
   const [business, setBusiness] = useState("");
   const [service, setService] = useState("");
-  const [budget, setBudget] = useState("");
+  const [scale, setScale] = useState("");
   const [start, setStart] = useState("");
   const [description, setDescription] = useState("");
   const [agreed, setAgreed] = useState(false);
@@ -75,12 +75,12 @@ export default function BookingForm() {
       phone: normalizePhone(phone),
       business: business.trim(),
       service,
-      budget,
+      scale,
       start,
       description: description.trim(),
     };
 
-    if (!data.name || !data.email || !data.phone || !data.service || !data.budget || !data.start) {
+    if (!data.name || !data.email || !data.phone || !data.service || !data.scale || !data.start) {
       setError("Lengkapi semua kolom yang bertanda wajib.");
       return;
     }
@@ -196,8 +196,8 @@ export default function BookingForm() {
         <select value={service} onChange={(event) => setService(event.target.value)}>
           <option value="">Pilih layanan</option>
           {services.map((item) => (
-            <option key={item} value={item}>
-              {item}
+            <option key={item.name} value={item.name}>
+              {item.name}
             </option>
           ))}
         </select>
@@ -205,10 +205,10 @@ export default function BookingForm() {
 
       <div className="booking-row">
         <label className="booking-field">
-          Perkiraan anggaran *
-          <select value={budget} onChange={(event) => setBudget(event.target.value)}>
-            <option value="">Pilih anggaran</option>
-            {budgetOptions.map((item) => (
+          Skala proyek *
+          <select value={scale} onChange={(event) => setScale(event.target.value)}>
+            <option value="">Pilih skala</option>
+            {scaleOptions.map((item) => (
               <option key={item} value={item}>
                 {item}
               </option>
@@ -255,8 +255,7 @@ export default function BookingForm() {
       <label className="booking-check">
         <input type="checkbox" checked={agreed} onChange={(event) => setAgreed(event.target.checked)} />
         <span>
-          Saya memahami harga mulai {formatRupiah(booking.minPrice)} dan booking baru berlaku setelah
-          DP {formatRupiah(dpAmount)} diterima.
+          Saya memahami booking baru berlaku setelah DP {formatRupiah(dpAmount)} diterima.
         </span>
       </label>
 

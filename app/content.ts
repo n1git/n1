@@ -13,40 +13,70 @@ export const contact: Contact = {
   email: "contact@n-1labs.com",
 };
 
-export const services = [
-  "Sistem Keuangan",
-  "Sistem Order",
-  "Sistem Gudang",
-  "Sistem Kasir",
-  "E-commerce",
-  "Website",
+export type Service = { name: string; description: string };
+
+export const services: Service[] = [
+  {
+    name: "Sistem Keuangan",
+    description: "Catat pemasukan dan pengeluaran, pantau arus kas, dan lihat laporan tanpa rekap manual.",
+  },
+  {
+    name: "Sistem Order",
+    description: "Terima dan kelola pesanan dari pelanggan atau agen dalam satu alur, dari masuk sampai selesai.",
+  },
+  {
+    name: "Sistem Gudang",
+    description: "Pantau stok masuk dan keluar agar ketersediaan barang selalu jelas.",
+  },
+  {
+    name: "Sistem Kasir",
+    description: "Catat transaksi penjualan di toko dengan cepat dan rapi.",
+  },
+  {
+    name: "E-commerce",
+    description: "Toko online lengkap dengan katalog produk, keranjang, dan pesanan.",
+  },
+  {
+    name: "Website",
+    description: "Website profil usaha yang rapi dan nyaman dibuka di ponsel maupun komputer.",
+  },
+];
+
+export const painPoints = [
+  "Pencatatan keuangan, pesanan, atau stok masih manual di buku atau spreadsheet.",
+  "Data tersebar di banyak tempat sehingga sulit dilacak.",
+  "Pelanggan atau agen memesan lewat chat dan sulit dirapikan.",
+  "Usaha belum punya toko online atau website resmi.",
 ];
 
 export type Booking = {
-  minPrice: number;
   dpAmount?: number;
   bank?: { name: string; number: string; holder: string };
 };
 
-export const booking: Booking = {
-  minPrice: 10000000,
-};
+export const booking: Booking = {};
+
+export const scaleOptions = [
+  "Sederhana: satu fungsi utama",
+  "Menengah: beberapa modul",
+  "Kompleks: banyak modul atau integrasi",
+  "Belum tahu, perlu konsultasi",
+];
 
 export const startSteps = [
   {
     title: "Booking & DP",
     body: "Isi form booking dan bayar DP. Booking berlaku setelah DP diterima.",
   },
-  { title: "Develop", body: "Sistem dikembangkan sesuai kebutuhan bisnis dan operasional Anda." },
-  { title: "Integrate", body: "Sistem diintegrasikan ke proses bisnis Anda." },
-  { title: "Automate", body: "Proses bisnis dan layanan pelanggan diotomatisasi." },
-];
-
-export const budgetOptions = [
-  "Rp10–25 juta",
-  "Rp25–50 juta",
-  "Di atas Rp50 juta",
-  "Belum tahu, perlu konsultasi",
+  {
+    title: "Konsultasi",
+    body: "Ceritakan kebutuhan bisnis Anda. Kami bantu menentukan sistem yang tepat dan menyampaikan penawaran sesuai tingkat kompleksitasnya.",
+  },
+  {
+    title: "Develop & Integrate",
+    body: "Sistem dikembangkan sesuai kebutuhan Anda dan dihubungkan ke proses bisnis yang berjalan.",
+  },
+  { title: "Automate", body: "Proses rutin diotomatisasi agar pekerjaan Anda lebih ringan." },
 ];
 
 export const startOptions = ["Secepatnya", "1–3 bulan ke depan", "Belum pasti"];
