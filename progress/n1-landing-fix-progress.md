@@ -1,6 +1,6 @@
 # n1-landing-fix
 
-Status: Fase 0 selesai, menunggu OK owner.
+Status: Fase 1 sampai 5 selesai, menunggu OK owner atas mock (Fase 5) sebelum Fase 6.
 
 ## Fase
 
@@ -9,7 +9,7 @@ Status: Fase 0 selesai, menunggu OK owner.
 - [x] 2. SEO: `metadataBase` `https://n-1labs.com`, canonical, `og:url`, `og:image`, `summary`, judul dan deskripsi memuat "N-1 Labs" dan "N⁻¹ Labs", `app/robots.ts`, `app/sitemap.ts` (`/`, `/produk`, `/privacy`), JSON-LD `Organization`, logo kecil ~192 px untuk header, footer, favicon.
 - [x] 3. Halaman `/privacy` (draf), tertaut dari footer.
 - [x] 4. Tautan: sosial opsional di `contact`, GitHub `https://github.com/n1git`, Getruzz `https://getruzz.com`, ruang bawah untuk tombol chat dan WhatsApp.
-- [ ] 5. Mock tata letak baru (HP 390 px dan desktop 1440 px). **Wait for my OK.**
+- [x] 5. Mock tata letak baru (HP 390 px dan desktop 1440 px). **Wait for my OK.**
 - [ ] 6. Terapkan tata letak yang disetujui, `npm run build` sekali, cek `out/robots.txt`, `out/sitemap.xml`, `out/privacy.html`.
 
 ## Tambahan di luar fase: booking jasa
@@ -78,3 +78,11 @@ Belum ada data untuk: nama klien, angka hasil, testimoni, studi kasus yang bisa 
 - Untuk menampilkan ikon sosial: isi `contact.instagram`, `contact.tiktok`, `contact.youtube` di `app/content.ts` (pertanyaan owner nomor 2).
 - Pengecekan: `npx next typegen && npx tsc --noEmit` lolos.
 - Blocker: tidak ada.
+
+### Fase 5
+- Mock (HTML statis di luar repo, memakai `app/globals.css` asli) dirender ke screenshot HP 390 px dan desktop 1440 px lalu dikirim ke owner.
+- Urutan yang diusulkan: hero (satu penawaran: enam jenis sistem, harga mulai Rp10.000.000, DP; CTA "Hubungi Kami" WhatsApp di samping "Lihat Portofolio"), Layanan (enam jenis dan empat area dari `buildAreas`), Produk dan Portofolio (Getruzz, Systemma, enam proyek), Cara Memulai Proyek (Booking dan DP, Develop, Integrate, Automate), Tentang, lalu Filosofi, Visi, Roadmap diringkas dan dipindah ke bawah.
+- Tidak ada klaim, angka, nama klien, atau testimoni baru. Bagian bukti menunggu data owner.
+- Skill `ui-ux-pro-max` tidak punya pola landing jasa yang cocok di database; mock memakai token dan komponen situs sendiri.
+- Hal untuk diputuskan owner: judul hero memakai daftar enam jenis sistem (usulan) menggantikan "Building Indonesia's Own AI Technology Capability", yang berpindah ke Visi.
+- Blocker: **Wait for my OK.**
