@@ -8,7 +8,7 @@ Status: Fase 0 selesai, menunggu OK owner.
 - [x] 1. Chat dukungan tanpa endpoint + pemberitahuan privasi bila endpoint ada; `apps-script/Code.gs` (netralkan formula, batas laju global, email notifikasi `NOTIFY_EMAIL`) dan `apps-script/README.md`.
 - [x] 2. SEO: `metadataBase` `https://n-1labs.com`, canonical, `og:url`, `og:image`, `summary`, judul dan deskripsi memuat "N-1 Labs" dan "N⁻¹ Labs", `app/robots.ts`, `app/sitemap.ts` (`/`, `/produk`, `/privacy`), JSON-LD `Organization`, logo kecil ~192 px untuk header, footer, favicon.
 - [x] 3. Halaman `/privacy` (draf), tertaut dari footer.
-- [ ] 4. Tautan: sosial opsional di `contact`, GitHub `https://github.com/n1git`, Getruzz `https://getruzz.com`, ruang bawah untuk tombol chat dan WhatsApp.
+- [x] 4. Tautan: sosial opsional di `contact`, GitHub `https://github.com/n1git`, Getruzz `https://getruzz.com`, ruang bawah untuk tombol chat dan WhatsApp.
 - [ ] 5. Mock tata letak baru (HP 390 px dan desktop 1440 px). **Wait for my OK.**
 - [ ] 6. Terapkan tata letak yang disetujui, `npm run build` sekali, cek `out/robots.txt`, `out/sitemap.xml`, `out/privacy.html`.
 
@@ -69,5 +69,12 @@ Belum ada data untuk: nama klien, angka hasil, testimoni, studi kasus yang bisa 
 - Berkas: `app/privacy/page.tsx`, `app/Footer.tsx` (tautan "Kebijakan Privasi"), `components/booking/BookingForm.tsx` (tautan ke `/privacy`), `app/globals.css`.
 - Isi: pengelola, data chat dan booking, tujuan, penyimpanan di Google Sheets dan email (Google sebagai penyedia), penyimpanan lokal chat, hak menurut UU PDP, kontak dari `contact`; berlabel "Draf, belum ditinjau ahli hukum".
 - Masa simpan tidak diisi: halaman hanya menyatakan belum ditetapkan. Tetap pertanyaan owner nomor 1.
+- Pengecekan: `npx next typegen && npx tsc --noEmit` lolos.
+- Blocker: tidak ada.
+
+### Fase 4
+- Berkas: `app/content.ts` (`contact.instagram`, `tiktok`, `youtube` opsional), `app/page.tsx` (ikon sosial hanya bila URL diisi; GitHub `https://github.com/n1git`), `app/seo.ts` (`sameAs` ikut URL sosial yang diisi), `app/globals.css` (footer `padding-bottom` 92 px agar tombol chat dan WhatsApp tidak menutup teks).
+- Getruzz sudah tertaut ke `https://getruzz.com` di `/produk`; Systemma tanpa tautan.
+- Untuk menampilkan ikon sosial: isi `contact.instagram`, `contact.tiktok`, `contact.youtube` di `app/content.ts` (pertanyaan owner nomor 2).
 - Pengecekan: `npx next typegen && npx tsc --noEmit` lolos.
 - Blocker: tidak ada.

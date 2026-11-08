@@ -1404,7 +1404,7 @@ section:not(.hero) {
 
 /* ---------- footer ---------- */
 .site-footer {
-  padding: 28px 0;
+  padding: 28px 0 92px;
   border-bottom: none;
 }
 

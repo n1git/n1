@@ -56,10 +56,10 @@ function EmailIcon() {
 }
 
 const SOCIAL_LINKS = [
-  { label: "GitHub", href: "https://github.com/n-1repo", icon: <BrandIcon path={ICON_PATHS.github} />, external: true },
-  { label: "Instagram", href: "https://instagram.com/", icon: <BrandIcon path={ICON_PATHS.instagram} />, external: true },
-  { label: "TikTok", href: "https://tiktok.com/", icon: <BrandIcon path={ICON_PATHS.tiktok} />, external: true },
-  { label: "YouTube", href: "https://youtube.com/", icon: <BrandIcon path={ICON_PATHS.youtube} />, external: true },
+  { label: "GitHub", href: "https://github.com/n1git", icon: <BrandIcon path={ICON_PATHS.github} />, external: true },
+  { label: "Instagram", href: contact.instagram, icon: <BrandIcon path={ICON_PATHS.instagram} />, external: true },
+  { label: "TikTok", href: contact.tiktok, icon: <BrandIcon path={ICON_PATHS.tiktok} />, external: true },
+  { label: "YouTube", href: contact.youtube, icon: <BrandIcon path={ICON_PATHS.youtube} />, external: true },
   { label: "WhatsApp", href: WHATSAPP_URL, icon: <BrandIcon path={ICON_PATHS.whatsapp} />, external: true },
   { label: "Email", href: MAILTO_URL, icon: <EmailIcon />, external: false },
 ];
@@ -106,7 +106,7 @@ export default function Home() {
           ))}
         </div>
         <div className="hero-socials">
-          {SOCIAL_LINKS.map((social) => (
+          {SOCIAL_LINKS.filter((social) => social.href).map((social) => (
             <a
               key={social.label}
               className="hero-social-link"

@@ -1,4 +1,13 @@
-export const contact = {
+export type Contact = {
+  whatsapp: string;
+  whatsappDisplay: string;
+  email: string;
+  instagram?: string;
+  tiktok?: string;
+  youtube?: string;
+};
+
+export const contact: Contact = {
   whatsapp: "6285691966199",
   whatsappDisplay: "+62 856-9196-6199",
   email: "contact@n-1labs.com",

@@ -54,5 +54,8 @@ export const organizationJsonLd = {
     addressCountry: "ID",
   },
   foundingDate: "2026-09-02",
-  sameAs: ["https://github.com/n1git"],
+  sameAs: [
+    "https://github.com/n1git",
+    ...[contact.instagram, contact.tiktok, contact.youtube].filter((url): url is string => Boolean(url)),
+  ],
 };
