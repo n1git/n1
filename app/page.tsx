@@ -1,7 +1,10 @@
+import Link from "next/link";
 import Header from "./Header";
 import Footer from "./Footer";
 import Portfolio from "./Portfolio";
+import ProductCategories from "./ProductCategories";
 import HeroScrub from "@/components/HeroScrub";
+import { formatRupiah } from "@/lib/booking/booking";
 import {
   contact,
   identity,
@@ -19,11 +22,19 @@ import {
   values,
   roadmapPhases,
   positioningCards,
+  services,
+  booking,
+  startSteps,
+  productCategories,
 } from "./content";
 import { organizationJsonLd } from "./seo";
 
 const WHATSAPP_URL = `https://wa.me/${contact.whatsapp}`;
 const MAILTO_URL = `mailto:${contact.email}`;
+
+const ROADMAP_SUMMARY = roadmapPhases
+  .map((phase) => `${phase.phase.replace(/^Phase \d+ — /, "")} (${phase.year})`)
+  .join(" → ");
 
 function BrandIcon({ path, viewBox = "0 0 24 24" }: { path: string; viewBox?: string }) {
   return (
@@ -74,7 +85,7 @@ export default function Home() {
       <Header />
 
       <HeroScrub>
-        <div className="hero-eyebrow">Company Profile · 2026</div>
+        <div className="hero-eyebrow">Jasa pembuatan sistem · Semarang</div>
         <div className="progress-badge" aria-hidden="true">
           <span className="progress-track">
             <span className="progress-fill" />
@@ -82,19 +93,18 @@ export default function Home() {
           <span className="progress-label">N⁻¹ · Always One Short</span>
         </div>
         <h1>
-          Building Indonesia&apos;s Own <span>AI Technology</span> Capability
+          Sistem keuangan, order, gudang, kasir, e-commerce, dan website <span>untuk bisnis Anda.</span>
         </h1>
         <p>
-          N⁻¹ Labs adalah perusahaan teknologi AI asal Indonesia yang membangun AI Agent, software
-          systems, automation, dan digital products — dengan arah jangka panjang menjadi AI technology
-          company yang membangun teknologinya sendiri.
+          Harga mulai {formatRupiah(booking.minPrice)}, menyesuaikan tingkat kompleksitas. Booking
+          disertai DP.
         </p>
         <div className="hero-ctas">
-          <a className="btn btn-primary" href="#portfolio">
-            Lihat Portofolio
+          <a className="btn btn-primary" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
+            Hubungi Kami
           </a>
-          <a className="btn btn-ghost" href="#vision">
-            Pelajari Visi Kami
+          <a className="btn btn-ghost" href="#portfolio">
+            Lihat Portofolio
           </a>
         </div>
         <div className="hero-stats">
@@ -120,9 +130,162 @@ export default function Home() {
         </div>
       </HeroScrub>
 
+      <section id="services">
+        <div className="container">
+          <div className="kicker">01 · Layanan</div>
+          <h2 className="section-title">Yang Kami Bangun</h2>
+          <div className="divider" />
+          <p className="section-lead">
+            Harga mulai {formatRupiah(booking.minPrice)}, menyesuaikan tingkat kompleksitas. Produk kami
+            berjalan nyata, bukan sekadar prototipe: Getruzz sudah live di getruzz.com dan Systemma
+            berjalan di produksi.
+          </p>
+
+          <ul className="booking-services">
+            {services.map((service) => (
+              <li key={service}>{service}</li>
+            ))}
+          </ul>
+
+          <div className="grid grid-2" style={{ marginTop: 24 }}>
+            {buildAreas.map((area) => (
+              <div className="panel" key={area.title}>
+                <h4 style={{ margin: "0 0 8px 0", fontSize: 14.5 }}>{area.title}</h4>
+                <p style={{ margin: 0, fontSize: 13.5, color: "var(--muted)" }}>{area.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <div className="container">
+          <div className="kicker">02 · Produk &amp; Portofolio</div>
+          <h2 className="section-title">Produk dan Proyek</h2>
+          <div className="divider" />
+
+          <ProductCategories categories={productCategories} />
+
+          <div className="subhead" style={{ marginTop: 16 }}>
+            Project Portfolio
+          </div>
+          <p className="section-lead">
+            Enam proyek berikut menggambarkan perjalanan N⁻¹ Labs dalam membangun kapabilitas — dari
+            software engineering, sistem bisnis, automation, hingga AI Agent. Setiap proyek dijelaskan
+            berdasarkan permasalahan, solusi, fungsi, dampak, dan hal yang dipelajari N⁻¹ Labs.
+          </p>
+          <span className="tag existing">Existing Capability</span>
+
+          <Portfolio projects={projects} />
+        </div>
+      </section>
+
+      <section id="how-to-start">
+        <div className="container">
+          <div className="kicker">03 · Cara Memulai Proyek</div>
+          <h2 className="section-title">Dari Booking sampai Berjalan</h2>
+          <div className="divider" />
+
+          <div className="grid start-steps" style={{ marginTop: 16 }}>
+            {startSteps.map((step, index) => (
+              <div className="panel" key={step.title}>
+                <span className="start-step-num">{index + 1}</span>
+                <h4 style={{ margin: "0 0 6px 0", fontSize: 15 }}>{step.title}</h4>
+                <p style={{ margin: 0, fontSize: 13.5, color: "var(--muted)" }}>{step.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <div className="hero-ctas" style={{ marginTop: 24 }}>
+            <Link className="btn btn-primary" href="/booking">
+              Booking Proyek
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section id="about">
+        <div className="container">
+          <div className="kicker">04 · Tentang Kami</div>
+          <h2 className="section-title">About N⁻¹ Labs</h2>
+          <div className="divider" />
+
+          <p className="section-lead" style={{ maxWidth: 720 }}>
+            N⁻¹ Labs adalah perusahaan teknologi asal Semarang, Jawa Tengah, yang berfokus pada
+            pengembangan Artificial Intelligence, AI Agent, software systems, automation, digital
+            products, dan teknologi komputasi.
+          </p>
+          <p style={{ maxWidth: 720 }}>
+            Didirikan pada 2 September 2026, N⁻¹ Labs hadir bukan sebagai software house biasa,
+            melainkan sebagai perusahaan yang membangun kapabilitasnya secara bertahap — dimulai dari
+            software engineering, menuju sistem bisnis dan automation, hingga akhirnya pada pengembangan
+            AI Agent dan AI Infrastructure. Setiap proyek yang dikerjakan N⁻¹ Labs dirancang untuk
+            memperkuat fondasi teknis menuju arah tersebut.
+          </p>
+          <p style={{ maxWidth: 720 }}>
+            Dalam jangka panjang, N⁻¹ Labs memiliki tujuan untuk berkembang menjadi{" "}
+            <b>AI technology company</b> yang mampu membangun teknologi AI-nya sendiri — termasuk
+            kontribusi terhadap kemampuan Indonesia dalam mengembangkan Large Language Model (LLM)
+            secara mandiri.
+          </p>
+
+          <div className="subhead" style={{ marginTop: 32 }}>
+            Ringkasan Identitas
+          </div>
+          <div className="panel">
+            <table className="identity-table">
+              <tbody>
+                {identity.map((row) => (
+                  <tr key={row.label}>
+                    <td>{row.label}</td>
+                    <td>{row.value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="direction">
+        <div className="container">
+          <div className="kicker">05 · Arah Kami</div>
+          <h2 className="section-title">Filosofi, Visi, dan Roadmap</h2>
+          <div className="divider" />
+
+          <div className="grid direction-grid" style={{ marginTop: 16 }}>
+            <div className="panel">
+              <h4 style={{ margin: "0 0 6px 0", fontSize: 15 }}>Filosofi</h4>
+              <p style={{ margin: 0, fontSize: 13.5, color: "var(--muted)" }}>
+                N⁻¹: selalu satu langkah sebelum selesai. Terus bergerak, tidak berhenti di versi sempurna.
+              </p>
+              <a className="direction-link" href="#philosophy">
+                Baca selengkapnya
+              </a>
+            </div>
+            <div className="panel">
+              <h4 style={{ margin: "0 0 6px 0", fontSize: 15 }}>Visi</h4>
+              <p style={{ margin: 0, fontSize: 13.5, color: "var(--muted)" }}>
+                Building Indonesia&apos;s Own AI Technology Capability.
+              </p>
+              <a className="direction-link" href="#vision">
+                Baca selengkapnya
+              </a>
+            </div>
+            <div className="panel">
+              <h4 style={{ margin: "0 0 6px 0", fontSize: 15 }}>Roadmap</h4>
+              <p style={{ margin: 0, fontSize: 13.5, color: "var(--muted)" }}>{ROADMAP_SUMMARY}</p>
+              <a className="direction-link" href="#roadmap">
+                Baca selengkapnya
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="philosophy">
         <div className="container">
-          <div className="kicker">00 · Filosofi</div>
+          <div className="kicker">06 · Filosofi</div>
           <h2 className="section-title">N⁻¹: Selalu Satu Langkah Sebelum Selesai</h2>
           <div className="divider" />
 
@@ -193,52 +356,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="about">
-        <div className="container">
-          <div className="kicker">01 · Tentang Kami</div>
-          <h2 className="section-title">About N⁻¹ Labs</h2>
-          <div className="divider" />
-
-          <p className="section-lead" style={{ maxWidth: 720 }}>
-            N⁻¹ Labs adalah perusahaan teknologi asal Semarang, Jawa Tengah, yang berfokus pada
-            pengembangan Artificial Intelligence, AI Agent, software systems, automation, digital
-            products, dan teknologi komputasi.
-          </p>
-          <p style={{ maxWidth: 720 }}>
-            Didirikan pada 2 September 2026, N⁻¹ Labs hadir bukan sebagai software house biasa,
-            melainkan sebagai perusahaan yang membangun kapabilitasnya secara bertahap — dimulai dari
-            software engineering, menuju sistem bisnis dan automation, hingga akhirnya pada pengembangan
-            AI Agent dan AI Infrastructure. Setiap proyek yang dikerjakan N⁻¹ Labs dirancang untuk
-            memperkuat fondasi teknis menuju arah tersebut.
-          </p>
-          <p style={{ maxWidth: 720 }}>
-            Dalam jangka panjang, N⁻¹ Labs memiliki tujuan untuk berkembang menjadi{" "}
-            <b>AI technology company</b> yang mampu membangun teknologi AI-nya sendiri — termasuk
-            kontribusi terhadap kemampuan Indonesia dalam mengembangkan Large Language Model (LLM)
-            secara mandiri.
-          </p>
-
-          <div className="subhead" style={{ marginTop: 32 }}>
-            Ringkasan Identitas
-          </div>
-          <div className="panel">
-            <table className="identity-table">
-              <tbody>
-                {identity.map((row) => (
-                  <tr key={row.label}>
-                    <td>{row.label}</td>
-                    <td>{row.value}</td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        </div>
-      </section>
-
       <section id="mission">
         <div className="container">
-          <div className="kicker">02 · Cara Kami Mewujudkannya</div>
+          <div className="kicker">07 · Cara Kami Mewujudkannya</div>
           <h2 className="section-title">Mission</h2>
           <div className="divider" />
           <p className="section-lead">
@@ -263,7 +383,7 @@ export default function Home() {
 
       <section id="technology">
         <div className="container">
-          <div className="kicker">03 · Kapabilitas Teknologi</div>
+          <div className="kicker">08 · Kapabilitas Teknologi</div>
           <h2 className="section-title">Technology Focus</h2>
           <div className="divider" />
           <p className="section-lead">
@@ -290,57 +410,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="what-we-build">
-        <div className="container">
-          <div className="kicker">04 · Output Nyata</div>
-          <h2 className="section-title">What We Build</h2>
-          <div className="divider" />
-          <p className="section-lead">
-            N⁻¹ Labs membangun sistem yang digunakan secara nyata — bukan sekadar prototipe atau konsep.
-            Setiap produk dirancang untuk menjadi bagian dari infrastruktur bisnis penggunanya.
-          </p>
-
-          <div className="grid grid-2" style={{ marginTop: 16 }}>
-            {buildAreas.map((area) => (
-              <div className="panel" key={area.title}>
-                <h4 style={{ margin: "0 0 8px 0", fontSize: 14.5 }}>{area.title}</h4>
-                <p style={{ margin: 0, fontSize: 13.5, color: "var(--muted)" }}>{area.body}</p>
-              </div>
-            ))}
-          </div>
-
-          <div className="subhead" style={{ marginTop: 28 }}>
-            Enam Proyek yang Telah Dibangun
-          </div>
-          <div className="panel">
-            <ul className="clean project-list">
-              {projects.map((project) => (
-                <li key={project.num}>{project.title}</li>
-              ))}
-            </ul>
-          </div>
-        </div>
-      </section>
-
-      <section id="portfolio">
-        <div className="container">
-          <div className="kicker">05 · Rekam Jejak</div>
-          <h2 className="section-title">Project Portfolio</h2>
-          <div className="divider" />
-          <p className="section-lead">
-            Enam proyek berikut menggambarkan perjalanan N⁻¹ Labs dalam membangun kapabilitas — dari
-            software engineering, sistem bisnis, automation, hingga AI Agent. Setiap proyek dijelaskan
-            berdasarkan permasalahan, solusi, fungsi, dampak, dan hal yang dipelajari N⁻¹ Labs.
-          </p>
-          <span className="tag existing">Existing Capability</span>
-
-          <Portfolio projects={projects} />
-        </div>
-      </section>
-
       <section id="journey">
         <div className="container">
-          <div className="kicker">06 · Perjalanan Kapabilitas</div>
+          <div className="kicker">09 · Perjalanan Kapabilitas</div>
           <h2 className="section-title">Technology Journey</h2>
           <div className="divider" />
           <p className="section-lead">
@@ -375,7 +447,7 @@ export default function Home() {
 
       <section id="vision">
         <div className="container">
-          <div className="kicker">07 · Arah Perusahaan</div>
+          <div className="kicker">10 · Arah Perusahaan</div>
           <h2 className="section-title">Vision</h2>
           <div className="divider" />
 
@@ -416,7 +488,7 @@ export default function Home() {
 
       <section id="long-term-vision">
         <div className="container">
-          <div className="kicker">08 · Masa Depan</div>
+          <div className="kicker">11 · Masa Depan</div>
           <h2 className="section-title">Long-Term Vision</h2>
           <div className="divider" />
           <span className="tag vision">Future Vision / Aspiration</span>
@@ -439,7 +511,7 @@ export default function Home() {
 
       <section id="llm">
         <div className="container">
-          <div className="kicker">09 · Kedaulatan Teknologi</div>
+          <div className="kicker">12 · Kedaulatan Teknologi</div>
           <h2 className="section-title">Building Indonesia&apos;s Own LLM</h2>
           <div className="divider" />
           <span className="tag vision">Future Vision / Aspiration</span>
@@ -477,7 +549,7 @@ export default function Home() {
 
       <section id="national-security">
         <div className="container">
-          <div className="kicker">10 · Kontribusi Strategis</div>
+          <div className="kicker">13 · Kontribusi Strategis</div>
           <h2 className="section-title">National Security &amp; Defense Technology</h2>
           <div className="divider" />
           <span className="tag vision">Future Vision / Aspiration</span>
@@ -514,7 +586,7 @@ export default function Home() {
 
       <section id="values">
         <div className="container">
-          <div className="kicker">11 · Prinsip Kerja</div>
+          <div className="kicker">14 · Prinsip Kerja</div>
           <h2 className="section-title">Company Values</h2>
           <div className="divider" />
           <p className="section-lead">
@@ -538,7 +610,7 @@ export default function Home() {
 
       <section id="roadmap">
         <div className="container">
-          <div className="kicker">12 · Jalan ke Depan</div>
+          <div className="kicker">15 · Jalan ke Depan</div>
           <h2 className="section-title">Development Roadmap</h2>
           <div className="divider" />
           <p style={{ fontSize: 12.5, color: "var(--muted)", marginBottom: 20 }}>
@@ -570,7 +642,7 @@ export default function Home() {
 
       <section id="positioning">
         <div className="container">
-          <div className="kicker">13 · Cara Kami Diposisikan</div>
+          <div className="kicker">16 · Cara Kami Diposisikan</div>
           <h2 className="section-title">Company Positioning</h2>
           <div className="divider" />
 
@@ -603,7 +675,7 @@ export default function Home() {
 
       <section id="contact" className="closing">
         <div className="container">
-          <div className="kicker">14 · Closing Statement</div>
+          <div className="kicker">17 · Closing Statement</div>
           <h2>
             Dari sistem yang dibangun hari ini,
             <br />

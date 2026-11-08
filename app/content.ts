@@ -32,6 +32,16 @@ export const booking: Booking = {
   minPrice: 10000000,
 };
 
+export const startSteps = [
+  {
+    title: "Booking & DP",
+    body: "Isi form booking dan bayar DP. Booking berlaku setelah DP diterima.",
+  },
+  { title: "Develop", body: "Sistem dikembangkan sesuai kebutuhan bisnis dan operasional Anda." },
+  { title: "Integrate", body: "Sistem diintegrasikan ke proses bisnis Anda." },
+  { title: "Automate", body: "Proses bisnis dan layanan pelanggan diotomatisasi." },
+];
+
 export const budgetOptions = [
   "Rp10–25 juta",
   "Rp25–50 juta",

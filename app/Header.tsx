@@ -6,12 +6,12 @@ import Link from "next/link";
 import { withBasePath } from "./base-path";
 
 const NAV_LINKS = [
-  { href: "/#philosophy", label: "Filosofi" },
-  { href: "/#about", label: "Tentang" },
-  { href: "/#technology", label: "Fokus Teknologi" },
+  { href: "/#services", label: "Layanan" },
   { href: "/produk", label: "Produk" },
   { href: "/#portfolio", label: "Portofolio" },
-  { href: "/#vision", label: "Visi" },
+  { href: "/#how-to-start", label: "Cara Memulai" },
+  { href: "/#about", label: "Tentang" },
+  { href: "/#philosophy", label: "Filosofi" },
   { href: "/#contact", label: "Kontak" },
 ];
 

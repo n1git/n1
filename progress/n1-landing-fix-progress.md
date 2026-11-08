@@ -1,6 +1,6 @@
 # n1-landing-fix
 
-Status: Fase 1 sampai 5 selesai, menunggu OK owner atas mock (Fase 5) sebelum Fase 6.
+Status: semua fase selesai. Menunggu keputusan dan data dari owner (lihat pertanyaan di bawah).
 
 ## Fase
 
@@ -10,7 +10,7 @@ Status: Fase 1 sampai 5 selesai, menunggu OK owner atas mock (Fase 5) sebelum Fa
 - [x] 3. Halaman `/privacy` (draf), tertaut dari footer.
 - [x] 4. Tautan: sosial opsional di `contact`, GitHub `https://github.com/n1git`, Getruzz `https://getruzz.com`, ruang bawah untuk tombol chat dan WhatsApp.
 - [x] 5. Mock tata letak baru (HP 390 px dan desktop 1440 px). **Wait for my OK.**
-- [ ] 6. Terapkan tata letak yang disetujui, `npm run build` sekali, cek `out/robots.txt`, `out/sitemap.xml`, `out/privacy.html`.
+- [x] 6. Terapkan tata letak yang disetujui, `npm run build` sekali, cek `out/robots.txt`, `out/sitemap.xml`, `out/privacy.html`.
 
 ## Tambahan di luar fase: booking jasa
 
@@ -85,4 +85,17 @@ Belum ada data untuk: nama klien, angka hasil, testimoni, studi kasus yang bisa 
 - Tidak ada klaim, angka, nama klien, atau testimoni baru. Bagian bukti menunggu data owner.
 - Skill `ui-ux-pro-max` tidak punya pola landing jasa yang cocok di database; mock memakai token dan komponen situs sendiri.
 - Hal untuk diputuskan owner: judul hero memakai daftar enam jenis sistem (usulan) menggantikan "Building Indonesia's Own AI Technology Capability", yang berpindah ke Visi.
-- Blocker: **Wait for my OK.**
+- OK owner diterima; lanjut Fase 6.
+
+### Fase 6
+- Berkas: `app/page.tsx` (hero baru, urutan baru, bagian Layanan, Produk dan Portofolio, Cara Memulai Proyek, Arah Kami), `app/content.ts` (`startSteps`), `app/Header.tsx` (nav: Layanan, Produk, Portofolio, Cara Memulai, Tentang, Filosofi, Kontak), `app/globals.css`.
+- Urutan: hero, Layanan, Produk dan Portofolio, Cara Memulai Proyek, Tentang, Arah Kami (ringkasan Filosofi, Visi, Roadmap dengan tautan), lalu seluruh teks Filosofi, Misi, Teknologi, Perjalanan, Visi, dan seterusnya tetap ada di bawah. Bagian tidak dilipat; hanya dipindah.
+- Daftar "Enam Proyek yang Telah Dibangun" di Layanan dihapus karena duplikat dengan daftar proyek di Portofolio.
+- Kalimat "sistem yang digunakan secara nyata" diganti dengan fakta yang bisa dibuktikan: Getruzz live di getruzz.com dan Systemma berjalan di produksi (README repo `systemma`).
+- Judul halaman dan deskripsi meta beranda masih "Building Indonesia's Own AI Technology Capability" karena tidak diminta diubah; hero kini memakai judul layanan.
+- `npm run build` satu kali: sukses, 8 halaman statis. `out/robots.txt`, `out/sitemap.xml`, `out/privacy.html` ada. Canonical, `og:url`, `og:image` (`https://n-1labs.com/...`), JSON-LD `Organization` pada beranda, dan kartu Twitter `summary` terverifikasi di HTML hasil build; ikon Instagram, TikTok, YouTube tidak muncul; GitHub `n1git` muncul.
+- Belum dibuka di peramban.
+
+## Klaim yang belum bisa dibuktikan dan masih tayang (keputusan owner)
+
+- "Enam proyek berikut menggambarkan perjalanan..." (`app/page.tsx`, bagian Portofolio) dan "Proyek-proyek yang telah dikerjakan N⁻¹ Labs..." (bagian Technology Journey): enam proyek tidak bisa diverifikasi dari repo. Ubah redaksi atau beri bukti.

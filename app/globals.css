@@ -2013,3 +2013,43 @@ section:not(.hero) {
 .footer-privacy {
   text-decoration: underline;
 }
+
+.start-steps .panel {
+  position: relative;
+  padding-top: 48px;
+}
+
+.start-step-num {
+  position: absolute;
+  top: 14px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: var(--blue-100);
+  color: var(--navy-900);
+  font-size: 13px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.direction-link {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 13px;
+  text-decoration: underline;
+}
+
+@media (min-width: 720px) {
+  .start-steps {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .direction-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
