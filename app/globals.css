@@ -1994,3 +1994,22 @@ section:not(.hero) {
   margin: 0;
   font-weight: 600;
 }
+
+.legal {
+  max-width: 720px;
+}
+
+.legal h2 {
+  font-size: 18px;
+  margin: 28px 0 8px;
+}
+
+.legal p,
+.legal li {
+  color: var(--muted);
+}
+
+.booking-hint a,
+.footer-privacy {
+  text-decoration: underline;
+}

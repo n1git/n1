@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import ChatWidget from "@/components/support-chat/ChatWidget";
 import { withBasePath } from "./base-path";
 import { contact } from "./content";
@@ -41,6 +42,9 @@ export default function Footer() {
             N⁻¹ LABS
           </a>
           <span className="footer-tagline">N⁻¹ · always one step from finished.</span>
+          <Link className="footer-privacy" href="/privacy">
+            Kebijakan Privasi
+          </Link>
           <span>© 2026 N⁻¹ Labs. All rights reserved.</span>
         </div>
       </footer>

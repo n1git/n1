@@ -7,7 +7,7 @@ Status: Fase 0 selesai, menunggu OK owner.
 - [x] 0. `CLAUDE.md`, progress file, pertanyaan owner. **Wait for my OK.**
 - [x] 1. Chat dukungan tanpa endpoint + pemberitahuan privasi bila endpoint ada; `apps-script/Code.gs` (netralkan formula, batas laju global, email notifikasi `NOTIFY_EMAIL`) dan `apps-script/README.md`.
 - [x] 2. SEO: `metadataBase` `https://n-1labs.com`, canonical, `og:url`, `og:image`, `summary`, judul dan deskripsi memuat "N-1 Labs" dan "N⁻¹ Labs", `app/robots.ts`, `app/sitemap.ts` (`/`, `/produk`, `/privacy`), JSON-LD `Organization`, logo kecil ~192 px untuk header, footer, favicon.
-- [ ] 3. Halaman `/privacy` (draf), tertaut dari footer.
+- [x] 3. Halaman `/privacy` (draf), tertaut dari footer.
 - [ ] 4. Tautan: sosial opsional di `contact`, GitHub `https://github.com/n1git`, Getruzz `https://getruzz.com`, ruang bawah untuk tombol chat dan WhatsApp.
 - [ ] 5. Mock tata letak baru (HP 390 px dan desktop 1440 px). **Wait for my OK.**
 - [ ] 6. Terapkan tata letak yang disetujui, `npm run build` sekali, cek `out/robots.txt`, `out/sitemap.xml`, `out/privacy.html`.
@@ -62,5 +62,12 @@ Belum ada data untuk: nama klien, angka hasil, testimoni, studi kasus yang bisa 
 - `metadataBase` `https://n-1labs.com`; canonical dan `og:url` per halaman lewat `pageMetadata`; `og:image` logo 985 px; kartu Twitter tetap `summary` karena belum ada gambar 1200x630; judul dan deskripsi memuat "N-1 Labs". Sitemap: `/`, `/produk`, `/booking`, `/privacy`. JSON-LD `sameAs` hanya `https://github.com/n1git`.
 - Favicon, header, footer memakai `logo-192.png`; `logo.png` besar tetap untuk OG dan JSON-LD.
 - `/privacy` sudah ada di sitemap tetapi halamannya baru dibuat di Fase 3.
+- Pengecekan: `npx next typegen && npx tsc --noEmit` lolos.
+- Blocker: tidak ada.
+
+### Fase 3
+- Berkas: `app/privacy/page.tsx`, `app/Footer.tsx` (tautan "Kebijakan Privasi"), `components/booking/BookingForm.tsx` (tautan ke `/privacy`), `app/globals.css`.
+- Isi: pengelola, data chat dan booking, tujuan, penyimpanan di Google Sheets dan email (Google sebagai penyedia), penyimpanan lokal chat, hak menurut UU PDP, kontak dari `contact`; berlabel "Draf, belum ditinjau ahli hukum".
+- Masa simpan tidak diisi: halaman hanya menyatakan belum ditetapkan. Tetap pertanyaan owner nomor 1.
 - Pengecekan: `npx next typegen && npx tsc --noEmit` lolos.
 - Blocker: tidak ada.

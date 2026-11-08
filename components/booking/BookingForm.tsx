@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, type FormEvent } from "react";
+import Link from "next/link";
 import {
   booking,
   budgetOptions,
@@ -259,7 +260,9 @@ export default function BookingForm() {
         </span>
       </label>
 
-      <p className="booking-hint">Data dipakai hanya untuk menindaklanjuti booking ini.</p>
+      <p className="booking-hint">
+        Data dipakai hanya untuk menindaklanjuti booking ini. <Link href="/privacy">Kebijakan privasi</Link>
+      </p>
 
       {error && (
         <p className="booking-error" role="alert">
