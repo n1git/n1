@@ -1,31 +1,16 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { withBasePath } from "./base-path";
+import { SITE_URL, pageMetadata } from "./seo";
 
-const TITLE = "N⁻¹ Labs — Building Indonesia's Own AI Technology Capability";
+const TITLE = "N⁻¹ Labs (N-1 Labs) — Building Indonesia's Own AI Technology Capability";
 const DESCRIPTION =
-  "N⁻¹ Labs adalah perusahaan teknologi AI asal Semarang, Indonesia yang membangun AI Agent, software systems, automation, dan digital products — dengan filosofi N⁻¹: selalu satu langkah sebelum selesai.";
+  "N⁻¹ Labs (N-1 Labs) adalah perusahaan teknologi AI asal Semarang, Indonesia yang membangun AI Agent, software systems, automation, dan digital products — dengan filosofi N⁻¹: selalu satu langkah sebelum selesai.";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://irwanasas.github.io/n1/"),
-  title: TITLE,
-  description: DESCRIPTION,
-  icons: { icon: withBasePath("/logo.png") },
-  openGraph: {
-    title: TITLE,
-    description: DESCRIPTION,
-    url: "/",
-    siteName: "N⁻¹ Labs",
-    images: [{ url: withBasePath("/logo.png"), width: 985, height: 985, alt: "N⁻¹ Labs" }],
-    locale: "id_ID",
-    type: "website",
-  },
-  twitter: {
-    card: "summary",
-    title: TITLE,
-    description: DESCRIPTION,
-    images: [withBasePath("/logo.png")],
-  },
+  metadataBase: new URL(SITE_URL),
+  ...pageMetadata({ title: TITLE, description: DESCRIPTION, path: "/" }),
+  icons: { icon: withBasePath("/logo-192.png") },
 };
 
 const THEME_INIT = `

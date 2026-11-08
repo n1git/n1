@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "../seo";
 import Header from "../Header";
 import Footer from "../Footer";
 import ProductCategories from "../ProductCategories";
 import { productCategories } from "../content";
 
-export const metadata: Metadata = {
-  title: "Produk — N⁻¹ Labs",
-  description: "Produk N⁻¹ Labs: Getruzz (Produk App) dan Systemma (Produk Sistem).",
-};
+export const metadata: Metadata = pageMetadata({
+  title: "Produk — N⁻¹ Labs (N-1 Labs)",
+  description: "Produk N⁻¹ Labs (N-1 Labs): Getruzz (Produk App) dan Systemma (Produk Sistem).",
+  path: "/produk",
+});
 
 export default function ProdukPage() {
   return (

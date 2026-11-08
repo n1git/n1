@@ -37,7 +37,7 @@ export default function Footer() {
         </div>
         <div className="container">
           <a className="brand" href="#top">
-            <Image src={withBasePath("/logo.png")} alt="N⁻¹ Labs" width={26} height={26} />
+            <Image src={withBasePath("/logo-192.png")} alt="N⁻¹ Labs" width={26} height={26} />
             N⁻¹ LABS
           </a>
           <span className="footer-tagline">N⁻¹ · always one step from finished.</span>

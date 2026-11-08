@@ -20,6 +20,7 @@ import {
   roadmapPhases,
   positioningCards,
 } from "./content";
+import { organizationJsonLd } from "./seo";
 
 const WHATSAPP_URL = `https://wa.me/${contact.whatsapp}`;
 const MAILTO_URL = `mailto:${contact.email}`;
@@ -63,9 +64,12 @@ const SOCIAL_LINKS = [
   { label: "Email", href: MAILTO_URL, icon: <EmailIcon />, external: false },
 ];
 
+const ORGANIZATION_JSON_LD = JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c");
+
 export default function Home() {
   return (
     <>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: ORGANIZATION_JSON_LD }} />
       <div id="top" />
       <Header />
 

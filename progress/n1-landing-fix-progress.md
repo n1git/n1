@@ -6,7 +6,7 @@ Status: Fase 0 selesai, menunggu OK owner.
 
 - [x] 0. `CLAUDE.md`, progress file, pertanyaan owner. **Wait for my OK.**
 - [x] 1. Chat dukungan tanpa endpoint + pemberitahuan privasi bila endpoint ada; `apps-script/Code.gs` (netralkan formula, batas laju global, email notifikasi `NOTIFY_EMAIL`) dan `apps-script/README.md`.
-- [ ] 2. SEO: `metadataBase` `https://n-1labs.com`, canonical, `og:url`, `og:image`, `summary`, judul dan deskripsi memuat "N-1 Labs" dan "N⁻¹ Labs", `app/robots.ts`, `app/sitemap.ts` (`/`, `/produk`, `/privacy`), JSON-LD `Organization`, logo kecil ~192 px untuk header, footer, favicon.
+- [x] 2. SEO: `metadataBase` `https://n-1labs.com`, canonical, `og:url`, `og:image`, `summary`, judul dan deskripsi memuat "N-1 Labs" dan "N⁻¹ Labs", `app/robots.ts`, `app/sitemap.ts` (`/`, `/produk`, `/privacy`), JSON-LD `Organization`, logo kecil ~192 px untuk header, footer, favicon.
 - [ ] 3. Halaman `/privacy` (draf), tertaut dari footer.
 - [ ] 4. Tautan: sosial opsional di `contact`, GitHub `https://github.com/n1git`, Getruzz `https://getruzz.com`, ruang bawah untuk tombol chat dan WhatsApp.
 - [ ] 5. Mock tata letak baru (HP 390 px dan desktop 1440 px). **Wait for my OK.**
@@ -56,3 +56,11 @@ Belum ada data untuk: nama klien, angka hasil, testimoni, studi kasus yang bisa 
 ## Tindakan owner di luar repo
 
 - Situs lama `irwanasas.github.io/n1/`: matikan atau alihkan ke `n-1labs.com`.
+
+### Fase 2
+- Berkas: `app/seo.ts` (`pageMetadata`, `organizationJsonLd`), `app/layout.tsx`, `app/produk/page.tsx`, `app/booking/page.tsx`, `app/page.tsx` (JSON-LD), `app/robots.ts`, `app/sitemap.ts`, `public/logo-192.png` (5,9 KB dari 210 KB, dibuat dengan ImageMagick sekali jalan), `app/Header.tsx`, `app/Footer.tsx`.
+- `metadataBase` `https://n-1labs.com`; canonical dan `og:url` per halaman lewat `pageMetadata`; `og:image` logo 985 px; kartu Twitter tetap `summary` karena belum ada gambar 1200x630; judul dan deskripsi memuat "N-1 Labs". Sitemap: `/`, `/produk`, `/booking`, `/privacy`. JSON-LD `sameAs` hanya `https://github.com/n1git`.
+- Favicon, header, footer memakai `logo-192.png`; `logo.png` besar tetap untuk OG dan JSON-LD.
+- `/privacy` sudah ada di sitemap tetapi halamannya baru dibuat di Fase 3.
+- Pengecekan: `npx next typegen && npx tsc --noEmit` lolos.
+- Blocker: tidak ada.
