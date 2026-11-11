@@ -1,0 +1,13 @@
+{
+  "id": "P013",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya tidak mau bayar DP ke vendor yang baru berdiri 2026 dan belum saya lihat kliennya. Sistem custom itu urusan penting, jadi saya butuh bukti dulu.",
+  "objection": "Bayar DP di depan ke vendor yang belum saya kenal terasa berisiko, dan tidak ada klien atau demo yang bisa saya lihat.",
+  "would_change_my_mind": "Demo yang berjalan dari klien nyata di bidang usaha seperti saya, plus referensi yang bisa saya telepon, dan DP kecil yang jelas bisa dikembalikan jika hasil tahap awal tidak cocok.",
+  "price_too_cheap": 5000000,
+  "price_cheap": 15000000,
+  "price_expensive": 40000000,
+  "price_too_expensive": 80000000
+}
