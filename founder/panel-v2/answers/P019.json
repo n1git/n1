@@ -1,0 +1,13 @@
+{
+  "id": "P019",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Rp10 juta itu hampir sepersepuluh penghasilan setahun saya, dan saya biasanya pilih yang paling murah. Staf saya juga sudah nyaman dengan buku dan spreadsheet, jadi saya tidak mau keluar uang sebesar itu untuk sesuatu yang belum tentu dipakai.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah, dan Rp10 juta terlalu besar untuk usaha sekecil saya apalagi perusahaannya baru berdiri 2026.",
+  "would_change_my_mind": "Harga mulai di bawah Rp3 juta atau sistem sederhana yang bisa saya coba dulu gratis di toko saya, dan ada pemilik usaha seperti saya yang sudah memakainya.",
+  "price_too_cheap": 1000000,
+  "price_cheap": 2500000,
+  "price_expensive": 5000000,
+  "price_too_expensive": 8000000
+}

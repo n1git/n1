@@ -1,0 +1,13 @@
+{
+  "id": "P011",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya sudah terbiasa pakai aplikasi kasir dan pembukuan siap pakai, jadi sistem custom dari perusahaan yang baru berdiri 2026 terasa berisiko. Garansi DP dan kepemilikan kode memang membantu, tapi saya tetap tanya sesama pengusaha dulu dan belum ada yang kenal mereka.",
+  "objection": "Vendor baru berdiri 2026, belum ada klien yang bisa saya tanyai langsung, dan saya harus bayar bertahap ke pihak yang belum terbukti sementara aplikasi siap pakai sudah cukup.",
+  "would_change_my_mind": "Referensi dari pengusaha yang saya kenal, atau demo sistem nyata untuk bisnis multi-cabang seperti punya saya dari klien yang bisa saya hubungi.",
+  "price_too_cheap": 5000000,
+  "price_cheap": 15000000,
+  "price_expensive": 60000000,
+  "price_too_expensive": 150000000
+}

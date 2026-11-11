@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Spreadsheet saya sudah cukup dan gratis. Rp10 juta itu hampir seperlima penghasilan setahun saya, untuk sesuatu yang belum tentu lebih baik dari Excel.",
+  "objection": "Apakah data usaha saya aman dan benar-benar milik saya, dan apakah perusahaan yang baru berdiri 2026 masih ada kalau sistemnya error setelah 30 hari dukungan.",
+  "would_change_my_mind": "Harga jauh lebih murah (di bawah Rp3 juta) atau contoh nyata usaha sekecil saya yang sudah memakainya dan hemat waktu, plus jaminan data bisa saya ekspor ke Excel kapan saja.",
+  "price_too_cheap": 1000000,
+  "price_cheap": 2500000,
+  "price_expensive": 5000000,
+  "price_too_expensive": 8000000
+}

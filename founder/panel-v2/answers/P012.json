@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya sudah biasa pakai aplikasi kasir siap pakai yang murah per bulan, jadi bayar Rp10 juta ke perusahaan yang baru berdiri 2026 terasa terlalu berisiko. Konsultasi gratisnya menarik, tapi belum cukup untuk membuat saya bayar.",
+  "objection": "N⁻¹ Labs perusahaan baru, belum ada klien yang bisa saya tanya. Kalau proyeknya macet atau mereka hilang, uang saya sulit kembali dan usaha saya tetap harus jalan.",
+  "would_change_my_mind": "Dua atau tiga klien nyata di usaha seukuran saya yang bisa saya telepon, dan harga tetap untuk tahap pertama yang jauh lebih kecil dari Rp10 juta.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
+}
