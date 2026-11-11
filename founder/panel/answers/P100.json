@@ -1,0 +1,13 @@
+{
+  "id": "P100",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya belum kenal vendor ini, usahanya baru berdiri 2026 dan belum punya klien proyek custom. Getruzz dan Systemma produk mereka sendiri, bukan bukti mereka bisa menyelesaikan sistem untuk usaha seperti saya.",
+  "objection": "Belum ada klien lain yang bisa saya tanya. Rp10 juta itu uang nyata buat usaha kecil, dan kalau proyeknya macet saya tidak punya cadangan.",
+  "would_change_my_mind": "Satu klien usaha kecil nyata yang mau saya telepon, atau demo sistem order yang berjalan dengan data seperti punya saya, lalu proyek pertama dengan harga lebih rendah.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
+}

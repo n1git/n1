@@ -1,0 +1,13 @@
+{
+  "id": "P035",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasa pakai aplikasi kasir siap pakai yang bayar bulanan, jadi sistem custom mulai Rp10 juta dari perusahaan yang baru berdiri dan belum punya klien proyek custom terasa berisiko. Konsultasi gratis boleh saya ambil, tapi belum sampai bayar DP.",
+  "objection": "Vendor baru tahun 2026, belum ada klien custom sama sekali. Kalau proyeknya macet atau tim mereka hilang, saya yang rugi waktu dan uang, dan aplikasi siap pakai yang sudah jalan lebih murah.",
+  "would_change_my_mind": "Satu klien usaha seperti saya yang mau saya telepon langsung dan bilang proyek custom-nya selesai tepat waktu, atau tahap pertama kecil berbayar murah yang hasilnya bisa saya lihat dulu.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 7000000,
+  "price_expensive": 15000000,
+  "price_too_expensive": 30000000
+}

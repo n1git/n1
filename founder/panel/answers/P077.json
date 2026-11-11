@@ -1,0 +1,13 @@
+{
+  "id": "P077",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya sudah nyaman dengan Excel, dan Rp10 juta itu lebih dari sebulan penghasilan saya. Perusahaannya baru berdiri dan belum punya klien proyek custom, jadi saya tidak mau jadi yang pertama dicoba.",
+  "objection": "Belum ada klien yang bisa saya tanya langsung, dan saya takut sistemnya mandek di tengah jalan atau data usaha saya jadi tidak aman. Meski tertulis kode dan data milik saya, saya belum yakin mereka sanggup menjalankannya.",
+  "would_change_my_mind": "Satu pemilik usaha sekecil saya yang sudah pakai jasa mereka dan mau saya telepon, plus harga tetap tahap pertama di bawah Rp5 juta.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
+}

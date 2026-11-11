@@ -1,0 +1,13 @@
+{
+  "id": "P053",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasa pakai aplikasi kasir siap pakai yang murah per bulan, jadi bayar mulai Rp10 juta ke perusahaan yang baru berdiri 2026 dan belum punya klien custom terasa berisiko. Konsultasi gratis boleh saya coba, tapi belum cukup untuk saya jadi klien pertama mereka.",
+  "objection": "Belum ada klien proyek custom sama sekali, jadi saya yang jadi kelinci percobaan. Kalau perusahaannya tutup atau sistemnya bermasalah, data usaha saya bagaimana?",
+  "would_change_my_mind": "Satu klien nyata di bisnis seperti saya yang bisa saya telepon, plus demo sistem order yang jalan dengan data contoh saya.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 7000000,
+  "price_expensive": 15000000,
+  "price_too_expensive": 30000000
+}

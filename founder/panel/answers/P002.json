@@ -2,12 +2,12 @@
   "id": "P002",
   "buys": false,
   "purchases_first_month": 0,
-  "reason_code": "price",
-  "reason": "Pesanan saya masih lewat WhatsApp dan dicatat manual, tapi Rp10 juta di depan itu mahal kalau aplikasi siap pakai cuma Rp300 ribuan sebulan. Saya coba yang murah dulu sebelum bayar sistem custom.",
-  "objection": "Harus bayar DP dulu ke perusahaan yang baru berdiri 2026, padahal belum jelas hasilnya cocok atau tidak dengan cara kerja saya. Aplikasi siap pakai jauh lebih murah dan bisa dicoba dulu.",
-  "would_change_my_mind": "Contoh sistem yang sudah jalan di usaha sejenis saya, demo untuk alur pesanan WhatsApp saya, dan harga jelas di bawah Rp10 juta atau bisa dicicil dengan garansi uang kembali kalau tidak cocok.",
-  "price_too_cheap": 1000000,
-  "price_cheap": 3000000,
-  "price_expensive": 8000000,
-  "price_too_expensive": 15000000
+  "reason_code": "trust",
+  "reason": "Saya minta bukti dulu, dan mereka sendiri bilang belum ada klien proyek custom. Getruzz dan Systemma produk mereka sendiri, jadi tidak ada orang lain yang bisa saya tanya.",
+  "objection": "Perusahaan baru, belum ada klien yang bisa saya tanya. Rp10 juta itu hampir sebulan penghasilan saya, dan saya tidak mau jadi klien pertama yang jadi kelinci percobaan.",
+  "would_change_my_mind": "Satu klien nyata di bisnis sejenis yang mau saya telepon, atau demo sistem order yang berjalan dengan data toko seperti punya saya.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 7000000,
+  "price_expensive": 15000000,
+  "price_too_expensive": 30000000
 }

@@ -1,0 +1,13 @@
+{
+  "id": "P054",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya tidak mau jadi klien pertama untuk sistem yang menyimpan data pesanan dan pelanggan cabang saya. Perusahaannya baru berdiri 2026 dan belum ada klien custom, jadi saya tunggu ada pengusaha lain yang sudah pakai dan bisa saya tanya.",
+  "objection": "Belum ada satu pun klien proyek custom. Saya tidak punya waktu mengawasi vendor baru, dan kalau datanya bocor atau sistemnya macet, saya yang rugi. Janji data milik saya tertulis bagus, tapi siapa yang menjaga keamanannya?",
+  "would_change_my_mind": "Satu atau dua pengusaha yang saya kenal sudah pakai jasanya dan mau bercerita langsung ke saya, plus penjelasan tertulis soal keamanan data dan siapa yang pegang server.",
+  "price_too_cheap": 5000000,
+  "price_cheap": 15000000,
+  "price_expensive": 45000000,
+  "price_too_expensive": 100000000
+}

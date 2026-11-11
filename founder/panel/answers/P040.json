@@ -1,0 +1,13 @@
+{
+  "id": "P040",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasa pakai aplikasi kasir dan pembukuan siap pakai yang murah per bulan, dan freelancer bisa mengerjakan lebih murah. Perusahaan baru berdiri 2026 dan belum punya satu pun klien proyek custom, jadi saya tidak mau jadi yang pertama dicoba dengan uang puluhan juta.",
+  "objection": "Belum ada klien proyek custom sama sekali. Getruzz dan Systemma produk mereka sendiri, bukan bukti mereka bisa mengerjakan sistem untuk usaha seperti saya, dan Rp10 juta ke atas lebih mahal daripada aplikasi siap pakai atau freelancer.",
+  "would_change_my_mind": "Satu klien nyata di usaha sejenis yang bisa saya telepon, atau pilot tahap awal berharga jauh di bawah Rp10 juta dengan DP yang benar-benar bisa kembali.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 40000000
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P082",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Perusahaannya baru berdiri dan belum punya klien proyek custom, sementara saya biasanya ikut vendor yang direkomendasikan teman. Rp10 juta itu sekitar sepersepuluh penghasilan setahun saya, dan freelancer kenalan bisa lebih murah.",
+  "objection": "Belum ada klien nyata yang bisa saya tanyai. Kalau dikerjakan setengah jalan lalu mereka hilang, saya rugi waktu dan uang, dan freelancer biasanya lebih murah.",
+  "would_change_my_mind": "Rekomendasi dari sesama pemilik usaha yang saya kenal dan sudah memakai jasanya, atau harga awal jauh di bawah Rp10 juta untuk rekap penjualan dan kas saja.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 18000000
+}

@@ -1,0 +1,13 @@
+{
+  "id": "P045",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Spreadsheet saya sudah jalan dan staf sudah terbiasa, jadi saya tidak merasa perlu bayar belasan juta untuk sistem baru. Konsultasi gratis boleh saja, tapi belum cukup untuk bikin saya pindah.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah. Perusahaannya juga baru berdiri dan belum punya klien proyek custom, jadi saya yang jadi percobaan pertama.",
+  "would_change_my_mind": "Kejadian besar di usaha saya, misalnya pesanan WhatsApp tercecer dan rugi besar, atau satu pemilik usaha seperti saya yang sudah pakai sistem mereka dan bisa saya hubungi langsung.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 40000000
+}

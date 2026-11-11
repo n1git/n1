@@ -1,0 +1,13 @@
+{
+  "id": "P078",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Rp10 juta itu hampir sebulan penghasilan saya, padahal aplikasi kasir atau pembukuan jadi di Instagram cuma puluhan ribu sebulan. Saya biasanya ambil yang paling murah yang masuk akal, dan mereka belum punya satu pun klien proyek custom.",
+  "objection": "Mahal untuk usaha sekecil saya, dan perusahaannya baru berdiri tanpa klien custom, jadi kalau proyeknya gagal uang saya dan data usaha saya taruhannya. Janji kode dan data milik saya bagus, tapi itu cuma tulisan.",
+  "would_change_my_mind": "Harga jauh di bawah Rp10 juta untuk sistem order saja, atau ada pemilik usaha seperti saya yang sudah pakai dan mau saya hubungi langsung.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
+}

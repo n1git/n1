@@ -1,0 +1,13 @@
+{
+  "id": "P037",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya mau ambil konsultasi gratis kalau sempat, tapi belum mau bayar proyek. Perusahaannya baru berdiri 2026 dan belum punya satu pun klien proyek custom, jadi saya yang jadi kelinci percobaan untuk sistem yang menyentuh uang dan pesanan saya.",
+  "objection": "Vendor belum punya klien custom sama sekali. Kalau proyek macet di tengah, saya sudah keluar uang dan pesanan WhatsApp tim saya malah kacau.",
+  "would_change_my_mind": "Satu klien nyata yang bisa saya telepon, atau tahap awal kecil berbayar murah yang hasilnya bisa saya coba sendiri dengan data pesanan saya sebelum komit ke proyek penuh.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 25000000,
+  "price_too_expensive": 60000000
+}

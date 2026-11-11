@@ -1,0 +1,13 @@
+{
+  "id": "P087",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Spreadsheet saya sudah cukup untuk sekarang dan Rp10 juta itu hampir sebulan penuh penghasilan saya. Saya belum yakin sistem order itu yang paling saya butuhkan.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli. Perusahaannya baru berdiri 2026 dan belum pernah mengerjakan proyek custom untuk klien, jadi saya yang jadi percobaan pertama.",
+  "would_change_my_mind": "Contoh klien nyata di usaha seukuran saya yang sudah berjalan, plus harga tetap yang lebih kecil untuk tahap pertama sehingga saya bisa coba tanpa risiko besar.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
+}

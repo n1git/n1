@@ -1,0 +1,13 @@
+{
+  "id": "P024",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Rp10 juta itu lebih dari sepersepuluh penghasilan setahunku, dan aplikasi siap pakai cuma Rp300 ribuan per bulan. Pesanan WhatsApp-ku masih bisa kucatat manual, jadi belum sepadan.",
+  "objection": "Terlalu mahal untuk usaha kecil seperti aku, dan perusahaannya baru berdiri, belum pernah mengerjakan proyek custom untuk klien.",
+  "would_change_my_mind": "Harga di bawah Rp3 juta atau bisa dicicil bulanan kecil, plus contoh klien nyata yang usahanya sebesar aku.",
+  "price_too_cheap": 1000000,
+  "price_cheap": 2500000,
+  "price_expensive": 5000000,
+  "price_too_expensive": 8000000
+}

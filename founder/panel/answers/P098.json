@@ -1,0 +1,13 @@
+{
+  "id": "P098",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Masalah saya nyata, rekap akhir bulan selalu selisih sama kas, tapi perusahaannya baru berdiri dan belum punya satu pun klien proyek custom. Saya nggak mau jadi kelinci percobaan untuk sistem yang menyentuh pesanan dan uang saya.",
+  "objection": "Belum ada klien custom sama sekali. Freelancer bisa lebih murah, dan kalau sistemnya macet di tengah, pesanan cabang saya ikut berhenti.",
+  "would_change_my_mind": "Referensi dari satu usaha sejenis yang sudah pakai sistem custom mereka, atau demo sistem order WhatsApp yang bisa saya coba dengan alur pesanan saya sendiri sebelum menyetujui penawaran.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 40000000
+}

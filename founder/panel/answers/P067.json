@@ -1,0 +1,13 @@
+{
+  "id": "P067",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Rp10 juta itu sekitar sepersepuluh penghasilan saya setahun, dan perusahaannya baru berdiri tanpa satu pun klien proyek custom. Saya juga belum yakin sistem order yang saya butuhkan, jadi lebih aman lanjut pakai buku dan WhatsApp dulu.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli, apalagi dari perusahaan baru yang belum pernah mengerjakan proyek untuk usaha seperti saya.",
+  "would_change_my_mind": "Contoh nyata usaha kecil seperti saya yang selisih kasnya selesai setelah pakai sistem mereka, plus harga tetap yang jelas di bawah Rp5 juta untuk tahap awal.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
+}

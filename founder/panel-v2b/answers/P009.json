@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya tidak mau bayar DP ke vendor yang baru berdiri 2026 tanpa lihat klien lain atau demo yang berjalan. Freelancer juga bisa mengerjakan lebih murah.",
+  "objection": "Perusahaan baru, belum ada klien yang bisa saya tanya, dan DP dibayar di depan sebelum saya lihat hasil apa pun.",
+  "would_change_my_mind": "Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan untuk bisnis seperti punya saya, dan DP kecil atau bisa dikembalikan.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 40000000
+}

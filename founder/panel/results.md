@@ -1,6 +1,6 @@
 # Buyer panel: N⁻¹ Labs, jasa pembuatan sistem bisnis custom dari Semarang
 
-**0 buy · 20 pass** (0% buy) out of 20 simulated buyers. Seed 861177, so the same cards can be dealt again.
+**0 buy · 100 pass** (0% buy) out of 100 simulated buyers. Seed 635786, so the same cards can be dealt again.
 
 These are simulated buyers, not customers. Use this to find objections and weak spots, then confirm the big ones with real people before you spend.
 
@@ -8,37 +8,38 @@ These are simulated buyers, not customers. Use this to find objections and weak 
 
 | group | buyers | buy rate |
 | --- | ---: | ---: |
-| Pemilik UMKM menengah | 8 | 0% |
-| Pemilik usaha mikro dan kecil | 8 | 0% |
-| Pemilik usaha berkembang, beberapa cabang atau tim | 4 | 0%  (thin) |
+| Pemilik usaha mikro dan kecil | 40 | 0% |
+| Pemilik UMKM menengah | 40 | 0% |
+| Pemilik usaha berkembang, beberapa cabang atau tim | 20 | 0% |
 
 ## By buying behaviour
 
 | group | buyers | buy rate |
 | --- | ---: | ---: |
-| Membandingkan harga | 3 | 0%  (thin) |
-| Pesanan lewat WhatsApp | 3 | 0%  (thin) |
-| Ikut rekomendasi kenalan | 2 | 0%  (thin) |
-| Setia pada spreadsheet | 4 | 0%  (thin) |
-| Minta bukti dulu | 3 | 0%  (thin) |
-| Pengguna aplikasi siap pakai | 3 | 0%  (thin) |
-| Sibuk dan serahkan ke orang lain | 2 | 0%  (thin) |
+| Membandingkan harga | 15 | 0% |
+| Minta bukti dulu | 14 | 0% |
+| Pesanan lewat WhatsApp | 18 | 0% |
+| Ikut rekomendasi kenalan | 10 | 0% |
+| Pengguna aplikasi siap pakai | 13 | 0% |
+| Sibuk dan serahkan ke orang lain | 12 | 0% |
+| Setia pada spreadsheet | 18 | 0% |
 
 ## By income
 
 | group | buyers | buy rate |
 | --- | ---: | ---: |
-| $130,903,000 to $458,060,000 | 7 | 0%  (thin) |
-| $458,060,000 and up | 7 | 0%  (thin) |
-| under $130,903,000 | 6 | 0%  (thin) |
+| under $154,032,000 | 33 | 0% |
+| $154,032,000 to $414,298,000 | 33 | 0% |
+| $414,298,000 and up | 34 | 0% |
 
 ## Why they pass
 
 | reason | buyers | in their words |
 | --- | ---: | --- |
-| trust | 12 | "Rp10 juta itu lebih dari sebulan penghasilan saya, dan perusahaannya baru berdiri 2026. Saya belum kenal siapa pun yang pernah pakai jasa mereka, jadi saya tidak berani bayar DP." (P003) · "Saya belum tahu persis butuh sistem yang mana, dan disuruh bayar DP dulu sebelum konsultasi itu terbalik buat saya. Perusahaannya baru berdiri 2026, jadi saya tidak mau jadi yang pertama dicoba." (P005) |
-| price | 5 | "Saya biasa minta penawaran dari beberapa vendor dan ambil yang paling murah. Rp10 juta itu cuma harga awal, dan freelancer biasanya bisa kerjakan lebih murah." (P001) · "Pesanan saya masih lewat WhatsApp dan dicatat manual, tapi Rp10 juta di depan itu mahal kalau aplikasi siap pakai cuma Rp300 ribuan sebulan. Saya coba yang murah dulu sebelum bayar sistem custom." (P002) |
-| habit | 3 | "Spreadsheet dan WhatsApp sudah cukup buat saya, dan staf saya sudah terbiasa. Saya tidak akan bayar DP untuk sistem baru tanpa ada kejadian besar yang memaksa." (P004) · "Spreadsheet saya sudah cukup buat usaha sekarang, jadi tidak ada alasan mendesak. Rp10 juta itu hampir sepersepuluh penghasilan setahun saya, dan freelancer biasanya bisa lebih murah." (P006) |
+| trust | 77 | "Rp10 juta itu hampir seperempat penghasilan saya setahun lebih sedikit, dan mereka belum punya satu pun klien proyek custom. Saya belum tahu pasti sistem mana yang saya butuhkan, jadi saya tidak mau jadi yang pertama dicoba." (P001) · "Saya minta bukti dulu, dan mereka sendiri bilang belum ada klien proyek custom. Getruzz dan Systemma produk mereka sendiri, jadi tidak ada orang lain yang bisa saya tanya." (P002) |
+| price | 13 | "Rp10 juta itu sudah lebih dari sebulan penghasilan saya, padahal pesanan WhatsApp masih bisa saya catat di buku. Konsultasi gratisnya boleh dicoba, tapi saya tidak akan langsung bayar proyek." (P015) · "Aplikasi siap pakai cuma Rp300 ribuan per bulan, jadi Rp10 juta di depan terasa mahal buat saya. Saya juga biasanya tanya sesama pengusaha dulu, dan perusahaan ini belum punya klien proyek custom." (P016) |
+| habit | 9 | "Saya sudah jalan pakai WhatsApp dan buku catatan, dan staf saya nyaman dengan itu. Mulai Rp10 juta itu hampir sebulan penuh penghasilan saya, padahal belum ada klien custom yang bisa saya tanya." (P026) · "Spreadsheet dan WhatsApp sudah cukup buat saya, dan Rp10 juta itu hampir sepersepuluh penghasilan setahun saya. Freelancer biasanya bisa kerjakan lebih murah." (P029) |
+| need | 1 | "Rp10 juta itu hampir sepersepuluh penghasilan setahun saya, padahal WhatsApp dan buku catatan masih jalan. Saya juga belum tahu sistem mana yang benar-benar saya butuhkan, dan perusahaannya belum punya klien proyek custom." (P004) |
 
 ## Why they buy
 
@@ -47,17 +48,17 @@ These are simulated buyers, not customers. Use this to find objections and weak 
 
 ## What would flip a no
 
-- Harga tetap tertulis untuk rekap penjualan dan kas saja, di bawah penawaran freelancer, plus contoh klien nyata atau demo yang bisa saya coba sebelum bayar DP.
-- Contoh sistem yang sudah jalan di usaha sejenis saya, demo untuk alur pesanan WhatsApp saya, dan harga jelas di bawah Rp10 juta atau bisa dicicil dengan garansi uang kembali kalau tidak cocok.
-- Rekomendasi dari sesama pemilik usaha yang sudah pakai, kepastian tertulis bahwa data dan kode jadi milik saya, dan pembayaran bertahap setelah ada hasil, bukan DP di depan.
-- Contoh klien nyata yang bisnisnya mirip saya, demo yang bisa dicoba staf saya, dan DP yang kecil atau bisa dikembalikan kalau hasil tahap awal tidak cocok.
-- Konsultasi awal gratis atau berbayar kecil dulu untuk menentukan kebutuhan, ditambah contoh klien UMKM sejenis yang bisa saya tanyai langsung, dan DP bisa dikembalikan kalau tidak cocok.
-- Harga jauh di bawah Rp10 juta untuk satu modul kecil, contoh sistem yang bisa saya coba dulu, dan DP kecil dengan jaminan uang kembali kalau tidak cocok.
-- Dua atau tiga klien nyata yang bisa saya hubungi, plus penawaran tertulis dengan harga tetap dan DP yang bisa dikembalikan kalau hasilnya tidak sesuai.
-- Demo langsung yang berjalan dan 2-3 klien nyata yang bisa saya hubungi, plus DP kecil atau pembayaran bertahap per milestone.
-- Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan untuk bisnis seperti punya saya, dan DP kecil atau bisa dikembalikan.
-- Dua atau tiga klien nyata di usaha seperti saya yang bisa saya hubungi langsung, plus DP kecil dan pembayaran bertahap per tahap selesai.
-- Referensi klien nyata yang bisa saya hubungi, demo langsung produk Getruzz atau Systemma, kontrak tertulis dengan termin bertahap per hasil, dan DP kecil yang bisa dikembalikan.
-- Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan dan DP kecil dengan pembayaran bertahap sesuai hasil.
+- Ada pemilik usaha seperti saya yang sudah pakai dan mau saya telepon, plus harga awal yang jauh lebih kecil untuk satu bagian saja supaya saya bisa coba dulu.
+- Satu klien nyata di bisnis sejenis yang mau saya telepon, atau demo sistem order yang berjalan dengan data toko seperti punya saya.
+- Satu klien nyata di usaha sejenis yang mau saya hubungi, atau demo sistem order berjalan dengan data contoh toko seperti punya saya.
+- Contoh nyata usaha seperti saya yang sudah pakai dan hemat waktu, plus paket awal yang jauh lebih murah (di bawah Rp3 juta) untuk dicoba dulu.
+- Ada pemilik usaha seperti saya yang sudah pakai dan mau saya telepon, harga awal yang jauh lebih kecil, dan biaya dukungan bulanan setelah 30 hari yang tertulis jelas.
+- Ada teman atau sesama pengusaha yang sudah pakai jasa mereka dan merekomendasikannya, atau harga awal sistem order di bawah Rp5 juta.
+- Demo sistem order WhatsApp yang berjalan untuk usaha kecil seperti saya, atau satu klien nyata yang mau saya telepon, plus harga awal yang jauh lebih kecil.
+- Satu klien nyata di bidang usaha seperti saya yang mau saya telepon, ditambah demo sistem order WhatsApp dengan data contoh punya saya.
+- Satu klien nyata di usaha seperti saya yang mau saya telepon, plus demo sistem order jalan dengan data contoh dan paket awal kecil yang jelas hasilnya sebelum komit ke proyek penuh.
+- Ada pemilik usaha seperti saya yang sudah memakai jasa mereka dan bisa saya hubungi, plus dukungan perbaikan bulanan dengan biaya tetap yang jelas setelah 30 hari.
+- Ada sesama pemilik usaha yang saya kenal dan percaya, yang sudah pakai dan bisa cerita langsung, plus harga tetap tertulis yang jelas untuk sistem order saya.
+- Rekomendasi dari sesama pengusaha yang sudah pernah memakai jasa mereka, atau kesempatan melihat sistem berjalan di usaha yang mirip dengan saya.
 
-20 buyers gave all four price answers. Run founder-pricing's van_westendorp.py on the answers folder.
+100 buyers gave all four price answers. Run founder-pricing's van_westendorp.py on the answers folder.

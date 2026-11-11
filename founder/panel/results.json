@@ -1,102 +1,90 @@
 {
  "business": "N⁻¹ Labs, jasa pembuatan sistem bisnis custom dari Semarang",
- "seed": 861177,
- "dealt": 20,
- "answered": 20,
+ "seed": 635786,
+ "dealt": 100,
+ "answered": 100,
  "skipped": [],
  "buys": 0,
- "passes": 20,
+ "passes": 100,
  "buy_rate": 0.0,
  "by_segment": [
   [
-   "Pemilik UMKM menengah",
-   8,
+   "Pemilik usaha mikro dan kecil",
+   40,
    0.0
   ],
   [
-   "Pemilik usaha mikro dan kecil",
-   8,
+   "Pemilik UMKM menengah",
+   40,
    0.0
   ],
   [
    "Pemilik usaha berkembang, beberapa cabang atau tim",
-   4,
+   20,
    0.0
   ]
  ],
  "by_behaviour": [
   [
    "Membandingkan harga",
-   3,
-   0.0
-  ],
-  [
-   "Pesanan lewat WhatsApp",
-   3,
-   0.0
-  ],
-  [
-   "Ikut rekomendasi kenalan",
-   2,
-   0.0
-  ],
-  [
-   "Setia pada spreadsheet",
-   4,
+   15,
    0.0
   ],
   [
    "Minta bukti dulu",
-   3,
+   14,
+   0.0
+  ],
+  [
+   "Pesanan lewat WhatsApp",
+   18,
+   0.0
+  ],
+  [
+   "Ikut rekomendasi kenalan",
+   10,
    0.0
   ],
   [
    "Pengguna aplikasi siap pakai",
-   3,
+   13,
    0.0
   ],
   [
    "Sibuk dan serahkan ke orang lain",
-   2,
+   12,
+   0.0
+  ],
+  [
+   "Setia pada spreadsheet",
+   18,
    0.0
   ]
  ],
  "by_income": [
   [
-   "$130,903,000 to $458,060,000",
-   7,
+   "under $154,032,000",
+   33,
    0.0
   ],
   [
-   "$458,060,000 and up",
-   7,
+   "$154,032,000 to $414,298,000",
+   33,
    0.0
   ],
   [
-   "under $130,903,000",
-   6,
+   "$414,298,000 and up",
+   34,
    0.0
   ]
  ],
  "why_not": [
   [
    "trust",
-   12,
+   77,
    [
-    "Rp10 juta itu lebih dari sebulan penghasilan saya, dan perusahaannya baru berdiri 2026. Saya belum kenal siapa pun yang pernah pakai jasa mereka, jadi saya tidak berani bayar DP.",
-    "Saya belum tahu persis butuh sistem yang mana, dan disuruh bayar DP dulu sebelum konsultasi itu terbalik buat saya. Perusahaannya baru berdiri 2026, jadi saya tidak mau jadi yang pertama dicoba."
-   ],
-   [
-    "P003",
-    "P005"
-   ]
-  ],
-  [
-   "price",
-   5,
-   [
-    "Saya biasa minta penawaran dari beberapa vendor dan ambil yang paling murah. Rp10 juta itu cuma harga awal, dan freelancer biasanya bisa kerjakan lebih murah.",
-    "Pesanan saya masih lewat WhatsApp dan dicatat manual, tapi Rp10 juta di depan itu mahal kalau aplikasi siap pakai cuma Rp300 ribuan sebulan. Saya coba yang murah dulu sebelum bayar sistem custom."
+    "Rp10 juta itu hampir seperempat penghasilan saya setahun lebih sedikit, dan mereka belum punya satu pun klien proyek custom. Saya belum tahu pasti sistem mana yang saya butuhkan, jadi saya tidak mau jadi yang pertama dicoba.",
+    "Saya minta bukti dulu, dan mereka sendiri bilang belum ada klien proyek custom. Getruzz dan Systemma produk mereka sendiri, jadi tidak ada orang lain yang bisa saya tanya."
    ],
    [
     "P001",
@@ -104,41 +92,143 @@
    ]
   ],
   [
-   "habit",
-   3,
+   "price",
+   13,
    [
-    "Spreadsheet dan WhatsApp sudah cukup buat saya, dan staf saya sudah terbiasa. Saya tidak akan bayar DP untuk sistem baru tanpa ada kejadian besar yang memaksa.",
-    "Spreadsheet saya sudah cukup buat usaha sekarang, jadi tidak ada alasan mendesak. Rp10 juta itu hampir sepersepuluh penghasilan setahun saya, dan freelancer biasanya bisa lebih murah."
+    "Rp10 juta itu sudah lebih dari sebulan penghasilan saya, padahal pesanan WhatsApp masih bisa saya catat di buku. Konsultasi gratisnya boleh dicoba, tapi saya tidak akan langsung bayar proyek.",
+    "Aplikasi siap pakai cuma Rp300 ribuan per bulan, jadi Rp10 juta di depan terasa mahal buat saya. Saya juga biasanya tanya sesama pengusaha dulu, dan perusahaan ini belum punya klien proyek custom."
    ],
    [
-    "P004",
-    "P006"
+    "P015",
+    "P016"
+   ]
+  ],
+  [
+   "habit",
+   9,
+   [
+    "Saya sudah jalan pakai WhatsApp dan buku catatan, dan staf saya nyaman dengan itu. Mulai Rp10 juta itu hampir sebulan penuh penghasilan saya, padahal belum ada klien custom yang bisa saya tanya.",
+    "Spreadsheet dan WhatsApp sudah cukup buat saya, dan Rp10 juta itu hampir sepersepuluh penghasilan setahun saya. Freelancer biasanya bisa kerjakan lebih murah."
+   ],
+   [
+    "P026",
+    "P029"
+   ]
+  ],
+  [
+   "need",
+   1,
+   [
+    "Rp10 juta itu hampir sepersepuluh penghasilan setahun saya, padahal WhatsApp dan buku catatan masih jalan. Saya juga belum tahu sistem mana yang benar-benar saya butuhkan, dan perusahaannya belum punya klien proyek custom."
+   ],
+   [
+    "P004"
    ]
   ]
  ],
  "why_yes": [],
  "flip": [
-  "Harga tetap tertulis untuk rekap penjualan dan kas saja, di bawah penawaran freelancer, plus contoh klien nyata atau demo yang bisa saya coba sebelum bayar DP.",
-  "Contoh sistem yang sudah jalan di usaha sejenis saya, demo untuk alur pesanan WhatsApp saya, dan harga jelas di bawah Rp10 juta atau bisa dicicil dengan garansi uang kembali kalau tidak cocok.",
-  "Rekomendasi dari sesama pemilik usaha yang sudah pakai, kepastian tertulis bahwa data dan kode jadi milik saya, dan pembayaran bertahap setelah ada hasil, bukan DP di depan.",
-  "Contoh klien nyata yang bisnisnya mirip saya, demo yang bisa dicoba staf saya, dan DP yang kecil atau bisa dikembalikan kalau hasil tahap awal tidak cocok.",
-  "Konsultasi awal gratis atau berbayar kecil dulu untuk menentukan kebutuhan, ditambah contoh klien UMKM sejenis yang bisa saya tanyai langsung, dan DP bisa dikembalikan kalau tidak cocok.",
-  "Harga jauh di bawah Rp10 juta untuk satu modul kecil, contoh sistem yang bisa saya coba dulu, dan DP kecil dengan jaminan uang kembali kalau tidak cocok.",
-  "Dua atau tiga klien nyata yang bisa saya hubungi, plus penawaran tertulis dengan harga tetap dan DP yang bisa dikembalikan kalau hasilnya tidak sesuai.",
-  "Demo langsung yang berjalan dan 2-3 klien nyata yang bisa saya hubungi, plus DP kecil atau pembayaran bertahap per milestone.",
-  "Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan untuk bisnis seperti punya saya, dan DP kecil atau bisa dikembalikan.",
-  "Dua atau tiga klien nyata di usaha seperti saya yang bisa saya hubungi langsung, plus DP kecil dan pembayaran bertahap per tahap selesai.",
-  "Referensi klien nyata yang bisa saya hubungi, demo langsung produk Getruzz atau Systemma, kontrak tertulis dengan termin bertahap per hasil, dan DP kecil yang bisa dikembalikan.",
-  "Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan dan DP kecil dengan pembayaran bertahap sesuai hasil.",
-  "Demo yang berjalan dari klien nyata di bidang usaha seperti saya, plus referensi yang bisa saya telepon, dan DP kecil yang jelas bisa dikembalikan jika hasil tahap awal tidak cocok.",
-  "Konsultasi gratis atau murah dulu untuk menentukan sistem yang saya perlukan, plus referensi dari pengusaha lain yang sudah pakai jasa mereka, dan harga di bawah Rp5 juta atau bisa dicicil.",
-  "Demo langsung sistem Getruzz atau Systemma yang sudah jalan, referensi pemilik usaha lain yang bisa saya telepon, dan DP kecil dengan pembayaran bertahap per tahap selesai atau garansi uang kembali.",
-  "Paket kecil di bawah Rp3 juta yang menggantikan spreadsheet stok saya, demo yang bisa dicoba dulu, atau pembayaran dicicil setelah sistem jalan.",
-  "Satu atau dua klien usaha sejenis yang bisa saya telepon langsung, plus DP kecil yang bisa dikembalikan dan tim yang mengurus semuanya tanpa saya harus banyak menjelaskan.",
-  "Rekomendasi langsung dari pengusaha yang saya kenal, plus paket kecil khusus rekap kas dengan harga di bawah Rp3 juta dan DP yang bisa dikembalikan.",
-  "Harga jauh lebih murah atau bisa dicicil, ada contoh toko seperti punya saya yang sudah pakai, dan ada masa coba sebelum bayar penuh.",
-  "Contoh klien nyata di usaha seukuran saya, jaminan data dan kode jadi milik saya, dan pembayaran bertahap atau DP kecil yang bisa dikembalikan kalau hasilnya tidak cocok."
+  "Ada pemilik usaha seperti saya yang sudah pakai dan mau saya telepon, plus harga awal yang jauh lebih kecil untuk satu bagian saja supaya saya bisa coba dulu.",
+  "Satu klien nyata di bisnis sejenis yang mau saya telepon, atau demo sistem order yang berjalan dengan data toko seperti punya saya.",
+  "Satu klien nyata di usaha sejenis yang mau saya hubungi, atau demo sistem order berjalan dengan data contoh toko seperti punya saya.",
+  "Contoh nyata usaha seperti saya yang sudah pakai dan hemat waktu, plus paket awal yang jauh lebih murah (di bawah Rp3 juta) untuk dicoba dulu.",
+  "Ada pemilik usaha seperti saya yang sudah pakai dan mau saya telepon, harga awal yang jauh lebih kecil, dan biaya dukungan bulanan setelah 30 hari yang tertulis jelas.",
+  "Ada teman atau sesama pengusaha yang sudah pakai jasa mereka dan merekomendasikannya, atau harga awal sistem order di bawah Rp5 juta.",
+  "Demo sistem order WhatsApp yang berjalan untuk usaha kecil seperti saya, atau satu klien nyata yang mau saya telepon, plus harga awal yang jauh lebih kecil.",
+  "Satu klien nyata di bidang usaha seperti saya yang mau saya telepon, ditambah demo sistem order WhatsApp dengan data contoh punya saya.",
+  "Satu klien nyata di usaha seperti saya yang mau saya telepon, plus demo sistem order jalan dengan data contoh dan paket awal kecil yang jelas hasilnya sebelum komit ke proyek penuh.",
+  "Ada pemilik usaha seperti saya yang sudah memakai jasa mereka dan bisa saya hubungi, plus dukungan perbaikan bulanan dengan biaya tetap yang jelas setelah 30 hari.",
+  "Ada sesama pemilik usaha yang saya kenal dan percaya, yang sudah pakai dan bisa cerita langsung, plus harga tetap tertulis yang jelas untuk sistem order saya.",
+  "Rekomendasi dari sesama pengusaha yang sudah pernah memakai jasa mereka, atau kesempatan melihat sistem berjalan di usaha yang mirip dengan saya.",
+  "Demo sistem order yang berjalan untuk usaha sekelas saya, referensi dari pemilik usaha yang bisa saya hubungi langsung, dan harga mulai di bawah Rp5 juta untuk tahap awal.",
+  "Satu klien nyata di usaha sejenis yang mau saya telepon, atau demo berjalan memakai alur pesanan WhatsApp yang mirip dengan usaha saya.",
+  "Harga awal jauh lebih kecil (sekitar Rp3-5 juta) untuk sistem order saja, atau ada pemilik usaha seperti saya yang sudah pakai dan mau cerita hasilnya.",
+  "Ada pengusaha yang saya kenal sudah pakai dan puas, atau demo sistem order yang cocok dengan alur WhatsApp saya, dengan harga yang jelas di bawah Rp10 juta untuk tahap awal.",
+  "Satu klien UMKM sungguhan yang bisa saya telepon, plus demo sistem order dengan data contoh saya sendiri dan hak kode serta data tertulis di perjanjian.",
+  "Ada pengusaha yang saya kenal atau teman sesama pengusaha yang sudah pakai dan mau cerita langsung, atau bisa lihat sistem pesanan yang berjalan di usaha sejenis saya.",
+  "Contoh nyata usaha seperti saya yang sudah pakai dan hemat waktu, atau tahap awal kecil di bawah Rp5 juta yang bisa saya coba dulu sebelum lanjut.",
+  "Teman sesama pengusaha yang saya kenal sudah pakai jasa mereka dan puas, atau ada klien nyata yang mau saya tanyai langsung.",
+  "Referensi dari pengusaha lain yang bisa saya telepon dan tanya langsung, atau satu proyek pertama dengan harga lebih murah untuk pelanggan awal.",
+  "Ada satu pemilik usaha seperti saya yang mau saya telepon dan bilang sistemnya jalan, atau mereka mau bikin versi kecil untuk satu alur pesanan WhatsApp dengan harga di bawah Rp10 juta supaya staf saya bisa coba dulu.",
+  "Satu klien nyata di bisnis seperti saya yang bisa saya telepon, plus konsultasi gratis yang menunjukkan kenapa selisih kas saya bisa selesai, dan penawaran tertulis yang lebih murah dari vendor lain.",
+  "Harga di bawah Rp3 juta atau bisa dicicil bulanan kecil, plus contoh klien nyata yang usahanya sebesar aku.",
+  "Satu klien nyata di usaha seperti saya yang mau saya telepon, atau tahap awal kecil berbayar murah yang hasilnya bisa saya lihat dulu sebelum komit ke proyek penuh.",
+  "Harga tetap di bawah Rp5 juta untuk sistem order paling dasar, atau ada pemilik usaha seperti saya yang sudah pakai dan mau saya telepon.",
+  "Rekomendasi dari sesama pengusaha yang sudah pakai jasa mereka, atau satu klien nyata yang bisa saya telepon dan lihat sistemnya berjalan.",
+  "Satu atau dua klien proyek custom yang bisa saya telepon langsung, atau tahap awal kecil berbayar murah yang bisa saya coba dulu.",
+  "Satu klien nyata seperti usaha saya yang mau saya telepon, dan harga awal jauh di bawah Rp10 juta dengan fitur yang jelas hasilnya.",
+  "Rekomendasi langsung dari sesama pemilik usaha yang saya kenal dan pernah memakai jasa mereka, atau contoh sistem order yang bisa saya coba sendiri dulu.",
+  "Satu klien nyata seperti usaha saya yang mau saya telepon, plus harga tetap yang jelas di bawah Rp10 juta untuk masalah rekap penjualan dan selisih kas saja.",
+  "Ada pengusaha yang saya kenal yang sudah memakai jasa mereka dan puas, plus dukungan setelah 30 hari dengan biaya tetap yang tertulis jelas.",
+  "Satu klien nyata di bidang usaha seperti saya yang mau saya telepon, ditambah penawaran tertulis yang lebih murah atau setara dari vendor lain, dan konsultasi gratis yang membantu saya menentukan sistem mana yang perlu didahulukan.",
+  "Harga paket awal di bawah Rp3 juta, atau bisa dicicil kecil per bulan, plus satu contoh nyata usaha seperti punya saya yang sudah memakainya.",
+  "Satu klien usaha seperti saya yang mau saya telepon langsung dan bilang proyek custom-nya selesai tepat waktu, atau tahap pertama kecil berbayar murah yang hasilnya bisa saya lihat dulu.",
+  "Satu atau dua pemilik usaha sejenis yang sudah memakai sistem order mereka dan mau saya telepon, ditambah demo sistem yang menunjukkan selisih penjualan dan kas bisa tertutup.",
+  "Satu klien nyata yang bisa saya telepon, atau tahap awal kecil berbayar murah yang hasilnya bisa saya coba sendiri dengan data pesanan saya sebelum komit ke proyek penuh.",
+  "Contoh klien nyata di usaha seperti saya yang pesanannya lewat WhatsApp, atau harga awal yang jauh lebih rendah untuk tahap pertama.",
+  "Referensi dari satu klien nyata dengan alur order mirip saya yang bisa saya telepon, atau pilot kecil berbayar murah yang berjalan paralel dengan spreadsheet saya tanpa mengganggu operasional.",
+  "Satu klien nyata di usaha sejenis yang bisa saya telepon, atau pilot tahap awal berharga jauh di bawah Rp10 juta dengan DP yang benar-benar bisa kembali.",
+  "Satu klien usaha seperti saya yang mau ditelepon dan cerita sistemnya jalan, atau pilot kecil berbayar murah untuk satu alur pesanan WhatsApp dulu.",
+  "Harga jauh di bawah Rp10 juta untuk sistem order dasar, atau satu klien usaha kecil nyata yang bisa saya tanya langsung.",
+  "Satu klien nyata di usaha seperti saya yang bisa saya telepon, plus demo sistem order dengan alur WhatsApp saya sendiri sebelum saya setuju penawaran.",
+  "Harga yang setara freelancer, sekitar Rp3-5 juta untuk sistem order dasar, atau satu klien nyata seperti saya yang bisa saya tanya langsung.",
+  "Kejadian besar di usaha saya, misalnya pesanan WhatsApp tercecer dan rugi besar, atau satu pemilik usaha seperti saya yang sudah pakai sistem mereka dan bisa saya hubungi langsung.",
+  "Satu klien nyata yang bisa saya telepon, dengan sistem order yang sudah jalan, atau harga pilot di bawah Rp10 juta dengan DP yang benar-benar bisa kembali.",
+  "Contoh sistem order yang sudah jalan di usaha seperti punya saya, dan ada tahap awal kecil dengan harga jauh di bawah Rp10 juta yang bisa dicoba staf lebih dulu.",
+  "Satu klien usaha kecil sungguhan yang bisa saya telepon dan ceritanya sama dengan saya, plus harga tahap awal yang jauh lebih kecil untuk dicoba dulu.",
+  "Rekomendasi dari sesama pemilik usaha yang sudah pakai jasa mereka, plus harga awal di bawah Rp5 juta untuk sistem order yang kecil.",
+  "Ada pengusaha sejenis yang saya kenal dan mau cerita langsung bahwa sistem order dari mereka jalan baik, atau demo sistem order WhatsApp yang bisa saya coba dengan data saya sendiri sebelum bayar.",
+  "Referensi dari pengusaha yang saya kenal yang sudah memakai jasa mereka, atau satu klien nyata yang mau saya hubungi langsung.",
+  "Ada pengusaha yang saya kenal dan percaya, dengan usaha seperti saya, bilang sistemnya jalan dan mereka yang urus semuanya. Harga awal yang jauh lebih rendah juga membantu.",
+  "Satu klien nyata di bisnis seperti saya yang bisa saya telepon, plus demo sistem order yang jalan dengan data contoh saya.",
+  "Satu atau dua pengusaha yang saya kenal sudah pakai jasanya dan mau bercerita langsung ke saya, plus penjelasan tertulis soal keamanan data dan siapa yang pegang server.",
+  "Kenalan sesama pemilik usaha yang sudah pakai jasa mereka dan cerita sistemnya benar-benar mengurangi selisih kas, atau demo di data pesanan saya sendiri.",
+  "Satu atau dua pemilik usaha sejenis yang sudah memakai sistemnya dan mau saya telepon, atau pilot kecil berbayar murah dulu sebelum proyek penuh.",
+  "Demo yang berjalan untuk usaha sejenis punya saya atau referensi dari satu pemilik usaha kecil yang bisa saya hubungi, plus kepastian biaya dukungan setelah 30 hari.",
+  "Satu atau dua klien bisnis nyata yang mau saya telepon, atau demo sistem order untuk usaha seperti saya, plus penanggung jawab proyek yang mengurus semuanya tanpa saya harus banyak menjelaskan.",
+  "Ada klien usaha sejenis saya yang sudah memakai sistem buatan mereka dan mau ditelepon, plus dukungan sesudah 30 hari dengan biaya bulanan yang jelas tertulis.",
+  "Satu klien nyata di usaha seperti saya yang bisa saya telepon, plus kontrak dukungan berkelanjutan dengan biaya bulanan yang tertulis jelas setelah 30 hari. Sistem order saja tidak cukup, saya butuh yang menyelesaikan selisih kas.",
+  "Teman atau sesama pengusaha yang saya kenal sudah pakai jasa mereka dan puas, atau ada paket kecil di bawah Rp5 juta yang bisa saya coba dulu.",
+  "Satu atau dua klien nyata yang mau saya hubungi langsung, atau demo berjalan dari sistem order yang mirip alur bisnis saya, sebelum saya menyetujui penawaran.",
+  "Kontrak dukungan berkelanjutan dengan biaya bulanan yang tertulis jelas, plus minimal satu klien usaha kecil yang bisa saya telepon langsung.",
+  "Satu klien nyata dengan usaha mirip saya yang bisa saya telepon, plus kontrak dukungan berbayar setelah 30 hari dengan harga dan waktu respons tertulis.",
+  "Ada satu pengusaha sejenis yang bisa saya telepon dan bilang sistemnya jalan, atau tahap awal dengan harga jauh lebih murah yang bisa saya coba sebagai percobaan sebelum komit ke proyek penuh.",
+  "Demo sistem order yang berjalan dengan alur seperti usaha saya, atau satu klien usaha kecil yang mau saya hubungi langsung, plus harga tahap pertama jauh di bawah Rp10 juta.",
+  "Contoh nyata usaha kecil seperti saya yang selisih kasnya selesai setelah pakai sistem mereka, plus harga tetap yang jelas di bawah Rp5 juta untuk tahap awal.",
+  "Satu atau dua pemilik usaha sejenis saya yang sudah dikerjakan dan mau saya telepon, atau tahap awal kecil berbayar murah (di bawah Rp3 juta) untuk satu alur pesanan WhatsApp saya.",
+  "Satu atau dua klien UMKM sejenis yang bisa saya telepon langsung dan cerita hasilnya, atau pilot kecil berbayar murah untuk satu alur pesanan sebelum komitmen proyek penuh.",
+  "Satu klien nyata di usaha seperti saya yang mau saya telepon, plus harga dukungan bulanan setelah 30 hari yang tertulis jelas.",
+  "Contoh nyata usaha seperti saya yang sudah pakai sistem order mereka, atau tahap awal kecil berharga murah yang bisa saya lihat hasilnya dulu sebelum lanjut.",
+  "Demo yang berjalan untuk usaha sebesar punya saya, atau satu klien usaha kecil yang mau saya telepon, ditambah harga awal di bawah Rp5 juta untuk modul order saja.",
+  "Satu atau dua klien UMKM sejenis yang bisa saya hubungi langsung, dan harga awal yang jauh lebih rendah, sekitar Rp3-5 juta untuk sistem order saja.",
+  "Ada klien nyata di usaha sejenis (distributor atau banyak cabang) yang bisa saya telepon, dan konsultasi awal yang jelas memetakan alur pesanan WhatsApp saya sebelum ada angka harga.",
+  "Satu klien nyata dengan beberapa cabang yang bisa saya telepon, plus demo yang membaca data spreadsheet saya yang sekarang tanpa harus input ulang, dan tim saya boleh mencoba dulu.",
+  "Satu klien usaha kecil seperti saya yang bisa saya telepon dan sudah pakai sistemnya, plus konsultasi gratis yang jelas menunjukkan sistem apa yang cukup untuk saya dengan harga tetap di bawah Rp10 juta.",
+  "Satu pemilik usaha sekecil saya yang sudah pakai jasa mereka dan mau saya telepon, plus harga tetap tahap pertama di bawah Rp5 juta.",
+  "Harga jauh di bawah Rp10 juta untuk sistem order saja, atau ada pemilik usaha seperti saya yang sudah pakai dan mau saya hubungi langsung.",
+  "Demo yang berjalan untuk alur seperti usaha saya (rekap penjualan cocok dengan kas), minimal satu klien proyek custom yang bisa saya telepon, dan dukungan setelah 30 hari dengan biaya tertulis.",
+  "Satu klien nyata di bidang usaha seperti saya yang mau saya telepon langsung, atau demo sistem order yang berjalan untuk usaha kecil, plus harga tetap tertulis di bawah Rp10 juta untuk tahap pertama.",
+  "Contoh klien nyata dengan usaha seperti saya, dan sistem yang langsung menutup selisih penjualan dengan kas di harga jauh di bawah Rp10 juta.",
+  "Rekomendasi dari sesama pemilik usaha yang saya kenal dan sudah memakai jasanya, atau harga awal jauh di bawah Rp10 juta untuk rekap penjualan dan kas saja.",
+  "Ada pemilik usaha sejenis yang sudah memakai dan mau saya hubungi, plus harga paket awal yang jauh lebih kecil dan jelas, misalnya di bawah Rp3 juta.",
+  "Satu atau dua klien UMKM sebesar saya yang mau saya telepon, ditambah demo sistem order berjalan dengan data contoh yang mirip usaha saya.",
+  "Satu klien nyata dengan skala mirip saya yang bisa saya telepon, plus paket dukungan berbayar bulanan dengan harga dan waktu respons tertulis, dan sistemnya juga mencakup rekonsiliasi kas.",
+  "Ada klien nyata di usaha seperti saya yang sudah jalan, dan harga jelas di bawah Rp5 juta dengan mereka yang mengurus semuanya tanpa saya banyak terlibat.",
+  "Contoh klien nyata di usaha seukuran saya yang sudah berjalan, plus harga tetap yang lebih kecil untuk tahap pertama sehingga saya bisa coba tanpa risiko besar.",
+  "Satu atau dua klien proyek custom nyata yang bisa saya hubungi langsung, atau tahap awal kecil berbayar murah dengan hasil yang bisa saya lihat sebelum komit ke proyek penuh.",
+  "Satu klien nyata seperti usaha saya yang mau saya telepon langsung, atau tahap awal kecil berbayar murah yang hasilnya bisa saya lihat dulu sebelum komitmen proyek penuh.",
+  "Satu klien nyata di usaha sejenis yang bisa saya telepon, plus paket awal sistem order yang jauh lebih murah (di bawah Rp5 juta) supaya saya bisa coba tanpa risiko besar.",
+  "Satu klien nyata dengan usaha seperti saya yang bisa saya telepon, plus harga dukungan bulanan sesudah 30 hari yang tertulis jelas di penawaran.",
+  "Harga awal di bawah Rp3 juta atau bisa dicicil per bulan, plus contoh klien nyata di usaha seperti saya yang hemat waktu dibanding aplikasi Rp300 ribuan.",
+  "Satu atau dua klien proyek custom nyata yang mau saya hubungi langsung, atau demo sistem order yang berjalan dengan alur WhatsApp seperti punya saya.",
+  "Ada klien nyata di usaha seperti punya saya yang mau cerita langsung, plus contoh sistem order berjalan dengan harga di bawah Rp5 juta dan boleh dicoba dulu dengan data saya sendiri.",
+  "Rekomendasi langsung dari sesama pemilik usaha yang sudah pakai jasa mereka, atau kontak klien nyata yang bisa saya telepon.",
+  "Ada pemilik usaha seperti saya yang bisa saya hubungi dan bilang proyeknya beres tanpa saya banyak terlibat, atau mereka yang datang ke toko, lihat cara saya mencatat lewat WhatsApp dan buku, lalu menunjukkan satu alur order yang pasti cocok.",
+  "Referensi dari pemilik usaha sejenis yang sudah memakai sistem mereka, atau contoh sistem order nyata yang bisa saya lihat berjalan dengan data usaha seperti saya, dengan mereka yang menggali kebutuhan sehingga saya tidak perlu repot menjelaskan.",
+  "Referensi dari satu usaha sejenis yang sudah pakai sistem custom mereka, atau demo sistem order WhatsApp yang bisa saya coba dengan alur pesanan saya sendiri sebelum menyetujui penawaran.",
+  "Konsultasi gratis yang benar-benar menunjukkan masalah selisih kas saya bisa selesai dengan sistem ini, plus satu klien nyata seperti usaha saya yang mau saya telepon dan tanya.",
+  "Satu klien usaha kecil nyata yang mau saya telepon, atau demo sistem order yang berjalan dengan data seperti punya saya, lalu proyek pertama dengan harga lebih rendah."
  ],
  "purchases_first_month_per_buyer": null,
- "price_answers": 20
+ "price_answers": 100
 }

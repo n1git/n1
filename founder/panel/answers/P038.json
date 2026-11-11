@@ -1,0 +1,13 @@
+{
+  "id": "P038",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Rp10 juta itu mahal kalau aplikasi siap pakai cuma Rp300 ribuan per bulan, dan WhatsApp plus buku catatan saya masih jalan. Perusahaannya baru berdiri 2026 dan belum punya klien custom, jadi saya tidak mau jadi yang pertama.",
+  "objection": "Rp10 juta mahal dibanding aplikasi siap pakai yang Rp300 ribuan per bulan, dan mereka belum pernah mengerjakan proyek custom untuk klien.",
+  "would_change_my_mind": "Contoh klien nyata di usaha seperti saya yang pesanannya lewat WhatsApp, atau harga awal yang jauh lebih rendah untuk tahap pertama.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 12000000
+}

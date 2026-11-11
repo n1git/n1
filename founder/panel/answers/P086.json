@@ -1,0 +1,13 @@
+{
+  "id": "P086",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Rp10 juta mahal buat saya, apalagi ada aplikasi siap pakai Rp300 ribuan sebulan. Perusahaannya baru berdiri dan belum punya klien proyek custom, jadi saya tidak mau jadi kelinci percobaan.",
+  "objection": "Rp10 juta di depan itu mahal dibanding aplikasi jadi, dan mereka belum pernah mengerjakan proyek custom untuk klien. Saya juga tidak punya waktu menjelaskan kebutuhan panjang lebar.",
+  "would_change_my_mind": "Ada klien nyata di usaha seperti saya yang sudah jalan, dan harga jelas di bawah Rp5 juta dengan mereka yang mengurus semuanya tanpa saya banyak terlibat.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
+}

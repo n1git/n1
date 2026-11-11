@@ -1,0 +1,13 @@
+{
+  "id": "P076",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya sudah biasa pakai aplikasi kasir dan pembukuan bulanan yang murah, jadi bayar mulai Rp10 juta untuk sistem custom dari perusahaan yang belum punya klien proyek itu berat. Saya juga belum yakin sistem order yang mana yang saya butuhkan, takut salah beli.",
+  "objection": "Belum ada klien proyek custom sama sekali, dan saya belum tahu persis butuh sistem yang mana. Rp10 juta itu hampir sepersepuluh penghasilan setahun saya.",
+  "would_change_my_mind": "Satu klien usaha kecil seperti saya yang bisa saya telepon dan sudah pakai sistemnya, plus konsultasi gratis yang jelas menunjukkan sistem apa yang cukup untuk saya dengan harga tetap di bawah Rp10 juta.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 40000000
+}

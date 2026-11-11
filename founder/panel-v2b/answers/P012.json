@@ -1,0 +1,13 @@
+{
+  "id": "P012",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya sudah terbiasa pakai aplikasi kasir siap pakai yang bayarnya bulanan dan murah. Rp10 juta di depan untuk perusahaan yang baru berdiri 2026 itu besar, hampir 6% penghasilan setahun saya.",
+  "objection": "Perusahaan baru, belum ada klien yang bisa saya tanya, dan saya harus bayar DP dulu sebelum lihat hasilnya.",
+  "would_change_my_mind": "Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan dan DP kecil dengan pembayaran bertahap sesuai hasil.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
+}

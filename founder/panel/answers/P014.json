@@ -2,12 +2,12 @@
   "id": "P014",
   "buys": false,
   "purchases_first_month": 0,
-  "reason_code": "price",
-  "reason": "Rp10 juta itu lebih dari sebulan penghasilan saya, dan saya belum tahu sistem mana yang saya butuhkan. Perusahaannya baru berdiri 2026, jadi saya tidak mau bayar DP dulu ke orang yang belum saya kenal.",
-  "objection": "Saya takut salah beli. Belum jelas sistem apa yang cocok buat usaha saya, tapi sudah harus bayar DP lewat form sebelum ada konsultasi.",
-  "would_change_my_mind": "Konsultasi gratis atau murah dulu untuk menentukan sistem yang saya perlukan, plus referensi dari pengusaha lain yang sudah pakai jasa mereka, dan harga di bawah Rp5 juta atau bisa dicicil.",
-  "price_too_cheap": 1000000,
-  "price_cheap": 3000000,
-  "price_expensive": 6000000,
-  "price_too_expensive": 10000000
+  "reason_code": "trust",
+  "reason": "Saya minta bukti dulu, dan mereka sendiri bilang belum ada klien proyek custom. Getruzz dan Systemma produk mereka sendiri, bukan sesuatu yang dibuat untuk usaha seperti punya saya.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah. Ditambah vendor baru yang belum pernah mengerjakan sistem untuk klien lain, jadi saya yang jadi kelinci percobaan.",
+  "would_change_my_mind": "Satu klien nyata di usaha sejenis yang mau saya telepon, atau demo berjalan memakai alur pesanan WhatsApp yang mirip dengan usaha saya.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 7000000,
+  "price_expensive": 15000000,
+  "price_too_expensive": 30000000
 }

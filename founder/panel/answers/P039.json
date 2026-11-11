@@ -1,0 +1,13 @@
+{
+  "id": "P039",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya sudah nyaman dengan spreadsheet dan belum merasa ada kejadian besar yang memaksa ganti. Perusahaannya baru berdiri dan belum punya satu pun klien proyek custom, jadi saya tidak mau jadi kelinci percobaan untuk sistem yang menyentuh pesanan cabang-cabang saya.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli. Dan mereka belum pernah mengerjakan proyek custom untuk klien lain, jadi tidak ada bukti mereka bisa menyesuaikan dengan alur bisnis saya.",
+  "would_change_my_mind": "Referensi dari satu klien nyata dengan alur order mirip saya yang bisa saya telepon, atau pilot kecil berbayar murah yang berjalan paralel dengan spreadsheet saya tanpa mengganggu operasional.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 10000000,
+  "price_expensive": 35000000,
+  "price_too_expensive": 80000000
+}

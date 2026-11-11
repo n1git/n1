@@ -1,0 +1,13 @@
+{
+  "id": "P026",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Saya sudah jalan pakai WhatsApp dan buku catatan, dan staf saya nyaman dengan itu. Mulai Rp10 juta itu hampir sebulan penuh penghasilan saya, padahal belum ada klien custom yang bisa saya tanya.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah. Kalau sistemnya jadi tapi tidak dipakai, uang Rp10 juta hilang, dan mereka belum punya satu pun klien proyek custom.",
+  "would_change_my_mind": "Harga tetap di bawah Rp5 juta untuk sistem order paling dasar, atau ada pemilik usaha seperti saya yang sudah pakai dan mau saya telepon.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
+}

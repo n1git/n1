@@ -1,0 +1,13 @@
+{
+  "id": "P055",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasanya pilih vendor yang direkomendasikan sesama pengusaha, dan perusahaan ini baru berdiri, belum punya klien proyek custom. Dua produk mereka bukan sistem untuk usaha seperti punya saya.",
+  "objection": "Belum ada pengusaha lain yang bisa saya tanya soal hasilnya, dan staf saya sudah nyaman dengan buku dan spreadsheet, belum tentu mau pindah. Rp10 juta lebih dari harga yang saya keluarkan buat coba-coba.",
+  "would_change_my_mind": "Kenalan sesama pemilik usaha yang sudah pakai jasa mereka dan cerita sistemnya benar-benar mengurangi selisih kas, atau demo di data pesanan saya sendiri.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 12000000,
+  "price_too_expensive": 25000000
+}

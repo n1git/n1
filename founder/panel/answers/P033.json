@@ -1,0 +1,13 @@
+{
+  "id": "P033",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya belum yakin sistem apa yang sebenarnya saya butuhkan, dan perusahaannya baru berdiri 2026 tanpa satu pun klien proyek custom. Saya biasanya minta beberapa penawaran dan ambil yang paling murah yang masuk akal, jadi saya tidak akan langsung memilih vendor baru yang belum terbukti.",
+  "objection": "Takut salah beli. Saya belum tahu persis butuh sistem yang mana, dan mereka belum pernah mengerjakan proyek custom untuk klien lain.",
+  "would_change_my_mind": "Satu klien nyata di bidang usaha seperti saya yang mau saya telepon, ditambah penawaran tertulis yang lebih murah atau setara dari vendor lain, dan konsultasi gratis yang membantu saya menentukan sistem mana yang perlu didahulukan.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 25000000,
+  "price_too_expensive": 60000000
+}

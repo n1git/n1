@@ -3,11 +3,11 @@
   "buys": false,
   "purchases_first_month": 0,
   "reason_code": "trust",
-  "reason": "Perusahaannya baru berdiri 2026 dan saya tidak lihat satu pun klien lain atau demo yang berjalan. Saya tidak mau bayar DP ke vendor yang belum terbukti, apalagi freelancer bisa lebih murah.",
-  "objection": "Bayar DP dulu sebelum lihat bukti. Tidak ada klien referensi, cuma produk sendiri yang saya belum lihat jalan.",
-  "would_change_my_mind": "Demo langsung yang berjalan dan 2-3 klien nyata yang bisa saya hubungi, plus DP kecil atau pembayaran bertahap per milestone.",
+  "reason": "Saya sudah pernah coba aplikasi kasir siap pakai dan tahu biayanya. Perusahaan ini baru berdiri 2026 dan belum punya satu pun klien proyek custom, jadi saya tidak mau jadi yang pertama dipakai belajar untuk cabang saya yang sudah jalan.",
+  "objection": "Belum ada klien custom sama sekali. Kalau mau custom, freelancer bisa lebih murah, dan kalau mau cepat, aplikasi siap pakai sudah ada. Kenapa harus mereka?",
+  "would_change_my_mind": "Satu klien nyata di bidang usaha seperti saya yang mau saya telepon, ditambah demo sistem order WhatsApp dengan data contoh punya saya.",
   "price_too_cheap": 3000000,
   "price_cheap": 8000000,
-  "price_expensive": 40000000,
-  "price_too_expensive": 100000000
+  "price_expensive": 25000000,
+  "price_too_expensive": 50000000
 }

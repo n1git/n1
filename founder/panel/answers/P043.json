@@ -1,0 +1,13 @@
+{
+  "id": "P043",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasa pakai aplikasi siap pakai yang murah per bulan, jadi bayar sistem custom puluhan juta untuk perusahaan yang baru berdiri dan belum punya klien proyek custom terasa berisiko. Saya juga belum yakin sistem order itu yang paling saya butuhkan.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli, dan mereka belum pernah mengerjakan proyek custom untuk klien lain.",
+  "would_change_my_mind": "Satu klien nyata di usaha seperti saya yang bisa saya telepon, plus demo sistem order dengan alur WhatsApp saya sendiri sebelum saya setuju penawaran.",
+  "price_too_cheap": 4000000,
+  "price_cheap": 10000000,
+  "price_expensive": 30000000,
+  "price_too_expensive": 75000000
+}

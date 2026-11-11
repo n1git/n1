@@ -1,0 +1,13 @@
+{
+  "id": "P072",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya minta bukti dulu, dan mereka sendiri bilang belum ada klien proyek custom. Rp10 juta itu hampir dua bulan penghasilan saya, jadi tidak mau jadi kelinci percobaan.",
+  "objection": "Belum ada klien proyek custom sama sekali, dan saya sendiri belum tahu pasti butuh sistem yang mana. Takut salah beli dan uangnya habis.",
+  "would_change_my_mind": "Demo yang berjalan untuk usaha sebesar punya saya, atau satu klien usaha kecil yang mau saya telepon, ditambah harga awal di bawah Rp5 juta untuk modul order saja.",
+  "price_too_cheap": 1500000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
+}

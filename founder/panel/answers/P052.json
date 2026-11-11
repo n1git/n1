@@ -1,0 +1,13 @@
+{
+  "id": "P052",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Rp10 juta itu mahal dibanding aplikasi siap pakai yang Rp300 ribuan per bulan, dan saya tidak punya waktu ikut menjelaskan kebutuhan ke vendor baru. Perusahaannya baru berdiri 2026 dan belum punya klien proyek custom, jadi saya tidak mau jadi yang pertama.",
+  "objection": "Belum ada klien custom yang bisa saya tanyai. Saya biasa tanya sesama pengusaha dulu sebelum beli yang mahal, dan di sini tidak ada yang bisa saya tanya. Aplikasi siap pakai jauh lebih murah dan tidak merepotkan.",
+  "would_change_my_mind": "Ada pengusaha yang saya kenal dan percaya, dengan usaha seperti saya, bilang sistemnya jalan dan mereka yang urus semuanya. Harga awal yang jauh lebih rendah juga membantu.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
+}

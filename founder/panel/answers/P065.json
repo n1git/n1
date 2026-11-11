@@ -1,0 +1,13 @@
+{
+  "id": "P065",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasanya tanya sesama pengusaha dulu sebelum beli yang mahal, dan di sini tidak ada klien yang bisa saya tanya. Untuk sistem yang mengatur pesanan saya, saya tidak mau jadi kelinci percobaan pertama.",
+  "objection": "Perusahaan baru berdiri 2026 dan belum punya klien proyek custom, jadi tidak ada orang yang bisa saya tanya soal hasil kerjanya. Getruzz dan Systemma itu produk mereka sendiri, bukan bukti mereka bisa mengerjakan bisnis seperti punya saya.",
+  "would_change_my_mind": "Ada satu pengusaha sejenis yang bisa saya telepon dan bilang sistemnya jalan, atau tahap awal dengan harga jauh lebih murah yang bisa saya coba sebagai percobaan sebelum komit ke proyek penuh.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 7000000,
+  "price_expensive": 15000000,
+  "price_too_expensive": 30000000
+}

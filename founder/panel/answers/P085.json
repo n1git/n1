@@ -1,0 +1,13 @@
+{
+  "id": "P085",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Masalah saya nyata, rekap akhir bulan selalu selisih dengan kas. Tapi perusahaannya baru berdiri 2026 dan belum punya klien proyek custom, jadi saya belum mau menaruh operasional beberapa cabang di tangan mereka bulan ini.",
+  "objection": "Kalau sistemnya bermasalah setelah jadi, siapa yang membantu dan berapa biayanya. Dukungan hanya 30 hari, sedangkan perusahaannya sendiri belum teruji di proyek klien.",
+  "would_change_my_mind": "Satu klien nyata dengan skala mirip saya yang bisa saya telepon, plus paket dukungan berbayar bulanan dengan harga dan waktu respons tertulis, dan sistemnya juga mencakup rekonsiliasi kas.",
+  "price_too_cheap": 5000000,
+  "price_cheap": 15000000,
+  "price_expensive": 50000000,
+  "price_too_expensive": 120000000
+}

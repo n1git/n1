@@ -1,0 +1,13 @@
+{
+  "id": "P027",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasanya pilih vendor yang direkomendasikan teman, dan perusahaan ini baru berdiri 2026 tanpa satu pun klien proyek custom. Getruzz dan Systemma produk mereka sendiri, bukan bukti mereka bisa bikin sistem untuk usaha seperti saya.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli, dan vendornya belum pernah mengerjakan proyek untuk klien lain.",
+  "would_change_my_mind": "Rekomendasi dari sesama pengusaha yang sudah pakai jasa mereka, atau satu klien nyata yang bisa saya telepon dan lihat sistemnya berjalan.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 40000000,
+  "price_too_expensive": 120000000
+}

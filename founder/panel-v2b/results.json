@@ -1,0 +1,144 @@
+{
+ "business": "N⁻¹ Labs, jasa pembuatan sistem bisnis custom dari Semarang",
+ "seed": 861177,
+ "dealt": 20,
+ "answered": 20,
+ "skipped": [],
+ "buys": 0,
+ "passes": 20,
+ "buy_rate": 0.0,
+ "by_segment": [
+  [
+   "Pemilik UMKM menengah",
+   8,
+   0.0
+  ],
+  [
+   "Pemilik usaha mikro dan kecil",
+   8,
+   0.0
+  ],
+  [
+   "Pemilik usaha berkembang, beberapa cabang atau tim",
+   4,
+   0.0
+  ]
+ ],
+ "by_behaviour": [
+  [
+   "Membandingkan harga",
+   3,
+   0.0
+  ],
+  [
+   "Pesanan lewat WhatsApp",
+   3,
+   0.0
+  ],
+  [
+   "Ikut rekomendasi kenalan",
+   2,
+   0.0
+  ],
+  [
+   "Setia pada spreadsheet",
+   4,
+   0.0
+  ],
+  [
+   "Minta bukti dulu",
+   3,
+   0.0
+  ],
+  [
+   "Pengguna aplikasi siap pakai",
+   3,
+   0.0
+  ],
+  [
+   "Sibuk dan serahkan ke orang lain",
+   2,
+   0.0
+  ]
+ ],
+ "by_income": [
+  [
+   "$130,903,000 to $458,060,000",
+   7,
+   0.0
+  ],
+  [
+   "$458,060,000 and up",
+   7,
+   0.0
+  ],
+  [
+   "under $130,903,000",
+   6,
+   0.0
+  ]
+ ],
+ "why_not": [
+  [
+   "trust",
+   12,
+   [
+    "Rp10 juta itu lebih dari sebulan penghasilan saya, dan perusahaannya baru berdiri 2026. Saya belum kenal siapa pun yang pernah pakai jasa mereka, jadi saya tidak berani bayar DP.",
+    "Saya belum tahu persis butuh sistem yang mana, dan disuruh bayar DP dulu sebelum konsultasi itu terbalik buat saya. Perusahaannya baru berdiri 2026, jadi saya tidak mau jadi yang pertama dicoba."
+   ],
+   [
+    "P003",
+    "P005"
+   ]
+  ],
+  [
+   "price",
+   5,
+   [
+    "Saya biasa minta penawaran dari beberapa vendor dan ambil yang paling murah. Rp10 juta itu cuma harga awal, dan freelancer biasanya bisa kerjakan lebih murah.",
+    "Pesanan saya masih lewat WhatsApp dan dicatat manual, tapi Rp10 juta di depan itu mahal kalau aplikasi siap pakai cuma Rp300 ribuan sebulan. Saya coba yang murah dulu sebelum bayar sistem custom."
+   ],
+   [
+    "P001",
+    "P002"
+   ]
+  ],
+  [
+   "habit",
+   3,
+   [
+    "Spreadsheet dan WhatsApp sudah cukup buat saya, dan staf saya sudah terbiasa. Saya tidak akan bayar DP untuk sistem baru tanpa ada kejadian besar yang memaksa.",
+    "Spreadsheet saya sudah cukup buat usaha sekarang, jadi tidak ada alasan mendesak. Rp10 juta itu hampir sepersepuluh penghasilan setahun saya, dan freelancer biasanya bisa lebih murah."
+   ],
+   [
+    "P004",
+    "P006"
+   ]
+  ]
+ ],
+ "why_yes": [],
+ "flip": [
+  "Harga tetap tertulis untuk rekap penjualan dan kas saja, di bawah penawaran freelancer, plus contoh klien nyata atau demo yang bisa saya coba sebelum bayar DP.",
+  "Contoh sistem yang sudah jalan di usaha sejenis saya, demo untuk alur pesanan WhatsApp saya, dan harga jelas di bawah Rp10 juta atau bisa dicicil dengan garansi uang kembali kalau tidak cocok.",
+  "Rekomendasi dari sesama pemilik usaha yang sudah pakai, kepastian tertulis bahwa data dan kode jadi milik saya, dan pembayaran bertahap setelah ada hasil, bukan DP di depan.",
+  "Contoh klien nyata yang bisnisnya mirip saya, demo yang bisa dicoba staf saya, dan DP yang kecil atau bisa dikembalikan kalau hasil tahap awal tidak cocok.",
+  "Konsultasi awal gratis atau berbayar kecil dulu untuk menentukan kebutuhan, ditambah contoh klien UMKM sejenis yang bisa saya tanyai langsung, dan DP bisa dikembalikan kalau tidak cocok.",
+  "Harga jauh di bawah Rp10 juta untuk satu modul kecil, contoh sistem yang bisa saya coba dulu, dan DP kecil dengan jaminan uang kembali kalau tidak cocok.",
+  "Dua atau tiga klien nyata yang bisa saya hubungi, plus penawaran tertulis dengan harga tetap dan DP yang bisa dikembalikan kalau hasilnya tidak sesuai.",
+  "Demo langsung yang berjalan dan 2-3 klien nyata yang bisa saya hubungi, plus DP kecil atau pembayaran bertahap per milestone.",
+  "Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan untuk bisnis seperti punya saya, dan DP kecil atau bisa dikembalikan.",
+  "Dua atau tiga klien nyata di usaha seperti saya yang bisa saya hubungi langsung, plus DP kecil dan pembayaran bertahap per tahap selesai.",
+  "Referensi klien nyata yang bisa saya hubungi, demo langsung produk Getruzz atau Systemma, kontrak tertulis dengan termin bertahap per hasil, dan DP kecil yang bisa dikembalikan.",
+  "Dua atau tiga klien nyata yang bisa saya hubungi langsung, plus demo sistem yang berjalan dan DP kecil dengan pembayaran bertahap sesuai hasil.",
+  "Demo yang berjalan dari klien nyata di bidang usaha seperti saya, plus referensi yang bisa saya telepon, dan DP kecil yang jelas bisa dikembalikan jika hasil tahap awal tidak cocok.",
+  "Konsultasi gratis atau murah dulu untuk menentukan sistem yang saya perlukan, plus referensi dari pengusaha lain yang sudah pakai jasa mereka, dan harga di bawah Rp5 juta atau bisa dicicil.",
+  "Demo langsung sistem Getruzz atau Systemma yang sudah jalan, referensi pemilik usaha lain yang bisa saya telepon, dan DP kecil dengan pembayaran bertahap per tahap selesai atau garansi uang kembali.",
+  "Paket kecil di bawah Rp3 juta yang menggantikan spreadsheet stok saya, demo yang bisa dicoba dulu, atau pembayaran dicicil setelah sistem jalan.",
+  "Satu atau dua klien usaha sejenis yang bisa saya telepon langsung, plus DP kecil yang bisa dikembalikan dan tim yang mengurus semuanya tanpa saya harus banyak menjelaskan.",
+  "Rekomendasi langsung dari pengusaha yang saya kenal, plus paket kecil khusus rekap kas dengan harga di bawah Rp3 juta dan DP yang bisa dikembalikan.",
+  "Harga jauh lebih murah atau bisa dicicil, ada contoh toko seperti punya saya yang sudah pakai, dan ada masa coba sebelum bayar penuh.",
+  "Contoh klien nyata di usaha seukuran saya, jaminan data dan kode jadi milik saya, dan pembayaran bertahap atau DP kecil yang bisa dikembalikan kalau hasilnya tidak cocok."
+ ],
+ "purchases_first_month_per_buyer": null,
+ "price_answers": 20
+}

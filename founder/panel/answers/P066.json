@@ -1,0 +1,13 @@
+{
+  "id": "P066",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Rp10 juta itu hampir sebulan penuh penghasilan saya, dan perusahaannya baru berdiri 2026 tanpa satu pun klien proyek custom. Saya minta bukti dulu, dan Getruzz serta Systemma itu produk mereka sendiri, bukan klien yang bisa saya telepon.",
+  "objection": "Belum ada klien custom yang bisa saya tanyai, dan freelancer bisa mengerjakan lebih murah. Kalau gagal, uang segitu berat buat usaha kecil seperti saya.",
+  "would_change_my_mind": "Demo sistem order yang berjalan dengan alur seperti usaha saya, atau satu klien usaha kecil yang mau saya hubungi langsung, plus harga tahap pertama jauh di bawah Rp10 juta.",
+  "price_too_cheap": 1500000,
+  "price_cheap": 3500000,
+  "price_expensive": 7000000,
+  "price_too_expensive": 12000000
+}

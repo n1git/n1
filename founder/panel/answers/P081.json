@@ -1,0 +1,13 @@
+{
+  "id": "P081",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Masalah saya selisih kas saat rekap akhir bulan, dan sistem order bukan itu. Rp10 juta lebih dari setengah penghasilan sebulan saya, dan mereka belum punya satu pun klien proyek custom.",
+  "objection": "Perusahaan baru berdiri 2026 dan belum pernah mengerjakan proyek custom untuk klien. Freelancer atau aplikasi kasir siap pakai bisa lebih murah, dan sistem order tidak menyelesaikan selisih kas saya.",
+  "would_change_my_mind": "Contoh klien nyata dengan usaha seperti saya, dan sistem yang langsung menutup selisih penjualan dengan kas di harga jauh di bawah Rp10 juta.",
+  "price_too_cheap": 1500000,
+  "price_cheap": 4000000,
+  "price_expensive": 9000000,
+  "price_too_expensive": 18000000
+}

@@ -3,11 +3,11 @@
   "buys": false,
   "purchases_first_month": 0,
   "reason_code": "trust",
-  "reason": "Saya sudah pernah coba aplikasi kasir dan pembukuan siap pakai, dan untuk cabang saya itu cukup. Vendor baru berdiri 2026 minta DP di depan sebelum saya lihat hasil apa pun, jadi saya tidak mau ambil risiko.",
-  "objection": "Bayar DP di depan ke vendor yang belum saya kenal dan baru berdiri tahun ini. Tidak ada klien, contoh proyek, atau referensi yang bisa saya tanyakan ke sesama pengusaha.",
-  "would_change_my_mind": "Referensi klien nyata yang bisa saya hubungi, demo langsung produk Getruzz atau Systemma, kontrak tertulis dengan termin bertahap per hasil, dan DP kecil yang bisa dikembalikan.",
+  "reason": "Perusahaannya baru berdiri dan belum punya satu pun klien proyek custom, jadi saya tidak mau jadi yang pertama dicoba dengan uang puluhan juta. Freelancer juga bisa lebih murah, dan saya biasanya tanya sesama pengusaha dulu sebelum beli yang mahal.",
+  "objection": "Belum ada klien proyek custom sama sekali. Rp10 juta itu cuma harga mulai, ujungnya bisa jauh lebih mahal, dan saya tidak punya waktu ikut mengurus sistemnya.",
+  "would_change_my_mind": "Ada sesama pemilik usaha yang saya kenal dan percaya, yang sudah pakai dan bisa cerita langsung, plus harga tetap tertulis yang jelas untuk sistem order saya.",
   "price_too_cheap": 3000000,
-  "price_cheap": 10000000,
-  "price_expensive": 40000000,
-  "price_too_expensive": 120000000
+  "price_cheap": 6000000,
+  "price_expensive": 15000000,
+  "price_too_expensive": 30000000
 }

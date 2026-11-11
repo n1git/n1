@@ -3,11 +3,11 @@
   "buys": false,
   "purchases_first_month": 0,
   "reason_code": "trust",
-  "reason": "Rp10 juta itu lebih dari sebulan penghasilan saya, dan perusahaannya baru berdiri 2026. Saya belum kenal siapa pun yang pernah pakai jasa mereka, jadi saya tidak berani bayar DP.",
-  "objection": "Apakah data usaha saya aman dan milik saya, dan kalau perusahaan sekecil dan sebaru ini hilang, sistem saya bagaimana?",
-  "would_change_my_mind": "Rekomendasi dari sesama pemilik usaha yang sudah pakai, kepastian tertulis bahwa data dan kode jadi milik saya, dan pembayaran bertahap setelah ada hasil, bukan DP di depan.",
-  "price_too_cheap": 2000000,
-  "price_cheap": 4000000,
-  "price_expensive": 8000000,
-  "price_too_expensive": 15000000
+  "reason": "Perusahaannya baru berdiri 2026 dan belum punya satu pun klien proyek custom. Saya tidak mau jadi yang pertama dicoba, apalagi untuk data usaha saya.",
+  "objection": "Belum ada klien yang bisa saya telepon. Getruzz dan Systemma produk mereka sendiri, bukan bukti mereka bisa mengerjakan sistem untuk usaha seperti punya saya. Kalau mereka tutup tahun depan, siapa yang urus sistem saya?",
+  "would_change_my_mind": "Satu klien nyata di usaha sejenis yang mau saya hubungi, atau demo sistem order berjalan dengan data contoh toko seperti punya saya.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 40000000
 }

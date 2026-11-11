@@ -1,0 +1,13 @@
+{
+  "id": "P036",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya masih nyaman dengan spreadsheet, dan selisih kas di akhir bulan belum cukup membuat saya mengganti cara kerja. N⁻¹ Labs baru berdiri tahun 2026 dan belum punya klien proyek custom, jadi tidak ada yang bisa saya tanya.",
+  "objection": "Belum ada klien proyek custom yang bisa saya telepon. Getruzz dan Systemma produk mereka sendiri, bukan sistem untuk usaha seperti saya, dan saya takut uang dan data saya jadi bahan percobaan.",
+  "would_change_my_mind": "Satu atau dua pemilik usaha sejenis yang sudah memakai sistem order mereka dan mau saya telepon, ditambah demo sistem yang menunjukkan selisih penjualan dan kas bisa tertutup.",
+  "price_too_cheap": 5000000,
+  "price_cheap": 12000000,
+  "price_expensive": 35000000,
+  "price_too_expensive": 80000000
+}

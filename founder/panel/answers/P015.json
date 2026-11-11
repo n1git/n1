@@ -2,12 +2,12 @@
   "id": "P015",
   "buys": false,
   "purchases_first_month": 0,
-  "reason_code": "trust",
-  "reason": "Saya butuh merapikan pesanan WhatsApp, tapi disuruh bayar DP dulu ke vendor yang baru berdiri 2026 dan belum saya kenal. Tanpa lihat contoh nyata dan klien lain, saya tidak mau transfer.",
-  "objection": "Bayar DP di depan ke vendor baru yang belum saya kenal terasa berisiko. Kalau sistemnya tidak jadi atau tidak cocok dengan cara kerja cabang saya, uang DP hilang.",
-  "would_change_my_mind": "Demo langsung sistem Getruzz atau Systemma yang sudah jalan, referensi pemilik usaha lain yang bisa saya telepon, dan DP kecil dengan pembayaran bertahap per tahap selesai atau garansi uang kembali.",
-  "price_too_cheap": 3000000,
-  "price_cheap": 8000000,
-  "price_expensive": 40000000,
-  "price_too_expensive": 100000000
+  "reason_code": "price",
+  "reason": "Rp10 juta itu sudah lebih dari sebulan penghasilan saya, padahal pesanan WhatsApp masih bisa saya catat di buku. Konsultasi gratisnya boleh dicoba, tapi saya tidak akan langsung bayar proyek.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli, dan mereka belum punya klien proyek custom sama sekali, jadi uang segitu terasa berisiko.",
+  "would_change_my_mind": "Harga awal jauh lebih kecil (sekitar Rp3-5 juta) untuk sistem order saja, atau ada pemilik usaha seperti saya yang sudah pakai dan mau cerita hasilnya.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
 }

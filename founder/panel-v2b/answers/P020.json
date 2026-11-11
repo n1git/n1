@@ -1,0 +1,13 @@
+{
+  "id": "P020",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Excel dan Google Sheets sudah cukup buat usaha saya, dan Rp10 juta itu sekitar seperlima penghasilan setahun saya. Perusahaannya baru berdiri 2026, saya belum tahu mereka bisa dipercaya atau tidak.",
+  "objection": "Apakah data usaha saya aman dan benar-benar milik saya kalau sistemnya dibuat orang lain, dan harus bayar DP dulu ke perusahaan yang baru berdiri.",
+  "would_change_my_mind": "Contoh klien nyata di usaha seukuran saya, jaminan data dan kode jadi milik saya, dan pembayaran bertahap atau DP kecil yang bisa dikembalikan kalau hasilnya tidak cocok.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 12000000
+}

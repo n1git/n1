@@ -1,0 +1,13 @@
+{
+  "id": "P030",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya biasanya ikut vendor yang direkomendasikan teman atau sesama pengusaha, dan belum ada satu pun klien proyek custom yang bisa saya tanya. Rp10 juta juga mahal kalau dibanding aplikasi siap pakai Rp300 ribuan per bulan.",
+  "objection": "Perusahaannya baru berdiri 2026 dan belum punya klien custom, jadi tidak ada kenalan yang bisa saya tanyai. Kalau gagal, uang dan waktu tim saya yang habis.",
+  "would_change_my_mind": "Rekomendasi langsung dari sesama pemilik usaha yang saya kenal dan pernah memakai jasa mereka, atau contoh sistem order yang bisa saya coba sendiri dulu.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 6000000,
+  "price_expensive": 12000000,
+  "price_too_expensive": 25000000
+}

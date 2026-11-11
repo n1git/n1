@@ -3,11 +3,11 @@
   "buys": false,
   "purchases_first_month": 0,
   "reason_code": "trust",
-  "reason": "Saya belum tahu persis butuh sistem yang mana, dan disuruh bayar DP dulu sebelum konsultasi itu terbalik buat saya. Perusahaannya baru berdiri 2026, jadi saya tidak mau jadi yang pertama dicoba.",
-  "objection": "Bayar DP di depan ke perusahaan yang baru berdiri tahun ini, padahal saya sendiri belum yakin sistem apa yang cocok. Takut uang Rp10 juta lebih hilang dan sistemnya tidak terpakai.",
-  "would_change_my_mind": "Konsultasi awal gratis atau berbayar kecil dulu untuk menentukan kebutuhan, ditambah contoh klien UMKM sejenis yang bisa saya tanyai langsung, dan DP bisa dikembalikan kalau tidak cocok.",
-  "price_too_cheap": 3000000,
-  "price_cheap": 8000000,
-  "price_expensive": 20000000,
-  "price_too_expensive": 40000000
+  "reason": "Pesanan lewat WhatsApp yang saya catat di buku masih jalan, dan Rp10 juta itu hampir sebulan penghasilan saya. Perusahaannya baru berdiri tahun ini dan belum pernah mengerjakan proyek custom untuk klien, jadi saya tidak mau jadi yang pertama dicoba.",
+  "objection": "Kalau sistemnya bermasalah setelah jadi, siapa yang membantu dan berapa biayanya. Dukungan cuma 30 hari, padahal masalah biasanya muncul sesudahnya.",
+  "would_change_my_mind": "Ada pemilik usaha seperti saya yang sudah pakai dan mau saya telepon, harga awal yang jauh lebih kecil, dan biaya dukungan bulanan setelah 30 hari yang tertulis jelas.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
 }

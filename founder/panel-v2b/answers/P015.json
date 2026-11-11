@@ -1,0 +1,13 @@
+{
+  "id": "P015",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya butuh merapikan pesanan WhatsApp, tapi disuruh bayar DP dulu ke vendor yang baru berdiri 2026 dan belum saya kenal. Tanpa lihat contoh nyata dan klien lain, saya tidak mau transfer.",
+  "objection": "Bayar DP di depan ke vendor baru yang belum saya kenal terasa berisiko. Kalau sistemnya tidak jadi atau tidak cocok dengan cara kerja cabang saya, uang DP hilang.",
+  "would_change_my_mind": "Demo langsung sistem Getruzz atau Systemma yang sudah jalan, referensi pemilik usaha lain yang bisa saya telepon, dan DP kecil dengan pembayaran bertahap per tahap selesai atau garansi uang kembali.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 40000000,
+  "price_too_expensive": 100000000
+}

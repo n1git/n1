@@ -1,0 +1,13 @@
+{
+  "id": "P022",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Pesanan saya masih lewat WhatsApp dan buku, dan itu jalan. Mereka belum punya satu pun klien proyek custom, jadi saya tidak mau jadi yang pertama dipakai coba-coba dengan uang puluhan juta.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah. Perusahaan baru berdiri 2026 dan belum ada klien custom, jadi kalau sistemnya macet atau mereka hilang, saya yang rugi.",
+  "would_change_my_mind": "Ada satu pemilik usaha seperti saya yang mau saya telepon dan bilang sistemnya jalan, atau mereka mau bikin versi kecil untuk satu alur pesanan WhatsApp dengan harga di bawah Rp10 juta supaya staf saya bisa coba dulu.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 40000000
+}
