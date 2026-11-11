@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Saya biasa minta penawaran dari beberapa vendor dan pilih yang paling murah. Freelancer bisa mengerjakan lebih murah, jadi saya tidak akan langsung ke perusahaan baru ini.",
+  "objection": "Perusahaannya baru berdiri 2026 dan harganya mulai Rp10 juta. Saya belum tahu hasil akhirnya dan freelancer pasti menawar lebih murah.",
+  "would_change_my_mind": "Penawaran tertulis yang jelas lebih murah atau setara freelancer, plus contoh klien nyata di bisnis seperti saya yang rekap kasnya sudah tidak selisih lagi.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 10000000,
+  "price_too_expensive": 20000000
+}

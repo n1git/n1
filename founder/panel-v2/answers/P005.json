@@ -1,0 +1,13 @@
+{
+  "id": "P005",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Perusahaannya baru berdiri 2026 dan saya belum kenal siapa pun yang pernah pakai jasanya. Saya biasa tanya sesama pengusaha dulu sebelum keluar uang sebesar ini, jadi tidak mungkin langsung beli bulan ini. Konsultasi gratis mungkin saya coba, tapi itu belum berarti beli.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli, dan mereka baru berdiri tahun ini, belum ada bukti usaha seperti punya saya yang sudah berhasil.",
+  "would_change_my_mind": "Kenalan sesama pemilik usaha yang pesanannya lewat WhatsApp bilang sudah pakai dan puas, atau ada contoh sistem pesanan WhatsApp yang bisa saya lihat jalan langsung.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 20000000,
+  "price_too_expensive": 45000000
+}

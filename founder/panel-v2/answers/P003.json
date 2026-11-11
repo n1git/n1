@@ -1,0 +1,13 @@
+{
+  "id": "P003",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Rp10 juta itu hampir sebulan penuh penghasilan saya, dan perusahaannya baru berdiri 2026 jadi saya belum kenal siapa pun yang pernah pakai jasanya. Saya biasanya ikut rekomendasi teman sesama pengusaha, dan di sini belum ada.",
+  "objection": "Belum ada kenalan atau pelanggan yang bisa saya tanya langsung, dan Rp10 juta itu besar untuk usaha sekecil saya. Kalau sistemnya gagal, uang saya habis.",
+  "would_change_my_mind": "Ada sesama pemilik usaha yang saya kenal dan pernah memakai jasanya, bisa saya telepon, plus paket kecil di bawah Rp5 juta untuk mulai.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
+}

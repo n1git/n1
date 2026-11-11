@@ -1,0 +1,13 @@
+{
+  "id": "P004",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "habit",
+  "reason": "Saya sudah nyaman dengan spreadsheet dan WhatsApp, dan tidak ada kejadian besar yang memaksa saya ganti. Staf saya sudah terbiasa, jadi pindah sistem terasa lebih repot daripada untungnya.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah. Perusahaan ini juga baru berdiri 2026, saya belum yakin mereka masih ada kalau sistem saya bermasalah.",
+  "would_change_my_mind": "Bukti nyata dari usaha sejenis saya yang sudah memakai sistem mereka bertahun-tahun, atau masalah besar di spreadsheet saya (stok selisih besar, data hilang) yang membuat saya terpaksa pindah.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 30000000,
+  "price_too_expensive": 80000000
+}

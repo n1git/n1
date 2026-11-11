@@ -1,0 +1,13 @@
+{
+  "id": "P002",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Pesanan saya masih lewat WhatsApp dan dicatat di buku, dan itu masih jalan. Rp10 juta itu mahal kalau aplikasi siap pakai cuma Rp300 ribuan per bulan, dan saya belum yakin sistem custom bikinan perusahaan baru itu perlu.",
+  "objection": "Perusahaannya baru berdiri 2026, jadi saya takut sistemnya mandek di tengah jalan atau tidak ada yang mengurus setelah 30 hari. Aplikasi kasir yang Rp300 ribuan per bulan sudah ada dan bisa saya coba tanpa risiko besar.",
+  "would_change_my_mind": "Contoh klien nyata di usaha seperti saya yang sudah jalan, dan harga di bawah Rp5 juta untuk tahap awal yang bisa saya pakai dulu.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 4000000,
+  "price_expensive": 8000000,
+  "price_too_expensive": 15000000
+}

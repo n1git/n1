@@ -1,0 +1,13 @@
+{
+  "id": "P009",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Perusahaannya baru berdiri 2026 dan saya belum lihat klien lain yang sudah pakai. Saya tidak mau jadi yang pertama, apalagi freelancer bisa mengerjakan lebih murah.",
+  "objection": "Vendor baru tanpa klien yang bisa saya tanyai. Getruzz dan Systemma itu produk mereka sendiri, bukan bukti mereka berhasil membangun sistem untuk usaha seperti punya saya.",
+  "would_change_my_mind": "Dua atau tiga klien UMKM sejenis yang mau saya telepon, ditambah demo sistem yang berjalan dengan data nyata.",
+  "price_too_cheap": 5000000,
+  "price_cheap": 15000000,
+  "price_expensive": 40000000,
+  "price_too_expensive": 100000000
+}

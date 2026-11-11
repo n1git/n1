@@ -1,0 +1,222 @@
+[
+ {
+  "id": "P001",
+  "name": "Caleb",
+  "age": 50,
+  "segment": "Pemilik UMKM menengah",
+  "income": 392183000,
+  "behaviour": "Membandingkan harga",
+  "behaviour_how": "Meminta penawaran dari beberapa vendor dan memilih yang paling murah yang terlihat masuk akal.",
+  "objection": "Freelancer bisa mengerjakan lebih murah",
+  "habit": "kamu merekap penjualan di akhir bulan dan sering selisih dengan uang di kas"
+ },
+ {
+  "id": "P002",
+  "name": "Emma",
+  "age": 51,
+  "segment": "Pemilik UMKM menengah",
+  "income": 471552000,
+  "behaviour": "Pesanan lewat WhatsApp",
+  "behaviour_how": "Pelanggan atau agen memesan lewat chat; dirapikan manual di buku atau catatan.",
+  "objection": "Rp10 juta mahal dibanding aplikasi siap pakai yang Rp300 ribuan per bulan",
+  "habit": "kamu pernah melihat iklan aplikasi kasir atau pembukuan di Instagram"
+ },
+ {
+  "id": "P003",
+  "name": "Luca",
+  "age": 45,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 89430000,
+  "behaviour": "Ikut rekomendasi kenalan",
+  "behaviour_how": "Memilih vendor yang direkomendasikan teman atau sesama pengusaha.",
+  "objection": "Apakah data usaha saya aman dan milik saya",
+  "habit": "kamu pernah melihat iklan aplikasi kasir atau pembukuan di Instagram"
+ },
+ {
+  "id": "P004",
+  "name": "Sol",
+  "age": 55,
+  "segment": "Pemilik usaha berkembang, beberapa cabang atau tim",
+  "income": 1702467000,
+  "behaviour": "Setia pada spreadsheet",
+  "behaviour_how": "Mencatat semua di Excel atau Google Sheets dan merasa cukup, kecuali ada kejadian besar.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah",
+  "habit": "kamu mengecek stok dan pesanan lewat WhatsApp dan buku catatan"
+ },
+ {
+  "id": "P005",
+  "name": "June",
+  "age": 42,
+  "segment": "Pemilik UMKM menengah",
+  "income": 288846000,
+  "behaviour": "Pesanan lewat WhatsApp",
+  "behaviour_how": "Pelanggan atau agen memesan lewat chat; dirapikan manual di buku atau catatan.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli",
+  "habit": "kamu bertanya ke sesama pengusaha sebelum membeli sesuatu yang mahal"
+ },
+ {
+  "id": "P006",
+  "name": "Noah",
+  "age": 28,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 103744000,
+  "behaviour": "Setia pada spreadsheet",
+  "behaviour_how": "Mencatat semua di Excel atau Google Sheets dan merasa cukup, kecuali ada kejadian besar.",
+  "objection": "Freelancer bisa mengerjakan lebih murah",
+  "habit": "kamu pernah melihat iklan aplikasi kasir atau pembukuan di Instagram"
+ },
+ {
+  "id": "P007",
+  "name": "Kai",
+  "age": 30,
+  "segment": "Pemilik UMKM menengah",
+  "income": 445390000,
+  "behaviour": "Membandingkan harga",
+  "behaviour_how": "Meminta penawaran dari beberapa vendor dan memilih yang paling murah yang terlihat masuk akal.",
+  "objection": "N⁻¹ Labs perusahaan baru, belum ada klien yang bisa saya tanya",
+  "habit": "semua uang di sini dalam rupiah (Rp), bukan dolar"
+ },
+ {
+  "id": "P008",
+  "name": "Sam",
+  "age": 31,
+  "segment": "Pemilik usaha berkembang, beberapa cabang atau tim",
+  "income": 1036611000,
+  "behaviour": "Minta bukti dulu",
+  "behaviour_how": "Tidak percaya vendor baru sebelum melihat klien lain atau demo yang berjalan.",
+  "objection": "Freelancer bisa mengerjakan lebih murah",
+  "habit": "kamu mengecek stok dan pesanan lewat WhatsApp dan buku catatan"
+ },
+ {
+  "id": "P009",
+  "name": "Farah",
+  "age": 52,
+  "segment": "Pemilik UMKM menengah",
+  "income": 427035000,
+  "behaviour": "Minta bukti dulu",
+  "behaviour_how": "Tidak percaya vendor baru sebelum melihat klien lain atau demo yang berjalan.",
+  "objection": "Freelancer bisa mengerjakan lebih murah",
+  "habit": "kamu bertanya ke sesama pengusaha sebelum membeli sesuatu yang mahal"
+ },
+ {
+  "id": "P010",
+  "name": "Lucia",
+  "age": 31,
+  "segment": "Pemilik UMKM menengah",
+  "income": 458060000,
+  "behaviour": "Pengguna aplikasi siap pakai",
+  "behaviour_how": "Sudah atau pernah mencoba aplikasi kasir atau pembukuan bulanan dan membandingkan dengan biayanya.",
+  "objection": "N⁻¹ Labs perusahaan baru, belum ada klien yang bisa saya tanya",
+  "habit": "semua uang di sini dalam rupiah (Rp), bukan dolar"
+ },
+ {
+  "id": "P011",
+  "name": "Chloe",
+  "age": 31,
+  "segment": "Pemilik usaha berkembang, beberapa cabang atau tim",
+  "income": 1727964000,
+  "behaviour": "Pengguna aplikasi siap pakai",
+  "behaviour_how": "Sudah atau pernah mencoba aplikasi kasir atau pembukuan bulanan dan membandingkan dengan biayanya.",
+  "objection": "Bayar DP di depan ke vendor yang belum saya kenal terasa berisiko",
+  "habit": "kamu bertanya ke sesama pengusaha sebelum membeli sesuatu yang mahal"
+ },
+ {
+  "id": "P012",
+  "name": "Alma",
+  "age": 37,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 174475000,
+  "behaviour": "Pengguna aplikasi siap pakai",
+  "behaviour_how": "Sudah atau pernah mencoba aplikasi kasir atau pembukuan bulanan dan membandingkan dengan biayanya.",
+  "objection": "N⁻¹ Labs perusahaan baru, belum ada klien yang bisa saya tanya",
+  "habit": "kamu mengecek stok dan pesanan lewat WhatsApp dan buku catatan"
+ },
+ {
+  "id": "P013",
+  "name": "Esme",
+  "age": 42,
+  "segment": "Pemilik UMKM menengah",
+  "income": 415992000,
+  "behaviour": "Minta bukti dulu",
+  "behaviour_how": "Tidak percaya vendor baru sebelum melihat klien lain atau demo yang berjalan.",
+  "objection": "Bayar DP di depan ke vendor yang belum saya kenal terasa berisiko",
+  "habit": "semua uang di sini dalam rupiah (Rp), bukan dolar"
+ },
+ {
+  "id": "P014",
+  "name": "Grace",
+  "age": 30,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 93866000,
+  "behaviour": "Sibuk dan serahkan ke orang lain",
+  "behaviour_how": "Ingin beres tanpa terlibat banyak, tidak punya waktu menjelaskan kebutuhan.",
+  "objection": "Saya belum tahu persis butuh sistem yang mana, takut salah beli",
+  "habit": "kamu bertanya ke sesama pengusaha sebelum membeli sesuatu yang mahal"
+ },
+ {
+  "id": "P015",
+  "name": "Min",
+  "age": 45,
+  "segment": "Pemilik usaha berkembang, beberapa cabang atau tim",
+  "income": 1180893000,
+  "behaviour": "Pesanan lewat WhatsApp",
+  "behaviour_how": "Pelanggan atau agen memesan lewat chat; dirapikan manual di buku atau catatan.",
+  "objection": "Bayar DP di depan ke vendor yang belum saya kenal terasa berisiko",
+  "habit": "semua uang di sini dalam rupiah (Rp), bukan dolar"
+ },
+ {
+  "id": "P016",
+  "name": "Tariq",
+  "age": 41,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 93905000,
+  "behaviour": "Setia pada spreadsheet",
+  "behaviour_how": "Mencatat semua di Excel atau Google Sheets dan merasa cukup, kecuali ada kejadian besar.",
+  "objection": "Freelancer bisa mengerjakan lebih murah",
+  "habit": "kamu mengecek stok dan pesanan lewat WhatsApp dan buku catatan"
+ },
+ {
+  "id": "P017",
+  "name": "Selin",
+  "age": 42,
+  "segment": "Pemilik UMKM menengah",
+  "income": 480864000,
+  "behaviour": "Sibuk dan serahkan ke orang lain",
+  "behaviour_how": "Ingin beres tanpa terlibat banyak, tidak punya waktu menjelaskan kebutuhan.",
+  "objection": "N⁻¹ Labs perusahaan baru, belum ada klien yang bisa saya tanya",
+  "habit": "kamu pernah melihat iklan aplikasi kasir atau pembukuan di Instagram"
+ },
+ {
+  "id": "P018",
+  "name": "Kofi",
+  "age": 26,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 63268000,
+  "behaviour": "Ikut rekomendasi kenalan",
+  "behaviour_how": "Memilih vendor yang direkomendasikan teman atau sesama pengusaha.",
+  "objection": "Freelancer bisa mengerjakan lebih murah",
+  "habit": "kamu merekap penjualan di akhir bulan dan sering selisih dengan uang di kas"
+ },
+ {
+  "id": "P019",
+  "name": "Rosa",
+  "age": 45,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 130903000,
+  "behaviour": "Membandingkan harga",
+  "behaviour_how": "Meminta penawaran dari beberapa vendor dan memilih yang paling murah yang terlihat masuk akal.",
+  "objection": "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah",
+  "habit": "kamu pernah melihat iklan aplikasi kasir atau pembukuan di Instagram"
+ },
+ {
+  "id": "P020",
+  "name": "Priya",
+  "age": 30,
+  "segment": "Pemilik usaha mikro dan kecil",
+  "income": 60301000,
+  "behaviour": "Setia pada spreadsheet",
+  "behaviour_how": "Mencatat semua di Excel atau Google Sheets dan merasa cukup, kecuali ada kejadian besar.",
+  "objection": "Apakah data usaha saya aman dan milik saya",
+  "habit": "kamu pernah melihat iklan aplikasi kasir atau pembukuan di Instagram"
+ }
+]
