@@ -1,0 +1,7 @@
+# N⁻¹ Labs
+
+- What it is: Jasa pembuatan sistem bisnis custom dari Semarang (sistem keuangan, order, gudang, kasir, e-commerce, dan website), dengan arah jangka panjang menjadi perusahaan teknologi AI yang membangun teknologinya sendiri.
+- Who it is for: Pemilik bisnis di Indonesia yang masih mencatat keuangan, pesanan, atau stok secara manual (buku atau spreadsheet), yang datanya tersebar, yang pelanggan atau agennya memesan lewat chat dan sulit dirapikan, atau yang belum punya toko online atau website resmi. Segmen dan ukuran bisnis belum dirinci lebih jauh.
+- What it sells, at what price: Proyek sistem custom, harga mulai Rp10.000.000 per proyek (tergantung kompleksitas: sederhana satu fungsi, menengah beberapa modul, kompleks banyak modul atau integrasi). Booking wajib DP nominal tetap (nominal belum ditetapkan) lewat transfer bank manual untuk menyaring klien serius. Selain jasa: produk sendiri Getruzz (sudah live di getruzz.com) dan Systemma (berjalan di produksi).
+- Where and how: Semarang, Jawa Tengah; pelanggan datang lewat landing page (n-1labs.com), form booking, dan WhatsApp. Pengerjaan dimulai setelah DP diterima: konsultasi, develop dan integrate, lalu automate.
+- Budget and constraints: Tidak disebutkan. Perusahaan berdiri 2 September 2026. Portofolio internal: AI Agent Customer Service, Voucher Management System, WhatsApp untuk AI Customer Service, E-commerce, Own a Dungeon, ERP untuk klub renang. Belum ada data klien berbayar, pendapatan, ukuran tim, atau biaya operasional yang diberikan.
