@@ -1,0 +1,13 @@
+{
+  "id": "P001",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "price",
+  "reason": "Saya biasa minta penawaran dari beberapa vendor dan ambil yang paling murah. Rp10 juta itu cuma harga awal, dan freelancer biasanya bisa kerjakan lebih murah.",
+  "objection": "Perusahaan baru berdiri 2026, harga mulai Rp10 juta tapi akhirnya bisa naik tergantung kompleksitas, dan saya harus bayar DP dulu sebelum lihat hasil apa pun. Freelancer bisa lebih murah.",
+  "would_change_my_mind": "Harga tetap tertulis untuk rekap penjualan dan kas saja, di bawah penawaran freelancer, plus contoh klien nyata atau demo yang bisa saya coba sebelum bayar DP.",
+  "price_too_cheap": 2000000,
+  "price_cheap": 5000000,
+  "price_expensive": 12000000,
+  "price_too_expensive": 25000000
+}

@@ -1,0 +1,37 @@
+{
+  "business": "N⁻¹ Labs, jasa pembuatan sistem bisnis custom dari Semarang",
+  "target": "Pemilik usaha di Indonesia (toko, distributor kecil, produksi, jasa) yang masih mencatat keuangan, pesanan, atau stok secara manual dan mempertimbangkan sistem sendiri",
+  "where": "Semarang dan Jawa Tengah, juga bisnis di kota lain yang bisa dilayani online",
+  "age": [26, 55],
+  "segments": [
+    {"name": "Pemilik usaha mikro dan kecil", "share": 0.40, "income": [60000000, 180000000]},
+    {"name": "Pemilik UMKM menengah", "share": 0.40, "income": [180000000, 600000000]},
+    {"name": "Pemilik usaha berkembang, beberapa cabang atau tim", "share": 0.20, "income": [600000000, 1800000000]}
+  ],
+  "behaviours": [
+    {"name": "Setia pada spreadsheet", "share": 0.18, "how": "Mencatat semua di Excel atau Google Sheets dan merasa cukup, kecuali ada kejadian besar."},
+    {"name": "Pesanan lewat WhatsApp", "share": 0.18, "how": "Pelanggan atau agen memesan lewat chat; dirapikan manual di buku atau catatan."},
+    {"name": "Membandingkan harga", "share": 0.15, "how": "Meminta penawaran dari beberapa vendor dan memilih yang paling murah yang terlihat masuk akal."},
+    {"name": "Minta bukti dulu", "share": 0.14, "how": "Tidak percaya vendor baru sebelum melihat klien lain atau demo yang berjalan."},
+    {"name": "Pengguna aplikasi siap pakai", "share": 0.13, "how": "Sudah atau pernah mencoba aplikasi kasir atau pembukuan bulanan dan membandingkan dengan biayanya."},
+    {"name": "Sibuk dan serahkan ke orang lain", "share": 0.12, "how": "Ingin beres tanpa terlibat banyak, tidak punya waktu menjelaskan kebutuhan."},
+    {"name": "Ikut rekomendasi kenalan", "share": 0.10, "how": "Memilih vendor yang direkomendasikan teman atau sesama pengusaha."}
+  ],
+  "objections": [
+    "Rp10 juta mahal dibanding aplikasi siap pakai yang Rp300 ribuan per bulan",
+    "N⁻¹ Labs perusahaan baru, belum ada klien yang bisa saya tanya",
+    "Bayar DP di depan ke vendor yang belum saya kenal terasa berisiko",
+    "Kalau sistemnya bermasalah setelah jadi, siapa yang membantu dan berapa biayanya",
+    "Freelancer bisa mengerjakan lebih murah",
+    "Staf saya sudah terbiasa dengan buku dan spreadsheet, belum tentu mau pindah",
+    "Saya belum tahu persis butuh sistem yang mana, takut salah beli",
+    "Apakah data usaha saya aman dan milik saya"
+  ],
+  "habits": [
+    "semua uang di sini dalam rupiah (Rp), bukan dolar",
+    "kamu mengecek stok dan pesanan lewat WhatsApp dan buku catatan",
+    "kamu merekap penjualan di akhir bulan dan sering selisih dengan uang di kas",
+    "kamu pernah melihat iklan aplikasi kasir atau pembukuan di Instagram",
+    "kamu bertanya ke sesama pengusaha sebelum membeli sesuatu yang mahal"
+  ]
+}

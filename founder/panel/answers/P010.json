@@ -1,0 +1,13 @@
+{
+  "id": "P010",
+  "buys": false,
+  "purchases_first_month": 0,
+  "reason_code": "trust",
+  "reason": "Saya sudah pernah coba aplikasi kasir siap pakai yang biayanya per bulan kecil. Bayar DP Rp10 juta ke perusahaan yang baru berdiri 2026 tanpa klien yang bisa saya tanya terasa terlalu berisiko.",
+  "objection": "N⁻¹ Labs perusahaan baru, belum ada klien yang bisa saya tanya. Kalau DP sudah masuk lalu proyeknya molor atau tidak jadi, uang saya hilang.",
+  "would_change_my_mind": "Dua atau tiga klien nyata di usaha seperti saya yang bisa saya hubungi langsung, plus DP kecil dan pembayaran bertahap per tahap selesai.",
+  "price_too_cheap": 3000000,
+  "price_cheap": 8000000,
+  "price_expensive": 18000000,
+  "price_too_expensive": 35000000
+}
