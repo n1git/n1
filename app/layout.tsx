@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Geist } from "next/font/google";
 import "./globals.css";
 import { withBasePath } from "./base-path";
 import { SITE_URL, pageMetadata } from "./seo";
@@ -6,6 +7,8 @@ import { SITE_URL, pageMetadata } from "./seo";
 const TITLE = "N⁻¹ Labs (N-1 Labs) — Building Indonesia's Own AI Technology Capability";
 const DESCRIPTION =
   "N⁻¹ Labs (N-1 Labs) adalah perusahaan teknologi AI asal Semarang, Indonesia yang membangun AI Agent, software systems, automation, dan digital products — dengan filosofi N⁻¹: selalu satu langkah sebelum selesai.";
+
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -30,7 +33,7 @@ const THEME_INIT = `
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="id" suppressHydrationWarning>
+    <html lang="id" className={geist.variable} suppressHydrationWarning>
       <head>
         <script dangerouslySetInnerHTML={{ __html: THEME_INIT }} />
       </head>
