@@ -22,7 +22,7 @@ export const services: Service[] = [
   },
   {
     name: "Sistem Order",
-    description: "Terima dan kelola pesanan dari pelanggan atau agen dalam satu alur, dari masuk sampai selesai.",
+    description: "Pesanan dari WhatsApp, pelanggan, atau agen terkumpul dalam satu alur, dari masuk sampai selesai.",
   },
   {
     name: "Sistem Gudang",
@@ -64,17 +64,18 @@ export const scaleOptions = [
 ];
 
 export const startSteps = [
+  { title: "Booking", body: "Isi form booking. Belum ada pembayaran." },
   {
-    title: "Booking & DP",
-    body: "Isi form booking dan bayar DP. Booking berlaku setelah DP diterima.",
+    title: "Konsultasi gratis",
+    body: "Ceritakan kebutuhan bisnis Anda. Kami bantu menentukan sistem yang tepat dan mengirim penawaran tertulis dengan harga tetap per tahap.",
   },
   {
-    title: "Konsultasi",
-    body: "Ceritakan kebutuhan bisnis Anda. Kami bantu menentukan sistem yang tepat dan menyampaikan penawaran sesuai tingkat kompleksitasnya.",
+    title: "DP setelah setuju",
+    body: "DP dibayar setelah Anda menyetujui penawaran, dan dikembalikan penuh jika hasil tahap awal tidak Anda terima.",
   },
   {
     title: "Develop & Integrate",
-    body: "Sistem dikembangkan sesuai kebutuhan Anda dan dihubungkan ke proses bisnis yang berjalan.",
+    body: "Sistem dikembangkan per tahap sesuai kebutuhan Anda dan dihubungkan ke proses bisnis yang berjalan.",
   },
   { title: "Automate", body: "Proses rutin diotomatisasi agar pekerjaan Anda lebih ringan." },
 ];

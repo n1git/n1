@@ -3,14 +3,12 @@
 import { useState, type FormEvent } from "react";
 import Link from "next/link";
 import {
-  booking,
   contact,
   scaleOptions,
   services,
   startOptions,
 } from "@/app/content";
 import {
-  formatRupiah,
   generateBookingId,
   normalizePhone,
   sendBooking,
@@ -23,7 +21,7 @@ const WHATSAPP_URL = `https://wa.me/${contact.whatsapp}`;
 
 function buildWhatsAppUrl(data: BookingPayload): string {
   const lines = [
-    "Halo N⁻¹ Labs, saya sudah booking.",
+    "Halo N⁻¹ Labs, saya sudah mengisi booking.",
     `Kode: ${data.bookingId}`,
     `Nama: ${data.name}`,
     `Layanan: ${data.service}`,
@@ -31,7 +29,7 @@ function buildWhatsAppUrl(data: BookingPayload): string {
     `Target mulai: ${data.start}`,
     `Kebutuhan: ${data.description}`,
     "",
-    "Bukti transfer DP saya lampirkan di chat ini.",
+    "Saya ingin konsultasi awal.",
   ];
   return `${WHATSAPP_URL}?text=${encodeURIComponent(lines.join("\n"))}`;
 }
@@ -49,22 +47,6 @@ export default function BookingForm() {
   const [honeypot, setHoneypot] = useState("");
   const [error, setError] = useState("");
   const [submitted, setSubmitted] = useState<BookingPayload | null>(null);
-
-  const { dpAmount, bank } = booking;
-
-  if (!dpAmount || !bank) {
-    return (
-      <div className="panel booking-notice">
-        <p>
-          Pendaftaran booking online segera dibuka. Sementara itu, hubungi kami lewat WhatsApp untuk
-          konsultasi kebutuhan Anda.
-        </p>
-        <a className="btn btn-primary" href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-          Hubungi via WhatsApp
-        </a>
-      </div>
-    );
-  }
 
   function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -97,7 +79,7 @@ export default function BookingForm() {
       return;
     }
     if (!agreed) {
-      setError("Centang persetujuan DP untuk melanjutkan.");
+      setError("Centang persetujuan untuk melanjutkan.");
       return;
     }
 
@@ -111,23 +93,13 @@ export default function BookingForm() {
       <div className="panel booking-done" role="status">
         <h2>Booking diterima</h2>
         <p className="booking-code">{submitted.bookingId}</p>
-        <p>
-          Booking baru berlaku setelah DP kami terima dan verifikasi. Selesaikan dua langkah berikut:
-        </p>
+        <p>Belum ada pembayaran yang perlu Anda lakukan sekarang. Langkah berikutnya:</p>
         <ol>
+          <li>Kami menghubungi Anda lewat WhatsApp dalam satu hari kerja untuk konsultasi awal gratis.</li>
+          <li>Anda menerima penawaran tertulis dengan harga tetap per tahap.</li>
           <li>
-            Transfer DP <b>{formatRupiah(dpAmount)}</b> ke:
-            <dl className="booking-bank">
-              <dt>Bank</dt>
-              <dd>{bank.name}</dd>
-              <dt>No. rekening</dt>
-              <dd>{bank.number}</dd>
-              <dt>Atas nama</dt>
-              <dd>{bank.holder}</dd>
-            </dl>
-          </li>
-          <li>
-            Kirim bukti transfer beserta kode <b>{submitted.bookingId}</b> lewat WhatsApp.
+            DP dibayar setelah Anda menyetujui penawaran, dan dikembalikan penuh jika hasil tahap awal
+            tidak Anda terima.
           </li>
         </ol>
         <a
@@ -136,7 +108,7 @@ export default function BookingForm() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Kirim Bukti via WhatsApp
+          Chat via WhatsApp
         </a>
       </div>
     );
@@ -255,7 +227,8 @@ export default function BookingForm() {
       <label className="booking-check">
         <input type="checkbox" checked={agreed} onChange={(event) => setAgreed(event.target.checked)} />
         <span>
-          Saya memahami booking baru berlaku setelah DP {formatRupiah(dpAmount)} diterima.
+          Saya memahami DP dibayar setelah saya menyetujui penawaran tertulis, dan dikembalikan penuh jika
+          hasil tahap awal tidak saya terima.
         </span>
       </label>
 

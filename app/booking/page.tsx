@@ -24,8 +24,8 @@ export default function BookingPage() {
           <h1 className="section-title">Booking Jasa Pembuatan Sistem</h1>
           <div className="divider" />
           <p className="section-lead">
-            Ceritakan kebutuhan bisnis Anda. Booking disertai DP agar kami bisa fokus pada klien yang
-            benar-benar siap berjalan.
+            Ceritakan kebutuhan bisnis Anda. Konsultasi awal gratis, dan DP baru dibayar setelah Anda
+            menyetujui penawaran tertulis.
           </p>
 
           <ul className="booking-services">
@@ -34,13 +34,12 @@ export default function BookingPage() {
             ))}
           </ul>
 
-          {booking.dpAmount && booking.bank && (
-            <ol className="booking-flow">
-              <li>Isi form dan dapatkan kode booking.</li>
-              <li>Transfer DP ke rekening yang tampil setelah form terkirim.</li>
-              <li>Kirim bukti transfer lewat WhatsApp. Booking berlaku setelah DP kami terima.</li>
-            </ol>
-          )}
+          <ol className="booking-flow">
+            <li>Isi form dan dapatkan kode booking.</li>
+            <li>Konsultasi awal gratis lewat WhatsApp.</li>
+            <li>Terima penawaran tertulis dengan harga tetap per tahap.</li>
+            <li>Bayar DP setelah setuju. DP dikembalikan penuh jika hasil tahap awal tidak Anda terima.</li>
+          </ol>
 
           <BookingForm />
         </div>

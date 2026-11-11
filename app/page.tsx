@@ -51,6 +51,10 @@ const SOCIAL_LINKS = [
 
 const ORGANIZATION_JSON_LD = JSON.stringify(organizationJsonLd).replace(/</g, "\\u003c");
 
+const orderedServices = [...services].sort(
+  (a, b) => Number(b.name === "Sistem Order") - Number(a.name === "Sistem Order"),
+);
+
 export default function Home() {
   return (
     <>
@@ -62,7 +66,7 @@ export default function Home() {
         <div className="container hero-grid">
           <div>
             <h1 id="hero-title">Bayangkan sistemnya, kami yang membangun.</h1>
-            <p className="hero-lead">Sistem keuangan, order, gudang, kasir, e-commerce, dan website.</p>
+            <p className="hero-lead">Pesanan WhatsApp Anda rapi dalam satu sistem order.</p>
             <div className="hero-ctas">
               <Link className="btn btn-primary" href="/booking">
                 Booking Proyek
@@ -94,9 +98,9 @@ export default function Home() {
       <section id="services" className="l-section">
         <div className="container l-split">
           <div>
-            <h2>Enam sistem untuk bisnis Anda</h2>
+            <h2>Mulai dari sistem order, lalu tambah yang Anda butuhkan</h2>
             <ul className="l-rows">
-              {services.map((service) => (
+              {orderedServices.map((service) => (
                 <li key={service.name}>
                   <b>{service.name}</b>
                   <span>{service.description}</span>
@@ -165,8 +169,8 @@ export default function Home() {
           <div>
             <h2>Dari booking sampai berjalan</h2>
             <p className="l-lead">
-              Empat langkah. Booking baru berlaku setelah DP diterima, lalu kami konsultasi dan mulai
-              membangun.
+              Konsultasi awal gratis. DP baru dibayar setelah Anda menyetujui penawaran tertulis, dan
+              dikembalikan penuh jika hasil tahap awal tidak Anda terima.
             </p>
             <div className="l-actions">
               <Link className="btn btn-primary" href="/booking">
@@ -177,7 +181,7 @@ export default function Home() {
           <div className="l-ground l-ground-checks">
             <ChecklistPreview
               title="Proyek Anda"
-              label="Empat langkah dari booking sampai sistem berjalan"
+              label="Lima langkah dari booking sampai sistem berjalan"
               done={2}
               items={startSteps.map((step) => step.title)}
             />
