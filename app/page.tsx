@@ -61,12 +61,8 @@ export default function Home() {
       <section className="hero" aria-labelledby="hero-title">
         <div className="container hero-grid">
           <div>
-            <p className="hero-kicker">Jasa pembuatan sistem · Semarang</p>
-            <h1 id="hero-title">Sistem keuangan, order, dan gudang untuk bisnis Anda</h1>
-            <p className="hero-lead">
-              Kami bangun sistem keuangan, pesanan, stok, kasir, e-commerce, dan website sesuai cara kerja
-              bisnis Anda.
-            </p>
+            <h1 id="hero-title">Bayangkan sistemnya, kami yang membangun.</h1>
+            <p className="hero-lead">Sistem keuangan, order, gudang, kasir, e-commerce, dan website.</p>
             <div className="hero-ctas">
               <Link className="btn btn-primary" href="/booking">
                 Booking Proyek
