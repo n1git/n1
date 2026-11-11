@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import "./landing.css";
 import { withBasePath } from "./base-path";
 import { SITE_URL, pageMetadata } from "./seo";
 

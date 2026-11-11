@@ -8,10 +8,9 @@ import { withBasePath } from "./base-path";
 const NAV_LINKS = [
   { href: "/#services", label: "Layanan" },
   { href: "/produk", label: "Produk" },
-  { href: "/#portfolio", label: "Portofolio" },
+  { href: "/portofolio", label: "Portofolio" },
   { href: "/#how-to-start", label: "Cara Memulai" },
-  { href: "/#about", label: "Tentang" },
-  { href: "/#philosophy", label: "Filosofi" },
+  { href: "/visi", label: "Visi" },
   { href: "/#contact", label: "Kontak" },
 ];
 
