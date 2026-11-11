@@ -1,0 +1,20 @@
+{
+  "business": "N⁻¹ Labs, jasa pembuatan sistem bisnis custom (ASUMSI: semua angka biaya dan volume adalah estimasi, belum dari pemilik)",
+  "unit": "proyek",
+  "price": 10000000,
+  "variable": [
+    {"label": "Domain, hosting, dan layanan pihak ketiga per proyek (ESTIMASI)", "cost": 1200000}
+  ],
+  "fixed_monthly": [
+    {"label": "Gaji 2 orang tim inti (ESTIMASI Rp5.000.000 per orang)", "cost": 10000000},
+    {"label": "Alat kerja, hosting produk sendiri, internet (ESTIMASI)", "cost": 2500000}
+  ],
+  "startup": [
+    {"label": "Perjanjian dan templat kontrak ditinjau (ESTIMASI)", "cost": 2000000},
+    {"label": "Iklan peluncuran dan materi bukti (ESTIMASI)", "cost": 3000000}
+  ],
+  "days_per_month": 1,
+  "capacity_per_day": 3,
+  "plan_per_day": 2,
+  "ramp_per_day": [0, 0, 0, 1, 0, 1, 1, 1, 1, 2, 2, 2]
+}
