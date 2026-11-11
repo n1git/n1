@@ -593,3 +593,14 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.l-rows b a {
+  text-decoration: underline;
+  text-decoration-color: var(--line);
+  text-underline-offset: 4px;
+}
+
+.l-rows b a:hover,
+.l-rows b a:focus-visible {
+  text-decoration-color: var(--accent);
+}

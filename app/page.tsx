@@ -121,12 +121,16 @@ export default function Home() {
             <h2>Produk dan proyek yang berjalan</h2>
             <ul className="l-rows">
               <li>
-                <b>Getruzz</b>
-                <span>Sudah live di getruzz.com</span>
+                <b>
+                  <a href="https://getruzz.com" target="_blank" rel="noopener noreferrer">
+                    Getruzz
+                  </a>
+                </b>
+                <span>Platform klub olahraga, sudah live di getruzz.com</span>
               </li>
               <li>
                 <b>Systemma</b>
-                <span>Berjalan di produksi</span>
+                <span>Sistem pre-order untuk puluhan agen, berjalan di produksi</span>
               </li>
               <li>
                 <b>AI Agent Customer Service</b>
