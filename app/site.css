@@ -649,5 +649,4 @@
 }
 
 .nav__logo .nav__logo-img { height: 28px; width: auto; }
-.nav__logo-img--onlight { filter: invert(1) hue-rotate(180deg); }
 @media (max-width: 639px) { .nav__logo .nav__logo-img { height: 20px; } }

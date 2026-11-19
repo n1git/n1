@@ -42,7 +42,7 @@ export default function Footer() {
             <div className="grid">
               <div className="span-4 stack-4">
                 <Link className="nav__logo" href="/">
-                  <Image className="nav__logo-img nav__logo-img--onlight" src={withBasePath("/logo-full.png")} alt="N⁻¹ Labs" width={211} height={28} />
+                  <Image className="nav__logo-img" src={withBasePath("/logo-full-light.png")} alt="N⁻¹ Labs" width={211} height={28} />
                 </Link>
                 <p className="footer__lede">Studio sistem bisnis custom dari Semarang, Jawa Tengah.</p>
               </div>
