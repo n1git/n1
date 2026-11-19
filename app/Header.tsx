@@ -1,110 +1,94 @@
-"use client";
-
-import { useEffect, useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 import { withBasePath } from "./base-path";
 
-const NAV_LINKS = [
-  { href: "/#services", label: "Layanan" },
-  { href: "/produk", label: "Produk" },
-  { href: "/portofolio", label: "Portofolio" },
-  { href: "/#how-to-start", label: "Cara Memulai" },
-  { href: "/visi", label: "Visi" },
-  { href: "/#contact", label: "Kontak" },
-];
+const CHEVRON = (
+  <svg className="chev" viewBox="0 0 12 12" aria-hidden="true">
+    <path d="M3 4.5l3 3 3-3" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
+);
 
 export default function Header() {
-  const [theme, setTheme] = useState<"light" | "dark">("light");
-  const [menuOpen, setMenuOpen] = useState(false);
-
-  useEffect(() => {
-    // Syncs with the data-theme the bootstrap script in layout.tsx set on
-    // <html> before hydration, so the toggle icon matches the real theme.
-    // eslint-disable-next-line react-hooks/set-state-in-effect
-    setTheme(document.documentElement.getAttribute("data-theme") === "dark" ? "dark" : "light");
-  }, []);
-
-  function toggleTheme() {
-    const next = theme === "light" ? "dark" : "light";
-    setTheme(next);
-    document.documentElement.setAttribute("data-theme", next);
-    try {
-      localStorage.setItem("n1-theme", next);
-    } catch {}
-  }
-
   return (
-    <header className="site-header">
-      <div className="container">
-        <Link className="brand" href="/">
-          <Image src={withBasePath("/logo-192.png")} alt="N⁻¹ Labs" width={34} height={34} priority />
-          N⁻¹&nbsp;LABS
+    <header className="nav nav--centre">
+      <div className="wrap nav__bar">
+        <a className="skip-link" href="#top">
+          Lewati ke isi
+        </a>
+        <Link className="nav__logo" href="/">
+          <Image src={withBasePath("/logo-192.png")} alt="" width={24} height={24} priority />
+          N⁻¹ Labs
         </Link>
-
-        <nav>
-          <ul className="nav-links">
-            {NAV_LINKS.map((link) => (
-              <li key={link.href}>
-                <Link href={link.href}>{link.label}</Link>
-              </li>
-            ))}
-          </ul>
-        </nav>
-
-        <Link className="btn btn-primary header-cta" href="/booking">
-          Booking Proyek
-        </Link>
-
-        <div className="header-actions">
-          <button
-            type="button"
-            className="icon-btn"
-            aria-label={theme === "light" ? "Aktifkan tema gelap" : "Aktifkan tema terang"}
-            onClick={toggleTheme}
-          >
-            {theme === "light" ? (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z" />
-              </svg>
-            ) : (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="12" r="4" />
-                <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
-              </svg>
-            )}
-          </button>
-          <button
-            type="button"
-            className="icon-btn menu-toggle"
-            aria-label={menuOpen ? "Tutup menu" : "Buka menu"}
-            aria-expanded={menuOpen}
-            onClick={() => setMenuOpen((open) => !open)}
-          >
-            {menuOpen ? (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M18 6 6 18M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M4 7h16M4 12h16M4 17h16" />
-              </svg>
-            )}
-          </button>
-        </div>
-      </div>
-
-      <div className={`mobile-nav-wrap${menuOpen ? " open" : ""}`}>
-        <nav className="mobile-nav">
-          {NAV_LINKS.map((link) => (
-            <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
-              {link.label}
+        <nav className="nav__links" aria-label="Utama">
+          <div className="nav__item">
+            <Link className="nav__link" href="/#order">
+              Order
             </Link>
-          ))}
-          <Link className="btn btn-primary mobile-nav-cta" href="/booking" onClick={() => setMenuOpen(false)}>
-            Booking Proyek
-          </Link>
+          </div>
+          <div className="nav__item">
+            <Link className="nav__link" href="/#layanan">
+              Layanan {CHEVRON}
+            </Link>
+            <div className="nav__menu">
+              <div className="wrap grid">
+                <div className="menu-col span-3">
+                  <p className="t-label">Operasional</p>
+                  <Link href="/#order">
+                    Sistem Order<span>Pesanan dalam satu alur</span>
+                  </Link>
+                  <Link href="/#layanan">
+                    Sistem Gudang<span>Stok masuk dan keluar</span>
+                  </Link>
+                  <Link href="/#layanan">
+                    Sistem Kasir<span>Transaksi di toko</span>
+                  </Link>
+                </div>
+                <div className="menu-col span-3">
+                  <p className="t-label">Keuangan dan toko</p>
+                  <Link href="/#layanan">
+                    Sistem Keuangan<span>Arus kas dan laporan</span>
+                  </Link>
+                  <Link href="/#layanan">
+                    E-commerce<span>Katalog, keranjang, pesanan</span>
+                  </Link>
+                  <Link href="/#layanan">
+                    Website<span>Profil usaha di ponsel</span>
+                  </Link>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="nav__item">
+            <Link className="nav__link" href="/#mulai">
+              Mulai
+            </Link>
+          </div>
+          <div className="nav__item">
+            <Link className="nav__link" href="/produk">
+              Produk
+            </Link>
+          </div>
+          <div className="nav__item">
+            <Link className="nav__link" href="/portofolio">
+              Portofolio
+            </Link>
+          </div>
+          <div className="nav__item">
+            <Link className="nav__link" href="/visi">
+              Visi
+            </Link>
+          </div>
         </nav>
+        <div className="nav__actions">
+          <Link className="btn btn--primary" href="/booking">
+            Booking proyek
+          </Link>
+        </div>
+        <button className="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
+          <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">
+            <path d="M2 5h14M2 13h14" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
+          </svg>
+        </button>
       </div>
     </header>
   );

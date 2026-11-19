@@ -288,7 +288,7 @@ export default function ChatWindow({ onClose }: ChatWindowProps) {
   }
 
   return (
-    <div className="support-chat-window panel" id="support-chat-window" role="dialog" aria-label="Chat bantuan">
+    <div className="support-chat-window" id="support-chat-window" role="dialog" aria-label="Chat bantuan">
       <div className="support-chat-header">
         <span>Bantuan N⁻¹ Labs</span>
         <div className="support-chat-header-actions">

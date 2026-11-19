@@ -14,11 +14,12 @@ export const metadata: Metadata = pageMetadata({
 export default function PrivacyPage() {
   return (
     <>
-      <div id="top" />
       <Header />
 
+      <main className="doc" id="top">
+        <div className="wrap">
       <section id="privacy">
-        <div className="container legal">
+        <div className="legal">
           <div className="kicker">Legal</div>
           <h1 className="section-title">Kebijakan Privasi</h1>
           <div className="divider" />
@@ -78,6 +79,8 @@ export default function PrivacyPage() {
           </p>
         </div>
       </section>
+        </div>
+      </main>
 
       <Footer />
     </>

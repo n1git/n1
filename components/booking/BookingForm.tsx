@@ -90,7 +90,7 @@ export default function BookingForm() {
 
   if (submitted) {
     return (
-      <div className="panel booking-done" role="status">
+      <div className="booking-done" role="status">
         <h2>Booking diterima</h2>
         <p className="booking-code">{submitted.bookingId}</p>
         <p>Belum ada pembayaran yang perlu Anda lakukan sekarang. Langkah berikutnya:</p>
@@ -103,7 +103,7 @@ export default function BookingForm() {
           </li>
         </ol>
         <a
-          className="btn btn-primary"
+          className="btn btn--primary"
           href={buildWhatsAppUrl(submitted)}
           target="_blank"
           rel="noopener noreferrer"
@@ -242,7 +242,7 @@ export default function BookingForm() {
         </p>
       )}
 
-      <button type="submit" className="btn btn-primary booking-submit">
+      <button type="submit" className="btn btn--primary booking-submit">
         Kirim Booking
       </button>
     </form>

@@ -18,34 +18,65 @@ function WhatsAppIcon({ size = 20 }: { size?: number }) {
 export default function Footer() {
   return (
     <>
-      <footer className="site-footer">
-        <div className="container footer-contact">
-          <span className="footer-contact-label">Hubungi Kami</span>
-          <div className="footer-contact-links">
-            <a
-              className="btn btn-ghost footer-whatsapp"
-              href={WHATSAPP_URL}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <WhatsAppIcon size={16} />
-              {contact.whatsappDisplay}
-            </a>
-            <a className="footer-email" href={MAILTO_URL}>
-              {contact.email}
-            </a>
+      <footer className="footer closing footer--statement" id="contact" aria-labelledby="close-h">
+        <div className="wrap">
+          <div className="closing__cta close--word">
+            <div className="section-head--split">
+              <div>
+                <h2 id="close-h">Konsultasi sistem gratis</h2>
+                <p className="t-lead">Booking tidak dipungut biaya. Kami membalas lewat WhatsApp.</p>
+              </div>
+              <Link className="btn btn--primary" href="/booking">
+                Booking proyek
+                <svg className="m-arrow" viewBox="0 0 12 12" aria-hidden="true">
+                  <path className="m-arrow__stem" d="M1 6h8" />
+                  <path className="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5" />
+                </svg>
+              </Link>
+            </div>
+            <p className="close__word" aria-hidden="true">
+              N⁻¹ Labs
+            </p>
           </div>
-        </div>
-        <div className="container">
-          <a className="brand" href="#top">
-            <Image src={withBasePath("/logo-192.png")} alt="N⁻¹ Labs" width={26} height={26} />
-            N⁻¹ LABS
-          </a>
-          <span className="footer-tagline">N⁻¹ · always one step from finished.</span>
-          <Link className="footer-privacy" href="/privacy">
-            Kebijakan Privasi
-          </Link>
-          <span>© 2026 N⁻¹ Labs. All rights reserved.</span>
+          <div className="closing__links">
+            <div className="grid">
+              <div className="span-4 stack-4">
+                <Link className="nav__logo" href="/">
+                  <Image src={withBasePath("/logo-192.png")} alt="" width={24} height={24} />
+                  N⁻¹ Labs
+                </Link>
+                <p className="footer__lede">Studio sistem bisnis custom dari Semarang, Jawa Tengah.</p>
+              </div>
+              <div className="span-2 start-7 footer__col">
+                <h3>Sistem</h3>
+                <ul>
+                  <li><Link href="/#order">Sistem order</Link></li>
+                  <li><Link href="/#layanan">Sistem lain</Link></li>
+                  <li><Link href="/booking">Booking proyek</Link></li>
+                </ul>
+              </div>
+              <div className="span-2 footer__col">
+                <h3>Studio</h3>
+                <ul>
+                  <li><Link href="/visi">Visi</Link></li>
+                  <li><Link href="/produk">Produk</Link></li>
+                  <li><Link href="/portofolio">Portofolio</Link></li>
+                </ul>
+              </div>
+              <div className="span-2 footer__col">
+                <h3>Kontak</h3>
+                <ul>
+                  <li><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">WhatsApp</a></li>
+                  <li><a href={MAILTO_URL}>Email</a></li>
+                </ul>
+              </div>
+            </div>
+            <div className="footer__legal">
+              <span>&copy; 2026 N⁻¹ Labs</span>
+              <Link href="/privacy">Kebijakan privasi</Link>
+              <div className="socials"></div>
+            </div>
+          </div>
         </div>
       </footer>
 

@@ -15,11 +15,12 @@ export const metadata: Metadata = pageMetadata({
 export default function BookingPage() {
   return (
     <>
-      <div id="top" />
       <Header />
 
+      <main className="doc" id="top">
+        <div className="wrap">
       <section id="booking">
-        <div className="container">
+        <div>
           <div className="kicker">Booking Proyek</div>
           <h1 className="section-title">Booking Jasa Pembuatan Sistem</h1>
           <div className="divider" />
@@ -44,6 +45,8 @@ export default function BookingPage() {
           <BookingForm />
         </div>
       </section>
+        </div>
+      </main>
 
       <Footer />
     </>

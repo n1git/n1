@@ -18,11 +18,12 @@ const ROADMAP_SUMMARY = roadmapPhases
 export default function VisiPage() {
   return (
     <>
-      <div id="top" />
       <Header />
 
+      <main className="doc" id="top">
+        <div className="wrap">
       <section id="about">
-        <div className="container">
+        <div>
           <div className="kicker">Tentang Kami</div>
           <h1 className="section-title">About N⁻¹ Labs</h1>
           <div className="divider" />
@@ -65,7 +66,7 @@ export default function VisiPage() {
       </section>
 
       <section id="direction">
-        <div className="container">
+        <div>
           <div className="kicker">Arah Kami</div>
           <h2 className="section-title">Filosofi, Visi, dan Roadmap</h2>
           <div className="divider" />
@@ -101,7 +102,7 @@ export default function VisiPage() {
       </section>
 
       <section id="philosophy">
-        <div className="container">
+        <div>
           <div className="kicker">Filosofi</div>
           <h2 className="section-title">N⁻¹: Selalu Satu Langkah Sebelum Selesai</h2>
           <div className="divider" />
@@ -174,7 +175,7 @@ export default function VisiPage() {
       </section>
 
       <section id="mission">
-        <div className="container">
+        <div>
           <div className="kicker">Cara Kami Mewujudkannya</div>
           <h2 className="section-title">Mission</h2>
           <div className="divider" />
@@ -199,7 +200,7 @@ export default function VisiPage() {
       </section>
 
       <section id="technology">
-        <div className="container">
+        <div>
           <div className="kicker">Kapabilitas Teknologi</div>
           <h2 className="section-title">Technology Focus</h2>
           <div className="divider" />
@@ -228,7 +229,7 @@ export default function VisiPage() {
       </section>
 
       <section id="journey">
-        <div className="container">
+        <div>
           <div className="kicker">Perjalanan Kapabilitas</div>
           <h2 className="section-title">Technology Journey</h2>
           <div className="divider" />
@@ -263,7 +264,7 @@ export default function VisiPage() {
       </section>
 
       <section id="vision">
-        <div className="container">
+        <div>
           <div className="kicker">Arah Perusahaan</div>
           <h2 className="section-title">Vision</h2>
           <div className="divider" />
@@ -304,7 +305,7 @@ export default function VisiPage() {
       </section>
 
       <section id="long-term-vision">
-        <div className="container">
+        <div>
           <div className="kicker">Masa Depan</div>
           <h2 className="section-title">Long-Term Vision</h2>
           <div className="divider" />
@@ -327,7 +328,7 @@ export default function VisiPage() {
       </section>
 
       <section id="llm">
-        <div className="container">
+        <div>
           <div className="kicker">Kedaulatan Teknologi</div>
           <h2 className="section-title">Building Indonesia&apos;s Own LLM</h2>
           <div className="divider" />
@@ -365,7 +366,7 @@ export default function VisiPage() {
       </section>
 
       <section id="national-security">
-        <div className="container">
+        <div>
           <div className="kicker">Kontribusi Strategis</div>
           <h2 className="section-title">National Security &amp; Defense Technology</h2>
           <div className="divider" />
@@ -402,7 +403,7 @@ export default function VisiPage() {
       </section>
 
       <section id="values">
-        <div className="container">
+        <div>
           <div className="kicker">Prinsip Kerja</div>
           <h2 className="section-title">Company Values</h2>
           <div className="divider" />
@@ -426,7 +427,7 @@ export default function VisiPage() {
       </section>
 
       <section id="roadmap">
-        <div className="container">
+        <div>
           <div className="kicker">Jalan ke Depan</div>
           <h2 className="section-title">Development Roadmap</h2>
           <div className="divider" />
@@ -458,7 +459,7 @@ export default function VisiPage() {
       </section>
 
       <section id="positioning">
-        <div className="container">
+        <div>
           <div className="kicker">Cara Kami Diposisikan</div>
           <h2 className="section-title">Company Positioning</h2>
           <div className="divider" />
@@ -489,6 +490,8 @@ export default function VisiPage() {
           </div>
         </div>
       </section>
+        </div>
+      </main>
 
       <Footer />
     </>

@@ -96,7 +96,7 @@ export default function PreChatForm({ onSubmit }: PreChatFormProps) {
           {error}
         </p>
       )}
-      <button type="submit" className="btn btn-primary support-chat-form-submit">
+      <button type="submit" className="btn btn--primary support-chat-form-submit">
         Mulai percakapan
       </button>
     </form>

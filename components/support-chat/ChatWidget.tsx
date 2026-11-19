@@ -6,7 +6,7 @@ import dynamic from "next/dynamic";
 const ChatWindow = dynamic(() => import("./ChatWindow"), {
   ssr: false,
   loading: () => (
-    <div className="support-chat-window panel support-chat-loading" role="status">
+    <div className="support-chat-window support-chat-loading" role="status">
       Memuat chat...
     </div>
   ),

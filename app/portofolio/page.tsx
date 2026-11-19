@@ -15,11 +15,12 @@ export const metadata: Metadata = pageMetadata({
 export default function PortofolioPage() {
   return (
     <>
-      <div id="top" />
       <Header />
 
+      <main className="doc" id="top">
+        <div className="wrap">
       <section id="portfolio">
-        <div className="container">
+        <div>
           <div className="kicker">Produk &amp; Portofolio</div>
           <h1 className="section-title">Produk dan Proyek</h1>
           <div className="divider" />
@@ -39,6 +40,8 @@ export default function PortofolioPage() {
           <Portfolio projects={projects} />
         </div>
       </section>
+        </div>
+      </main>
 
       <Footer />
     </>

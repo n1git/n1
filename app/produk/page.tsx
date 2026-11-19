@@ -14,11 +14,12 @@ export const metadata: Metadata = pageMetadata({
 export default function ProdukPage() {
   return (
     <>
-      <div id="top" />
       <Header />
 
+      <main className="doc" id="top">
+        <div className="wrap">
       <section id="produk">
-        <div className="container">
+        <div>
           <div className="kicker">Produk</div>
           <h1 className="section-title">Produk Kami</h1>
           <div className="divider" />
@@ -30,6 +31,8 @@ export default function ProdukPage() {
           <ProductCategories categories={productCategories} />
         </div>
       </section>
+        </div>
+      </main>
 
       <Footer />
     </>

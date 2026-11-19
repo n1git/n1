@@ -19,7 +19,7 @@ export default function ProductCategories({ categories }: { categories: ProductC
                 <p style={{ fontSize: 13.5, margin: 0 }}>{product.description}</p>
                 {product.url && (
                   <a
-                    className="btn btn-ghost"
+                    className="btn btn--secondary"
                     style={{ marginTop: 12, display: "inline-block" }}
                     href={product.url}
                     target="_blank"

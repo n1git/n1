@@ -101,7 +101,7 @@ export default function ChatPanel({
         />
         <button
           type="submit"
-          className="btn btn-primary support-chat-send"
+          className="btn btn--primary support-chat-send"
           disabled={!draft.trim() || isTyping}
         >
           Kirim
