@@ -34,16 +34,13 @@ export default function Footer() {
                 </svg>
               </Link>
             </div>
-            <p className="close__word" aria-hidden="true">
-              N⁻¹ Labs
-            </p>
+            <div className="close__word" aria-hidden="true">
+              <Image src={withBasePath("/logo-full-light-xl.png")} alt="" width={1292} height={171} />
+            </div>
           </div>
           <div className="closing__links">
             <div className="grid">
               <div className="span-4 stack-4">
-                <Link className="nav__logo" href="/">
-                  <Image className="nav__logo-img" src={withBasePath("/logo-full-light.png")} alt="N⁻¹ Labs" width={211} height={28} />
-                </Link>
                 <p className="footer__lede">Studio sistem bisnis custom dari Semarang, Jawa Tengah.</p>
               </div>
               <div className="span-2 start-7 footer__col">
