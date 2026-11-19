@@ -35,7 +35,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="close__word" aria-hidden="true">
-              <Image src={withBasePath("/logo-full-light-xl.png")} alt="" width={1292} height={171} />
+              <Image src={withBasePath("/logo-full-light.svg")} alt="" width={1292} height={171} />
             </div>
           </div>
           <div className="closing__links">

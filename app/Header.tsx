@@ -16,7 +16,7 @@ export default function Header() {
           Lewati ke isi
         </a>
         <Link className="nav__logo" href="/">
-          <Image className="nav__logo-img" src={withBasePath("/logo-full.png")} alt="N⁻¹ Labs" width={211} height={28} priority />
+          <Image className="nav__logo-img" src={withBasePath("/logo-full.svg")} alt="N⁻¹ Labs" width={211} height={28} priority />
         </Link>
         <nav className="nav__links" aria-label="Utama">
           <div className="nav__item">
