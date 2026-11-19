@@ -1,12 +1,17 @@
-import { contact, identity, missionPillars, techDomains, projects, values } from "@/app/content";
+import { contact, identity, productCategories, projects, services, startSteps, techDomains, values } from "@/app/content";
 import { CHAT_BACKEND_ENABLED } from "@/lib/support-chat/api";
 import type { FaqEntry } from "@/lib/support-chat/types";
 
 const identityValue = (label: string) => identity.find((item) => item.label === label)?.value ?? "";
 
-const servicesSummary = missionPillars.map((pillar) => `${pillar.title}: ${pillar.body}`).join("\n");
+const servicesSummary = services.map((service) => `${service.name}: ${service.description}`).join("\n");
 
-const pillarTitles = missionPillars.map((pillar) => pillar.title.replace(/^\d+\.\s*/, "")).join(", ");
+const stepsSummary = startSteps.map((step, index) => `${index + 1}. ${step.title}: ${step.body}`).join("\n");
+
+const productsSummary = productCategories
+  .flatMap((category) => category.products)
+  .map((product) => `${product.name} (${product.tagline}): ${product.description}`)
+  .join("\n");
 
 const techDomainsSummary = techDomains
   .map((domain) => `${domain.name}: ${domain.items.join(", ")}`)
@@ -27,9 +32,9 @@ export const faqEntries: FaqEntry[] = [
     question: "Halo",
     answer: `Halo! Saya asisten FAQ ${identityValue("Nama Perusahaan") || "N⁻¹ Labs"}. Pilih topik di bawah, atau ketik pertanyaan Anda.`,
     quickReplies: [
-      { label: "Tentang perusahaan", targetId: "about" },
       { label: "Layanan kami", targetId: "services" },
-      { label: "Hubungi tim", targetId: "contact" },
+      { label: "Harga dan DP", targetId: "pricing" },
+      { label: "Cara memulai", targetId: "process" },
       { label: "Bicara dengan manusia", targetId: ESCALATION_ENTRY_ID },
     ],
   },
@@ -53,7 +58,7 @@ export const faqEntries: FaqEntry[] = [
     ].join("\n\n"),
     quickReplies: [
       { label: "Layanan kami", targetId: "services" },
-      { label: "Nilai kami", targetId: "values" },
+      { label: "Produk kami", targetId: "products" },
       { label: "Lokasi kantor", targetId: "location" },
       { label: "Hubungi tim", targetId: "contact" },
     ],
@@ -61,23 +66,48 @@ export const faqEntries: FaqEntry[] = [
   {
     id: "services",
     intent: "layanan",
-    keywords: ["layanan", "servis", "jasa", "produk", "service", "dikerjakan", "kerjakan"],
+    keywords: ["layanan", "servis", "jasa", "service", "dikerjakan", "kerjakan", "sistem order", "sistem keuangan", "sistem gudang", "sistem kasir", "e-commerce", "website"],
     question: "Apa saja layanan N⁻¹ Labs?",
-    answer: `Berikut area kerja kami:\n\n${servicesSummary}`,
+    answer: `Kami membangun sistem bisnis custom. Mulai dari sistem order, lalu sistem lain bisa ditambah satu per satu:\n\n${servicesSummary}`,
     quickReplies: [
-      { label: "Bagaimana proses kerjanya?", targetId: "process" },
-      { label: "Domain teknologi", targetId: "tech-domains" },
-      { label: "Portofolio", targetId: "portfolio" },
+      { label: "Cara memulai", targetId: "process" },
+      { label: "Harga dan DP", targetId: "pricing" },
+      { label: "Produk kami", targetId: "products" },
       { label: "Hubungi tim", targetId: "contact" },
     ],
   },
   {
     id: "process",
     intent: "proses-kerja",
-    keywords: ["proses", "cara kerja", "mulai proyek", "memulai", "workflow", "tahapan"],
-    question: "Bagaimana proses kerja N⁻¹ Labs?",
-    answer: `Setiap kebutuhan kami tangani lewat tahapan yang sama dengan fokus kerja kami: ${pillarTitles}. Detail dan estimasi untuk kebutuhan spesifik Anda paling akurat jika dibahas langsung dengan tim kami.`,
+    keywords: ["proses", "cara kerja", "mulai proyek", "memulai", "mulai", "workflow", "tahapan", "booking", "pesan", "langkah"],
+    question: "Bagaimana cara memulai proyek?",
+    answer: `Lima langkah dari booking sampai berjalan:\n\n${stepsSummary}\n\nBooking lewat halaman Booking Proyek di situs ini.`,
     quickReplies: [
+      { label: "Harga dan DP", targetId: "pricing" },
+      { label: "Layanan kami", targetId: "services" },
+      { label: "Hubungi tim", targetId: "contact" },
+    ],
+  },
+  {
+    id: "pricing",
+    intent: "harga-dan-dp",
+    keywords: ["harga", "biaya", "tarif", "berapa", "dp", "bayar", "pembayaran", "refund", "kembali", "uang muka", "gratis"],
+    question: "Berapa harga dan bagaimana DP-nya?",
+    answer:
+      "Booking dan konsultasi awal gratis. Setelah itu Anda menerima penawaran tertulis dengan harga tetap per tahap, jadi nominalnya bergantung pada sistem dan kebutuhan Anda.\n\nDP baru dibayar setelah Anda menyetujui penawaran, dan dikembalikan penuh jika hasil tahap awal tidak Anda terima.",
+    quickReplies: [
+      { label: "Cara memulai", targetId: "process" },
+      { label: "Hubungi tim", targetId: "contact" },
+    ],
+  },
+  {
+    id: "products",
+    intent: "produk-sendiri",
+    keywords: ["produk", "getruzz", "systemma", "bukti", "klien", "referensi", "contoh", "demo"],
+    question: "Apa produk yang sudah berjalan?",
+    answer: `N⁻¹ Labs berdiri tahun 2026 dan belum punya klien proyek custom. Yang bisa Anda periksa hari ini adalah dua produk buatan kami sendiri:\n\n${productsSummary}`,
+    quickReplies: [
+      { label: "Portofolio", targetId: "portfolio" },
       { label: "Layanan kami", targetId: "services" },
       { label: "Hubungi tim", targetId: "contact" },
     ],
