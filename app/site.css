@@ -1,8 +1,8 @@
 :root {
   --p-bg: #111217; --p-surface: #191a20; --p-ink: #dfe5eb; --p-muted: #81858b;
-  --p-accent: #ef233c; --p-accent-ink: #0b0b0d; --p-action: #ef233c; --p-action-ink: #0b0b0d;
+  --p-accent: #f70d13; --p-accent-ink: #0b0b0d; --p-action: #f70d13; --p-action-ink: #0b0b0d;
   --p-inv-bg: #dfe5eb; --p-inv-surface: #ced4da; --p-inv-ink: #111217; --p-inv-muted: #56595f;
-  --p-inv-accent: #ef233c; --p-inv-accent-ink: #0b0b0d; --p-inv-action: #ef233c; --p-inv-action-ink: #0b0b0d;
+  --p-inv-accent: #f70d13; --p-inv-accent-ink: #0b0b0d; --p-inv-action: #f70d13; --p-inv-action-ink: #0b0b0d;
   --font-display: "Instrument Sans", system-ui, sans-serif;
   --font-text: "Instrument Sans", system-ui, sans-serif;
   --font-mono: "DM Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
@@ -15,12 +15,12 @@
 
 :root {
   --bg: var(--p-bg); --surface: var(--p-surface); --ink: var(--p-ink); --muted: var(--p-muted);
-  --line: rgba(223, 229, 235, 0.16); --accent: var(--p-accent); --accent-contrast: #0b0b0d; --accent-text: #ff7a8a;
-  --danger-text: #ff7a8a; --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
+  --line: rgba(223, 229, 235, 0.16); --accent: var(--p-accent); --accent-contrast: #0b0b0d; --accent-text: #ff7a7e;
+  --danger-text: #ff7a7e; --shadow: 0 1px 2px rgba(0, 0, 0, 0.3), 0 8px 24px rgba(0, 0, 0, 0.35);
   --cta-ease: cubic-bezier(0.4, 0, 0.2, 1); --cta-fast: 0.16s; --cta-med: 0.22s;
 }
 
-  html[data-ground="sky"] { --ground-bg: #dfe5eb; --ground-surface: #edf1f5; --ground-ink: #111217; --ground-muted: #4b4f56; --ground-accent: #ef233c; }
+  html[data-ground="sky"] { --ground-bg: #dfe5eb; --ground-surface: #edf1f5; --ground-ink: #111217; --ground-muted: #4b4f56; --ground-accent: #f70d13; }
   .hero__art { background: radial-gradient(70% 60% at 18% 12%, #f1f4f7, transparent 70%), var(--ground-bg); }
   .hero__art > .ly-piece--note { left: var(--s-6); bottom: var(--s-6); width: 300px; z-index: 2; }
   .hero__art .ui-win { width: 100%; }
@@ -634,8 +634,8 @@
 
 
 :root {
-  --on-dark: #dfe5eb; --dark-surface: #191a20; --navy-800: #23252e; --navy-900: #111217; --blue-100: rgba(239, 35, 60, 0.16);
-  --tag-existing-bg: rgba(223, 229, 235, 0.12); --tag-existing-fg: #dfe5eb; --tag-vision-bg: rgba(239, 35, 60, 0.18); --tag-vision-fg: #ff7a8a;
+  --on-dark: #dfe5eb; --dark-surface: #191a20; --navy-800: #23252e; --navy-900: #111217; --blue-100: rgba(247, 13, 19, 0.16);
+  --tag-existing-bg: rgba(223, 229, 235, 0.12); --tag-existing-fg: #dfe5eb; --tag-vision-bg: rgba(247, 13, 19, 0.18); --tag-vision-fg: #ff7a7e;
 }
 
 @media (min-width: 1024px) {
@@ -647,3 +647,7 @@
   main > :is(section, .section) > .wrap > .fill { flex: 1 0 auto; }
   main > :is(section, .section) > .wrap > .app.fill { flex: 1 1 0; min-height: 440px; }
 }
+
+.nav__logo .nav__logo-img { height: 28px; width: auto; }
+.nav__logo-img--onlight { filter: invert(1) hue-rotate(180deg); }
+@media (max-width: 639px) { .nav__logo .nav__logo-img { height: 20px; } }
