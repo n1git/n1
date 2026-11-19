@@ -28,7 +28,13 @@ const DESCRIPTION =
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   ...pageMetadata({ title: TITLE, description: DESCRIPTION, path: "/" }),
-  icons: { icon: withBasePath("/logo-192.png") },
+  icons: {
+    icon: [
+      { url: withBasePath("/favicon.ico"), sizes: "48x48" },
+      { url: withBasePath("/logo-192.png"), sizes: "192x192", type: "image/png" },
+    ],
+    apple: withBasePath("/apple-touch-icon.png"),
+  },
 };
 
 const HEAD_INIT = `document.documentElement.classList.add('m-enter');setTimeout(function(){document.documentElement.classList.add('m-enter-done')},700);document.documentElement.classList.add('mo-js');setTimeout(function(){document.documentElement.classList.add('mo-safe')},2500);document.addEventListener('touchstart',function(){},{passive:true});`;
