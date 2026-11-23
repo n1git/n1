@@ -178,10 +178,10 @@ export const LANDING_HTML = `
 <div class="wrap">
 <div class="grid grid--top fill">
 <div class="span-5">
-<h2 id="produk-h">Dua produk kami sudah berjalan</h2>
-<p class="t-lead" style="margin-top: var(--s-5)">N⁻¹ Labs berdiri tahun 2026 dan belum punya klien proyek custom. Yang bisa Anda periksa hari ini adalah dua produk buatan kami sendiri.</p>
+<h2 id="produk-h">Dua sistem kami sudah berjalan</h2>
+<p class="t-lead" style="margin-top: var(--s-5)">N⁻¹ Labs berdiri tahun 2026. Yang bisa Anda periksa hari ini: Getruzz, produk buatan kami sendiri, dan Systemma, sistem custom yang kami bangun khusus untuk satu usaha.</p>
 <ul class="rows" style="margin-top: var(--s-6)">
-<li><span class="rows__name">Systemma</span><p>Sistem pre-order untuk puluhan agen, berjalan di produksi.</p></li>
+<li><span class="rows__name">Systemma</span><p>Sistem pre-order custom untuk satu usaha dengan puluhan agen. Agen memesan per batch dan membayar DP; admin memeriksa pembayaran dan mengatur produksi serta pengiriman. Berjalan di produksi.</p></li>
 <li><span class="rows__name">Getruzz</span><p>Platform klub olahraga, sudah live.</p></li>
 </ul>
 </div>

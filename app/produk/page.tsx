@@ -7,7 +7,7 @@ import { productCategories } from "../content";
 
 export const metadata: Metadata = pageMetadata({
   title: "Produk — N⁻¹ Labs (N-1 Labs)",
-  description: "Produk N⁻¹ Labs (N-1 Labs): Getruzz (Produk App) dan Systemma (Produk Sistem).",
+  description: "Produk N⁻¹ Labs (N-1 Labs): Getruzz (Produk App) dan Systemma (sistem custom).",
   path: "/produk",
 });
 

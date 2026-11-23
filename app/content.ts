@@ -210,9 +210,9 @@ export const productCategories: ProductCategory[] = [
     products: [
       {
         name: "Systemma",
-        tagline: "Sistem pre-order agen",
+        tagline: "Sistem custom pre-order agen",
         description:
-          "Portal pre-order untuk puluhan agen: agen memesan per batch dan membayar DP, admin memeriksa pembayaran, produksi, dan pengiriman.",
+          "Sistem custom untuk satu usaha dengan puluhan agen: agen memesan per batch dan membayar DP, admin memeriksa pembayaran, produksi, dan pengiriman.",
       },
     ],
   },
