@@ -17,7 +17,7 @@ import "../public/kit/ui/doc/fragment.css";
 import "../public/kit/diagrams/diagram.css";
 import "../public/kit/moments/word-highlight/moment.css";
 import "./site.css";
-import "./doc.css";
+import "./sub.css";
 import { withBasePath } from "./base-path";
 import { SITE_URL, pageMetadata } from "./seo";
 

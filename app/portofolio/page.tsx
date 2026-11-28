@@ -3,12 +3,13 @@ import { pageMetadata } from "../seo";
 import Header from "../Header";
 import Footer from "../Footer";
 import Portfolio from "../Portfolio";
-import ProductCategories from "../ProductCategories";
-import { projects, productCategories } from "../content";
+import { SubBack, SubHero, Tag } from "../Sub";
+import { withBasePath } from "../base-path";
+import { projects } from "../content";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Produk dan Portofolio — N⁻¹ Labs (N-1 Labs)",
-  description: "Produk dan enam proyek N⁻¹ Labs (N-1 Labs): masalah, solusi, fungsi, dampak, dan hal yang dipelajari.",
+  title: "Portofolio — N⁻¹ Labs (N-1 Labs)",
+  description: "Enam proyek N⁻¹ Labs (N-1 Labs): masalah, solusi, fungsi, dampak, dan hal yang dipelajari.",
   path: "/portofolio",
 });
 
@@ -17,29 +18,37 @@ export default function PortofolioPage() {
     <>
       <Header />
 
-      <main className="doc" id="top">
+      <main className="sub" id="top">
         <div className="wrap">
-      <section id="portfolio">
-        <div>
-          <div className="kicker">Produk &amp; Portofolio</div>
-          <h1 className="section-title">Produk dan Proyek</h1>
-          <div className="divider" />
+          <SubBack />
+          <SubHero
+            label="Portofolio"
+            title="Enam proyek, enam fondasi"
+            lead="Setiap proyek menggambarkan satu langkah membangun kapabilitas, dari software engineering dan sistem bisnis sampai automation dan AI Agent."
+          >
+            <div className="sub-tags">
+              <Tag kind="existing" />
+            </div>
+          </SubHero>
 
-          <ProductCategories categories={productCategories} />
-
-          <div className="subhead" style={{ marginTop: 16 }}>
-            Project Portfolio
-          </div>
-          <p className="section-lead">
-            Enam proyek berikut menggambarkan perjalanan N⁻¹ Labs dalam membangun kapabilitas — dari
-            software engineering, sistem bisnis, automation, hingga AI Agent. Setiap proyek dijelaskan
-            berdasarkan permasalahan, solusi, fungsi, dampak, dan hal yang dipelajari N⁻¹ Labs.
-          </p>
-          <span className="tag existing">Existing Capability</span>
+          <nav className="sub-toc" aria-label="Daftar proyek">
+            {projects.map((project) => (
+              <a key={project.num} href={`#proyek-${project.num}`}>
+                {project.num} {project.title}
+              </a>
+            ))}
+          </nav>
 
           <Portfolio projects={projects} />
-        </div>
-      </section>
+
+          <div className="sub-links">
+            <a className="sub-link" href={withBasePath("/produk")}>
+              Lihat produk yang sudah berjalan
+            </a>
+            <a className="sub-link" href={withBasePath("/booking")}>
+              Booking proyek
+            </a>
+          </div>
         </div>
       </main>
 

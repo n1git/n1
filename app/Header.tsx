@@ -1,4 +1,4 @@
-import Link from "next/link";
+import NavLink from "./NavLink";
 import Image from "next/image";
 import { withBasePath } from "./base-path";
 
@@ -15,73 +15,67 @@ export default function Header() {
         <a className="skip-link" href="#top">
           Lewati ke isi
         </a>
-        <Link className="nav__logo" href="/">
+        <a className="nav__logo" href={withBasePath("/")}>
           <Image className="nav__logo-img" src={withBasePath("/logo-full.svg")} alt="N⁻¹ Labs" width={211} height={28} priority />
-        </Link>
+        </a>
         <nav className="nav__links" aria-label="Utama">
           <div className="nav__item">
-            <Link className="nav__link" href="/#order">
+            <a className="nav__link" href={withBasePath("/#order")}>
               Order
-            </Link>
+            </a>
           </div>
           <div className="nav__item">
-            <Link className="nav__link" href="/#layanan">
+            <a className="nav__link" href={withBasePath("/#layanan")}>
               Layanan {CHEVRON}
-            </Link>
+            </a>
             <div className="nav__menu">
               <div className="wrap grid">
                 <div className="menu-col span-3">
                   <p className="t-label">Operasional</p>
-                  <Link href="/#order">
+                  <a href={withBasePath("/#order")}>
                     Sistem Order<span>Pesanan dalam satu alur</span>
-                  </Link>
-                  <Link href="/#layanan">
+                  </a>
+                  <a href={withBasePath("/#layanan")}>
                     Sistem Gudang<span>Stok masuk dan keluar</span>
-                  </Link>
-                  <Link href="/#layanan">
+                  </a>
+                  <a href={withBasePath("/#layanan")}>
                     Sistem Kasir<span>Transaksi di toko</span>
-                  </Link>
+                  </a>
                 </div>
                 <div className="menu-col span-3">
                   <p className="t-label">Keuangan dan toko</p>
-                  <Link href="/#layanan">
+                  <a href={withBasePath("/#layanan")}>
                     Sistem Keuangan<span>Arus kas dan laporan</span>
-                  </Link>
-                  <Link href="/#layanan">
+                  </a>
+                  <a href={withBasePath("/#layanan")}>
                     E-commerce<span>Katalog, keranjang, pesanan</span>
-                  </Link>
-                  <Link href="/#layanan">
+                  </a>
+                  <a href={withBasePath("/#layanan")}>
                     Website<span>Profil usaha di ponsel</span>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
           </div>
           <div className="nav__item">
-            <Link className="nav__link" href="/#mulai">
+            <a className="nav__link" href={withBasePath("/#mulai")}>
               Mulai
-            </Link>
+            </a>
           </div>
           <div className="nav__item">
-            <Link className="nav__link" href="/produk">
-              Produk
-            </Link>
+            <NavLink href="/produk">Produk</NavLink>
           </div>
           <div className="nav__item">
-            <Link className="nav__link" href="/portofolio">
-              Portofolio
-            </Link>
+            <NavLink href="/portofolio">Portofolio</NavLink>
           </div>
           <div className="nav__item">
-            <Link className="nav__link" href="/visi">
-              Visi
-            </Link>
+            <NavLink href="/visi">Visi</NavLink>
           </div>
         </nav>
         <div className="nav__actions">
-          <Link className="btn btn--primary" href="/booking">
+          <a className="btn btn--primary" href={withBasePath("/booking")}>
             Booking proyek
-          </Link>
+          </a>
         </div>
         <button className="nav__toggle" type="button" aria-expanded="false" aria-label="Menu">
           <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden="true">

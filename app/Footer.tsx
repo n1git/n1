@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import ChatWidget from "@/components/support-chat/ChatWidget";
 import { withBasePath } from "./base-path";
 import { contact } from "./content";
@@ -26,13 +25,13 @@ export default function Footer() {
                 <h2 id="close-h">Konsultasi sistem gratis</h2>
                 <p className="t-lead">Booking tidak dipungut biaya. Kami membalas lewat WhatsApp.</p>
               </div>
-              <Link className="btn btn--primary" href="/booking">
+              <a className="btn btn--primary" href={withBasePath("/booking")}>
                 Booking proyek
                 <svg className="m-arrow" viewBox="0 0 12 12" aria-hidden="true">
                   <path className="m-arrow__stem" d="M1 6h8" />
                   <path className="m-arrow__head" d="M4.5 2.5 8 6l-3.5 3.5" />
                 </svg>
-              </Link>
+              </a>
             </div>
             <div className="close__word" aria-hidden="true">
               <Image src={withBasePath("/logo-full-light.svg")} alt="" width={1292} height={171} />
@@ -46,17 +45,17 @@ export default function Footer() {
               <div className="span-2 start-7 footer__col">
                 <h3>Sistem</h3>
                 <ul>
-                  <li><Link href="/#order">Sistem order</Link></li>
-                  <li><Link href="/#layanan">Sistem lain</Link></li>
-                  <li><Link href="/booking">Booking proyek</Link></li>
+                  <li><a href={withBasePath("/#order")}>Sistem order</a></li>
+                  <li><a href={withBasePath("/#layanan")}>Sistem lain</a></li>
+                  <li><a href={withBasePath("/booking")}>Booking proyek</a></li>
                 </ul>
               </div>
               <div className="span-2 footer__col">
                 <h3>Studio</h3>
                 <ul>
-                  <li><Link href="/visi">Visi</Link></li>
-                  <li><Link href="/produk">Produk</Link></li>
-                  <li><Link href="/portofolio">Portofolio</Link></li>
+                  <li><a href={withBasePath("/visi")}>Visi</a></li>
+                  <li><a href={withBasePath("/produk")}>Produk</a></li>
+                  <li><a href={withBasePath("/portofolio")}>Portofolio</a></li>
                 </ul>
               </div>
               <div className="span-2 footer__col">
@@ -69,7 +68,7 @@ export default function Footer() {
             </div>
             <div className="footer__legal">
               <span>&copy; 2026 N⁻¹ Labs</span>
-              <Link href="/privacy">Kebijakan privasi</Link>
+              <a href={withBasePath("/privacy")}>Kebijakan privasi</a>
               <div className="socials"></div>
             </div>
           </div>
